@@ -1775,14 +1775,14 @@ void main(){
   const CROP = { x: .08, y: .01, s: .84 };   // tighter framing: the head fills more of the frame
   const buf = gl.createBuffer();
   let count = 0, builtN = 0;
-  let job = null;
+  let job = null, pix = null;          // pix: a plain copy of the photo file, read pixel by pixel
   const startBuild = N => {
     const c = document.createElement('canvas');
     c.width = N; c.height = N;
     const x = c.getContext('2d', { willReadFrequently: true });
     x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high';
-    const W = img.naturalWidth, H = img.naturalHeight;
-    x.drawImage(img, W * CROP.x, H * CROP.y, W * CROP.s, H * CROP.s, 0, 0, N, N);
+    const W = pix.naturalWidth, H = pix.naturalHeight;
+    x.drawImage(pix, W * CROP.x, H * CROP.y, W * CROP.s, H * CROP.s, 0, 0, N, N);
     job = { N, px: x.getImageData(0, 0, N, N).data, out: new Float32Array(N * N * 10), n: 0, j: 0, s: 20261023 };
   };
   const stepBuild = ms => {             // true once the cloud is complete
@@ -1911,10 +1911,17 @@ void main(){
     try { ready = true; frame.classList.remove('nogl'); frame.classList.add('gl'); kick(); }
     catch (e) { console.warn(e); frame.classList.remove('gl'); frame.classList.add('nogl'); }
   };
+  // the <img> picks the file (srcset), but reports a density-corrected size; the cloud is built from a plain
+  // copy of that same file (already loaded, so it comes from the cache), whose size is its real pixel size
   const startPortrait = () => {
-    if (img.complete && img.naturalWidth) go();
-    else if (img.decode) img.decode().then(go).catch(() => img.addEventListener('load', go, { once: true }));
-    else img.addEventListener('load', go, { once: true });
+    const copy = () => {
+      pix = new Image();
+      pix.src = img.currentSrc || img.src;
+      if (pix.decode) pix.decode().then(go).catch(() => pix.addEventListener('load', go, { once: true }));
+      else pix.addEventListener('load', go, { once: true });
+    };
+    if (img.complete && img.naturalWidth) copy();
+    else img.addEventListener('load', copy, { once: true });
   };
   // Opened straight from disk (file://), a browser won't let the canvas read a local photo's pixels.
   // The hosting build carries the photo once more as a small script that is only fetched in that case.
