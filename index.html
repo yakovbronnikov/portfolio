@@ -1,0 +1,1932 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Yakov Bronnikov · Product designer</title>
+<meta name="description" content="Yakov Bronnikov, a product designer in Belgrade with a background in frontend and an AI-native approach. Case studies in business banking, DeFi lending and payment pages.">
+<meta name="color-scheme" content="light dark">
+<meta name="theme-color" content="#F3F3F3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0A0A0B" media="(prefers-color-scheme: dark)">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Yakov Bronnikov · Product designer">
+<meta property="og:description" content="Yakov Bronnikov, a product designer in Belgrade with a background in frontend and an AI-native approach. Case studies in business banking, DeFi lending and payment pages.">
+<meta property="og:image" content="og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Yakov Bronnikov, product designer">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="preload" href="fonts/geist-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/geist-mono-latin-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="img/portrait-768.avif" as="image" type="image/avif" imagesrcset="img/portrait-480.avif 480w, img/portrait-768.avif 768w" imagesizes="(max-width: 600px) calc(68vw - 22px), (max-width: 980px) 372px, min(30vw, 381px)" fetchpriority="high">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Yakov Bronnikov","jobTitle":"Product designer","address":{"@type":"PostalAddress","addressLocality":"Belgrade","addressCountry":"RS"},"sameAs":["https://www.linkedin.com/in/yakovbronnikov/","https://t.me/yakovbronnikov","https://dribbble.com/yakovbronnikov"]}</script>
+<style>@font-face{font-family:"Geist";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/geist-latin.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Geist";font-style:normal;font-weight:100 900;font-display:swap;src:url(fonts/geist-latin-ext.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-latin-400.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Geist Mono";font-style:normal;font-weight:400;font-display:swap;src:url(fonts/geist-mono-latin-ext-400.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}@font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-latin-500.woff2) format("woff2");unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}@font-face{font-family:"Geist Mono";font-style:normal;font-weight:500;font-display:swap;src:url(fonts/geist-mono-latin-ext-500.woff2) format("woff2");unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}</style>
+<style>
+/* Layout: a centered axis. The portrait sits on the axis, flanked by two fact columns that line up with the header's
+   name and nav; the statement and the links sit centered below it. The portrait is a WebGL point cloud built from the photo's
+   own pixels: it assembles on load, shimmers in place without warping the face, breaks into dust where the cursor
+   passes and settles back, and dissolves up into the header on scroll. Behind and in front of it a field of
+   faint white, ice-blue and mint motes wanders at several depths, sharp at the focus plane and opening into
+   bokeh discs away from it; it parts around the cursor or a finger. */
+:root{
+  --bg:#F3F3F3;
+  --fg:#0C0C0D;
+  --fg-2:#6E6E73;
+  --fg-3:#A8A8AC;
+  --line:rgba(12,12,13,.12);
+  --line-2:rgba(12,12,13,.28);
+  --blend:#FFFFFF;            /* header ink: inverts against whatever is behind it */
+  --glow:#1E8C74;             /* visited cities on the map */
+  --f-sans:"Geist","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --f-mono:"Geist Mono",ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  --gutter:clamp(16px,3.2vw,48px);
+  --maxw:1440px;
+  --hh:64px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]) .hdr{color:#fff;filter:none}
+  :root:not([data-theme="light"]){--bg:#0A0A0B;--fg:#F0F0F0;--fg-2:#8D8D92;--fg-3:#56565B;--line:rgba(240,240,240,.12);--line-2:rgba(240,240,240,.3);--glow:#A6F4DE;color-scheme:dark}
+}
+:root[data-theme="dark"] .hdr{color:#fff;filter:none}
+:root[data-theme="dark"]{--bg:#0A0A0B;--fg:#F0F0F0;--fg-2:#8D8D92;--fg-3:#56565B;--line:rgba(240,240,240,.12);--line-2:rgba(240,240,240,.3);--glow:#A6F4DE;color-scheme:dark}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-tap-highlight-color:transparent}  /* no blue flash on tap in mobile browsers; keyboard focus keeps its outline */
+body{margin:0;background:var(--bg);color:var(--fg);font-family:var(--f-sans);font-size:16px;line-height:1.5;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:clip}
+::selection{background:var(--fg);color:var(--bg)}
+a{color:inherit;text-decoration:none}
+:focus-visible{outline:1px solid currentColor;outline-offset:4px;border-radius:2px}
+.wrap{max-width:var(--maxw);margin-inline:auto;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+.sr-only{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;border:0}
+.mono{font-family:var(--f-mono);font-size:11px;font-weight:400;line-height:1.4;letter-spacing:.06em;text-transform:uppercase}
+
+/* ---------- header ---------- */
+/* content passing under the header goes soft */
+.fog{position:fixed;inset:0 0 auto;z-index:40;height:calc(var(--hh) + 24px + env(safe-area-inset-top,0px));pointer-events:none;-webkit-backdrop-filter:blur(5px);backdrop-filter:blur(5px);-webkit-mask-image:linear-gradient(#000 40%,transparent);mask-image:linear-gradient(#000 40%,transparent)}
+/* where the browser can bend the backdrop, content passing under the header is stretched as if through a glass rod */
+.fog.lens{height:calc(var(--hh) + 16px + env(safe-area-inset-top,0px));-webkit-backdrop-filter:url(#lens);backdrop-filter:url(#lens);-webkit-mask-image:linear-gradient(#000 75%,transparent);mask-image:linear-gradient(#000 75%,transparent)}
+.svg-defs{position:absolute;width:0;height:0;overflow:hidden}
+/* a fade in the page colour over the lens, so the header reads on a dark band */
+.hdr-fade{position:fixed;inset:0 0 auto;z-index:45;height:calc(var(--hh) + 16px + env(safe-area-inset-top,0px));pointer-events:none;background:var(--bg);-webkit-mask-image:linear-gradient(rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 35%,rgba(0,0,0,.3) 70%,transparent 100%);mask-image:linear-gradient(rgba(0,0,0,.92) 0%,rgba(0,0,0,.7) 35%,rgba(0,0,0,.3) 70%,transparent 100%)}
+.hdr{position:fixed;inset:0 0 auto;z-index:51;padding-top:env(safe-area-inset-top,0px);pointer-events:none;mix-blend-mode:difference;color:#000;filter:invert(1)}
+.hdr-in{max-width:var(--maxw);height:var(--hh);margin-inline:auto;display:flex;align-items:center;gap:24px;padding-left:max(var(--gutter),env(safe-area-inset-left,0px));padding-right:max(var(--gutter),env(safe-area-inset-right,0px))}
+.brand{pointer-events:auto;font-size:15px;font-weight:500;letter-spacing:-.012em;white-space:nowrap}
+.nav{pointer-events:auto;margin-left:auto;display:flex;gap:32px}
+.nav a{position:relative;padding-block:8px;font-family:var(--f-mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;white-space:pre}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:100% 50%;transition:transform .6s var(--ease)}
+.nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1);transform-origin:0 50%}
+@media (max-width:520px){.nav{gap:16px}.nav a{font-size:11px;letter-spacing:.03em}.brand{font-size:14px}}
+
+/* ---------- hero ---------- */
+.hero{position:relative;isolation:isolate;overflow-x:clip;padding-top:calc(var(--hh) + 32px);padding-bottom:clamp(56px,9vh,112px)}
+.hero-in{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);grid-template-areas:"ml photo mr" "lede lede lede";column-gap:32px;row-gap:clamp(16px,2.6vh,28px)}
+
+/* the portrait leaves room for the status columns on both sides (~220px each), and on short laptop screens
+   it gives way so the headline and buttons keep some air above the bottom edge */
+.frame{grid-area:photo;position:relative;width:clamp(320px,min(66svh - 30px,100svh - 340px,min(100vw,var(--maxw)) - 2 * var(--gutter) - 64px - 440px),860px);aspect-ratio:1/1;max-width:100%}
+picture{display:contents}
+.frame img,.frame canvas{position:absolute;inset:0;display:block;width:100%;height:100%}
+.frame canvas{inset:-12%;width:124%;height:124%;pointer-events:none}
+@media (max-width:600px){.frame canvas{inset:-6%;width:112%;height:112%}}
+.frame img{object-fit:cover;transition:opacity .2s}
+.frame.gl img{opacity:0}
+html.js .frame:not(.gl):not(.nogl) img{opacity:0}
+
+.meta{margin:0;align-self:start;display:grid;gap:20px;min-width:0}
+.meta-l{grid-area:ml;justify-items:start}
+.meta-r{grid-area:mr;justify-items:end;text-align:right}
+.meta>div{display:grid;gap:6px;min-width:0}
+.meta dt{color:var(--fg-2)}
+.meta dd{margin:0;display:flex;align-items:center;gap:10px;font-size:15px;line-height:1.35;color:var(--fg);font-variant-numeric:tabular-nums;white-space:nowrap}
+.dot{position:relative;flex:none;width:7px;height:7px;border-radius:50%;background:var(--fg)}
+.dot::after{content:"";position:absolute;inset:0;border-radius:50%;border:1px solid var(--fg);animation:ping 2.6s var(--ease) infinite}
+@keyframes ping{from{transform:scale(1);opacity:.9}to{transform:scale(3.4);opacity:0}}
+
+.lede{grid-area:lede;position:relative;z-index:1;display:grid;justify-items:center;gap:28px;text-align:center}
+.statement{margin:0;max-width:34ch;font-size:clamp(28px,3.3vw,52px);font-weight:400;line-height:1.06;letter-spacing:-.035em;text-wrap:balance}
+.statement .muted{color:var(--fg-2)}
+.links{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:12px}
+/* buttons in the nav's voice: mono caps that scramble on hover, a split arrow cell
+   and a fill that sweeps across */
+.btn{position:relative;isolation:isolate;display:inline-flex;align-items:stretch;height:48px;border:1px solid var(--line-2);background:transparent;font-family:var(--f-mono);font-size:12px;font-weight:400;letter-spacing:.08em;text-transform:uppercase;color:var(--fg);transition:color .5s var(--ease),border-color .5s var(--ease)}
+.btn::before{content:"";position:absolute;inset:-1px;z-index:-1;background:var(--fg);transform:scaleX(0);transform-origin:100% 50%;transition:transform .65s var(--ease)}
+.btn:hover::before,.btn:focus-visible::before{transform:scaleX(1);transform-origin:0 50%}
+.btn:hover,.btn:focus-visible{color:var(--bg);border-color:var(--fg)}
+.btn:focus-visible{outline:none}
+.btn-solid{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.btn-solid::before{background:var(--bg)}
+.btn-solid:hover,.btn-solid:focus-visible{color:var(--fg)}
+.btn-l{display:flex;align-items:center;padding:0 20px 0 22px;white-space:pre}
+.btn-a{display:grid;place-items:center;width:46px;border-left:1px solid color-mix(in srgb,currentColor 28%,transparent)}
+.btn-a i{position:relative;display:block;width:10px;height:10px;overflow:hidden}
+.btn-a svg{position:absolute;inset:0;width:10px;height:10px;transition:transform .55s var(--ease)}
+.btn-a svg+svg{transform:translate(-130%,130%)}
+.btn:hover .btn-a svg:first-child,.btn:focus-visible .btn-a svg:first-child{transform:translate(130%,-130%)}
+.btn:hover .btn-a svg+svg,.btn:focus-visible .btn-a svg+svg{transform:none}
+.btn-fwd .btn-a svg+svg{transform:translateX(-130%)}
+.btn-fwd:hover .btn-a svg:first-child,.btn-fwd:focus-visible .btn-a svg:first-child{transform:translateX(130%)}
+
+
+@media (max-width:860px){
+  .hero-in{grid-template-columns:auto minmax(0,1fr);grid-template-areas:"ml mr" "photo photo" "lede lede";column-gap:20px}
+  .frame{width:min(100%,560px);justify-self:center}
+  .meta{align-self:start;padding-top:16px;border-top:1px solid var(--line)}
+  /* phones: the headline and the buttons have to fit on the first screen, browser bars included.
+     A little less air at the top, tighter rows, the headline tucked into the faded shoulders,
+     and the portrait gives way on short screens (svh is the height with the bars showing) */
+  .hero{padding-top:calc(var(--hh) + 12px)}
+  .hero-in{row-gap:12px}
+  .frame{width:min(100%,560px,max(240px,100vh - 354px));width:min(100%,560px,max(240px,100svh - 354px))}
+  .lede{margin-top:-24px}
+}
+@media (max-width:520px){.lede{gap:24px}.meta{gap:16px}.meta dd{font-size:14px}}
+@media (max-width:359px){.meta dd{white-space:normal}.hero-in{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}}
+
+/* bokeh: two canvases, motes farther than the portrait behind it, nearer ones in front */
+.bokeh{position:absolute;inset:0;display:block;width:100%;height:100%;pointer-events:none}
+.bokeh-back{z-index:0}
+.bokeh-front{z-index:2}
+
+/* ---------- work ---------- */
+/* Layout: a ledger of projects. Each row: facts on the left (5 columns), a composed cover on the right (6). */
+.work{border-top:1px solid var(--line);padding-block:clamp(72px,10vw,140px) clamp(48px,7vw,96px)}
+.work-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:16px;align-items:end;margin-bottom:clamp(36px,5vw,72px)}
+.work-k{grid-column:1/-1;margin:0;color:var(--fg-2)}
+.work-title{grid-column:1/8;margin:0;font-size:clamp(56px,8vw,128px);font-weight:400;line-height:.9;letter-spacing:-.055em}
+.work-note{grid-column:9/13;justify-self:end;margin:0;max-width:36ch;font-size:16px;line-height:1.5;color:var(--fg-2)}
+.projects{list-style:none;margin:0;padding:0}
+.proj{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:28px;align-items:start;padding-block:clamp(28px,3.5vw,48px);border-top:1px solid var(--line)}
+.proj-info{grid-column:1/6;grid-row:1;min-width:0;display:flex;flex-direction:column;gap:20px}
+.proj-media{grid-column:7/13;grid-row:1;position:relative;margin:0;aspect-ratio:3/2;max-width:100%;overflow:hidden}
+.proj-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.proj:hover .proj-media img{transform:scale(1.025)}
+.proj-meta{margin:0;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--fg-2)}
+.proj-title{margin:0;font-size:clamp(30px,2.8vw,44px);font-weight:400;line-height:1.02;letter-spacing:-.035em;text-wrap:balance}
+.proj-lede{margin:0;max-width:44ch;font-size:16px;line-height:1.55;color:var(--fg)}
+.proj-note{margin:-8px 0 0;max-width:44ch;font-size:15px;line-height:1.55;color:var(--fg-2)}
+.proj-body{display:flex;flex-direction:column;gap:20px;min-width:0}
+.proj-cta{margin-top:4px}
+/* desktop with a mouse: the cursor is a soft mote ringed with dust (drawn in script) that shows what is under it,
+   so the projects need no button; each glyph slides in from the side it points away from */
+.pcur{display:none}
+@media (min-width:1024px) and (hover:hover) and (pointer:fine){
+  .proj-cta{position:absolute;width:1px;height:1px;margin:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
+  html.cur-on,html.cur-on *{cursor:none!important}
+  /* blended by difference, like the header, so it stays visible over white text, filled buttons and photos */
+  .pcur{position:fixed;left:0;top:0;z-index:70;display:block;width:0;height:0;pointer-events:none;transform:translate3d(-400px,-400px,0);will-change:transform;mix-blend-mode:difference}
+  .pcur canvas{position:absolute;left:-200px;top:-200px;display:block;width:400px;height:400px}
+  .pg{--from:scale(.6);position:absolute;left:-11px;top:-11px;display:block;width:22px;height:22px;color:#fff;opacity:0;transform:var(--from);transition:opacity .3s var(--ease),transform .5s var(--ease)}
+  .pg svg{display:block;width:22px;height:22px}
+  .pg.on{opacity:1;transform:none}
+  .pg[data-g="right"]{--from:translateX(-70%)}
+  .pg[data-g="ext"]{--from:translate(-55%,55%)}
+  .pg[data-g="dot"]{--from:scale(0);left:-2.5px;top:-2.5px;width:5px;height:5px;border-radius:50%;background:#fff}
+  .pg[data-g="read"]{left:-15px;width:30px;display:flex;align-items:center;justify-content:center;gap:4px}
+  .pg[data-g="read"] b{display:block;width:5px;height:5px;border-radius:50%;background:currentColor;animation:pg-read 1.1s var(--ease) infinite}
+  .pg[data-g="read"] b:nth-child(2){animation-delay:.14s}
+  .pg[data-g="read"] b:nth-child(3){animation-delay:.28s}
+  .pcur.dark .pg{filter:drop-shadow(0 0 5px rgba(196,224,255,.55))}
+}
+@keyframes pg-read{0%,60%,100%{transform:translateY(0);opacity:.5}30%{transform:translateY(-5px);opacity:1}}
+@media (prefers-reduced-motion:reduce){.pg[data-g="read"] b{animation:none;opacity:1}}
+@media (max-width:980px){
+  .work-title{grid-column:1/-1}
+  .work-note{grid-column:1/-1;justify-self:start}
+}
+/* tablet: two halves. On the left the meta line, the title and a small screenshot under it;
+   on the right the description and the button */
+@media (min-width:601px) and (max-width:980px){
+  .proj{row-gap:0;align-items:start}
+  .proj-info{display:contents}
+  .proj-meta{grid-column:1/7;grid-row:1}
+  .proj-title{grid-column:1/7;grid-row:2;margin-top:10px}
+  .proj-media{grid-column:1/7;grid-row:3;margin-top:24px;width:100%;max-width:none}
+  .proj-body{grid-column:7/13;grid-row:1/4;gap:18px;padding-top:2px}
+  .proj-lede{font-size:15px}
+  .proj-cta{margin-top:2px}
+}
+/* phone: a short card per project. Meta line, title, the screenshot edge to edge, the button;
+   the descriptions wait for the case study */
+@media (max-width:600px){
+  .proj{row-gap:0}
+  .proj-info,.proj-body{display:contents}
+  .proj-meta,.proj-title,.proj-media,.proj-cta{grid-column:1/-1;grid-row:auto}
+  .proj-meta{order:1}
+  .proj-title{order:2;margin-top:12px}
+  .proj-media{order:3;margin:24px calc(-1 * max(var(--gutter), env(safe-area-inset-left, 0px))) 0;max-width:none}
+  .proj-cta{order:4;margin-top:24px;justify-self:start}
+  .proj-lede,.proj-note{display:none}
+}
+
+/* ---------- about ---------- */
+/* Layout: one centred statement, lit word by word as it scrolls past; then a screen of its own for interests,
+   with the statement and the Instagram button on the left and four photos on the right. */
+.about{border-top:1px solid var(--line);padding-block:clamp(96px,14vw,200px) clamp(48px,7vw,104px)}
+.about-text{margin:0 auto;max-width:30ch;font-size:clamp(28px,3.4vw,52px);font-weight:400;line-height:1.14;letter-spacing:-.035em;text-align:center;text-wrap:balance}
+.interests{padding-block:0 clamp(72px,10vw,140px)}
+.interests-grid{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:48px;align-items:center}
+.interests-copy{grid-column:1/5;min-width:0;display:grid;gap:24px;justify-items:start}
+.interests-title{margin:0;font-size:clamp(36px,4vw,64px);font-weight:400;line-height:1;letter-spacing:-.045em;text-wrap:balance}
+.interests-note{margin:0;max-width:36ch;font-size:16px;line-height:1.55;color:var(--fg-2)}
+button.btn{-webkit-appearance:none;appearance:none;margin:0;padding:0;cursor:pointer;line-height:inherit}
+/* the photos: a strict mosaic, one tall frame and three around it. Square-ish corners, a quiet mono caption;
+   the others dim while one is in focus. */
+.interests-cta{min-width:0}
+.gal{grid-column:6/13;position:relative;min-width:0;--gap:8px;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));grid-template-rows:1fr 1fr;gap:var(--gap);height:clamp(380px,40vw,560px)}
+.gal-item{--k:0;position:relative;margin:0;overflow:hidden;border-radius:4px;background:var(--line);
+  clip-path:inset(0 0 0 0 round 4px);
+  transition:filter .6s var(--ease),clip-path 1.2s var(--ease);transition-delay:0s,calc(var(--k) * 90ms)}
+.gal-item:nth-child(1){grid-column:1/7;grid-row:1/3}
+.gal-item:nth-child(2){--k:1;grid-column:7/10;grid-row:2}
+.gal-item:nth-child(3){--k:2;grid-column:7/13;grid-row:1}
+.gal-item:nth-child(4){--k:3;grid-column:10/13;grid-row:2}
+.gal-item img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+/* crops: the skier centred, the rider kept in frame, the peaks and the cable car in the wide tile, the runner's face */
+.gal-item:nth-child(1) img{object-position:50% 40%}
+.gal-item:nth-child(2) img{object-position:70% 50%}
+.gal-item:nth-child(3) img{object-position:50% 68%}
+.gal-item:nth-child(4) img{object-position:50% 18%}
+.gal-item figcaption{position:absolute;left:0;right:0;bottom:0;z-index:2;display:grid;gap:4px;padding:48px 14px 12px;color:#fff;background:linear-gradient(to top,rgba(0,0,0,.5),rgba(0,0,0,0));pointer-events:none}
+.gal-item figcaption span{white-space:nowrap}
+.gal-n{opacity:.6}
+.gal:hover .gal-item:not(:hover){filter:brightness(.42) saturate(.7)}
+.gal-item:hover img{transform:scale(1.04)}
+/* reveal: the photos wipe up one after another instead of resolving out of blur */
+html.rv-on .gal[data-rv]:not(.in){opacity:1;filter:none;transform:none}
+html.rv-on .gal:not(.in) .gal-item{clip-path:inset(100% 0 0 0 round 4px)}
+@media (max-width:980px){
+  .interests-grid{row-gap:24px}
+  .interests-copy{display:contents}
+  .interests-title,.interests-note,.interests-cta,.gal{grid-column:1/-1}
+  .interests-title{order:1}.interests-note{order:2}
+  /* stacked: more room above and below, everything centred, a lower mosaic with the Instagram button right under it */
+  .about{padding-bottom:clamp(112px,16vw,140px)}
+  .interests{padding-bottom:clamp(104px,14vw,140px)}
+  .interests-title{font-size:clamp(36px,5vw,48px);letter-spacing:-.04em;text-align:center;justify-self:center}
+  .interests-note{text-align:center;justify-self:center}
+  .gal{order:3;margin-top:16px;height:clamp(320px,56vw,520px)}
+  .interests-cta{order:4;justify-self:center;margin-top:8px}
+}
+@media (max-width:600px){
+  .interests-title{font-size:28px;letter-spacing:-.035em}
+  .gal{--gap:6px;height:clamp(260px,80vw,440px)}
+  /* the tiles are too small for captions on a phone */
+  .gal-item figcaption{display:none}
+  .interests-cta{justify-self:stretch;margin-top:-8px}
+  .interests-cta .btn{display:flex;width:100%}
+  .interests-cta .btn-l{flex:1;justify-content:center}
+}
+
+/* ---------- contacts ---------- */
+/* Layout: a large invitation over a ledger of channels. Each row behaves like the hero buttons:
+   the fill sweeps across, the handle scrambles, the arrow swaps. */
+.contacts{border-top:1px solid var(--line);padding-block:clamp(80px,12vw,168px) clamp(40px,6vw,80px)}
+.contacts-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:24px;align-items:end;margin-bottom:clamp(40px,6vw,88px)}
+.contacts-title{grid-column:1/9;margin:0;font-size:clamp(48px,7.4vw,120px);font-weight:400;line-height:.94;letter-spacing:-.055em;text-wrap:balance}
+.contacts-title .muted{color:var(--fg-2)}
+.contacts-note{grid-column:9/13;justify-self:end;margin:0;max-width:34ch;font-size:16px;line-height:1.55;color:var(--fg-2)}
+.c-list{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.c-row{position:relative;isolation:isolate;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,auto) 56px;align-items:center;column-gap:32px;width:100%;margin:0;padding:clamp(16px,2.2vw,28px) 0;border:0;border-bottom:1px solid var(--line);background:none;color:var(--fg);font:inherit;text-align:left;cursor:pointer;transition:color .5s var(--ease)}
+.c-row::before{content:"";position:absolute;inset:-1px 0 0;z-index:-1;background:var(--fg);transform:scaleX(0);transform-origin:100% 50%;transition:transform .7s var(--ease)}
+.c-row:hover::before,.c-row:focus-visible::before,.c-row:active::before{transform:scaleX(1);transform-origin:0 50%}
+.c-row:hover,.c-row:focus-visible,.c-row:active{color:var(--bg)}
+.c-row:focus-visible{outline:none}
+.c-name{font-size:clamp(30px,4.2vw,64px);font-weight:400;line-height:1.02;letter-spacing:-.04em;transition:transform .7s var(--ease)}
+.c-row:hover .c-name,.c-row:focus-visible .c-name,.c-row:active .c-name{transform:translateX(18px)}
+.c-handle{font-family:var(--f-mono);font-size:13px;letter-spacing:.02em;white-space:pre;color:inherit;opacity:.62;transition:opacity .4s,transform .7s var(--ease)}
+.c-row:hover .c-handle,.c-row:focus-visible .c-handle{opacity:1}
+.c-a{display:grid;place-items:center;justify-self:end;width:56px;height:56px;border-left:1px solid color-mix(in srgb,currentColor 22%,transparent)}
+.c-a i{position:relative;display:block;width:12px;height:12px;overflow:hidden}
+.c-a svg{position:absolute;inset:0;width:12px;height:12px;transition:transform .55s var(--ease)}
+.c-a svg+svg{transform:translate(-130%,130%)}
+.c-row:hover .c-a svg:first-child,.c-row:focus-visible .c-a svg:first-child{transform:translate(130%,-130%)}
+.c-row:hover .c-a svg+svg,.c-row:focus-visible .c-a svg+svg{transform:none}
+.c-row.is-copy .c-a svg+svg{transform:translateY(130%)}
+.c-row.is-copy:hover .c-a svg:first-child,.c-row.is-copy:focus-visible .c-a svg:first-child{transform:translateY(-130%)}
+@media (max-width:980px){.contacts{padding-top:clamp(96px,13vw,168px)}.contacts-title,.contacts-note{grid-column:1/-1}.contacts-note{justify-self:start}}
+@media (max-width:640px){
+  .c-row{grid-template-columns:minmax(0,1fr) 48px;row-gap:6px}
+  .c-name{grid-column:1;grid-row:1}
+  .c-handle{grid-column:1;grid-row:2}
+  .c-a{grid-column:2;grid-row:1/3;width:48px;height:48px}
+  /* the handle sits under the name here, so it moves with it instead of touching the edge of the fill */
+  .c-row:hover .c-handle,.c-row:focus-visible .c-handle,.c-row:active .c-handle{transform:translateX(18px)}
+}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px 16px;padding-block:28px 40px;color:var(--fg-2)}
+
+/* ---------- load sequence: text resolves out of blur ---------- */
+[data-blur],.w{transition:opacity 1.5s var(--ease),filter 1.5s var(--ease),transform 1.5s var(--ease);transition-delay:var(--d,0s)}
+.w{display:inline-block;transition-delay:calc(var(--d,0s) + var(--i,0) * 55ms)}
+@media (prefers-reduced-motion:no-preference){
+  html.js:not(.is-in) [data-blur]{opacity:.04;filter:blur(12px);transform:translateY(12px)}
+  html.js:not(.is-in) .w{opacity:.04;filter:blur(16px);transform:translateY(.2em)}
+  html.js:not(.is-in) [data-words]:not(.split){opacity:.04;filter:blur(12px)}
+  /* sections below the first screen resolve out of blur as they scroll in */
+  html.rv-on [data-rv]{transition:opacity 1.4s var(--ease),filter 1.4s var(--ease),transform 1.4s var(--ease);transition-delay:var(--d,0s)}
+  html.rv-on [data-rv]:not(.in){opacity:0;filter:blur(10px);transform:translateY(24px)}
+  html.js .about-text .sw{opacity:.16;transition:opacity .45s var(--ease)}
+  html.js .about-text .sw.on{opacity:1}
+  html.js .about-text.far .sw{opacity:0}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .dot::after{animation:none;opacity:0}
+  [data-blur],.w,.btn,.btn::before,.btn-a svg,.nav a::after,.c-row,.c-row::before,.c-name,.c-a svg{transition:none}
+}
+
+/* ---------- case study: a full-screen article that wipes up over the page ---------- */
+/* Layout: its own bar (back, name, reading progress), a large title with the facts in a row, the cover,
+   then numbered sections: the number in the left gutter, the text in a reading column, figures wider. */
+.case{position:fixed;inset:0;z-index:60;overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;background:var(--bg);color:var(--fg);visibility:hidden;clip-path:inset(100% 0 0 0);transition:clip-path .9s var(--ease),visibility 0s linear .9s}
+.case.open{visibility:visible;clip-path:inset(0 0 0 0);transition:clip-path .9s var(--ease),visibility 0s}
+.case[hidden]{display:none}
+.case:focus{outline:none}
+html.case-open{overflow:hidden}
+.cs-bar{position:sticky;top:0;z-index:2;background:color-mix(in srgb,var(--bg) 84%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+.cs-bar-in{height:var(--hh);display:grid;grid-template-columns:minmax(0,1fr) auto minmax(0,1fr);align-items:center;gap:16px}
+.cs-back{justify-self:start}
+.cs-contact{justify-self:end}
+.btn-sm{height:38px;font-size:11px}
+.btn-sm .btn-l{padding:0 14px 0 16px}
+.btn-sm .btn-a{width:38px}
+.cs-back{display:inline-flex;align-items:center;gap:12px;margin:0;padding:8px 0;border:0;background:none;color:var(--fg);cursor:pointer}
+.cs-back svg{width:12px;height:12px;transition:transform .5s var(--ease)}
+.cs-back:hover svg,.cs-back:focus-visible svg{transform:translateX(-4px)}
+.cs-back:focus-visible{outline:1px solid var(--fg);outline-offset:4px}
+.cs-name{color:var(--fg-2);text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+/* the case taking over sits above the one stepping back */
+.case.open{z-index:61}
+.cs-prog{position:absolute;left:0;right:0;bottom:-1px;height:1px;background:var(--fg);transform:scaleX(0);transform-origin:0 50%}
+.cs-hero{padding-block:clamp(56px,9vw,136px) clamp(40px,6vw,80px)}
+.cs-title{margin:18px 0 0;font-size:clamp(52px,8.4vw,136px);font-weight:400;line-height:.94;letter-spacing:-.055em}
+.cs-dek{margin:28px 0 0;max-width:34ch;font-size:clamp(20px,2.1vw,30px);line-height:1.25;letter-spacing:-.02em;color:var(--fg-2);text-wrap:balance}
+.cs-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:24px;margin:clamp(48px,7vw,96px) 0 0;padding:0}
+.cs-facts>div{display:grid;gap:8px;padding-top:16px;border-top:1px solid var(--line)}
+.cs-facts dt{color:var(--fg-2)}
+.cs-facts dd{margin:0;font-size:16px}
+.cs-cover{margin-top:0;margin-bottom:clamp(24px,4vw,48px)}
+.cs-cover img{display:block;width:100%;height:auto;aspect-ratio:3/2}
+.cs-sec{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;align-items:start;padding-block:clamp(56px,8vw,112px);border-top:1px solid var(--line)}
+.cs-n{grid-column:1/4;margin:6px 0 0;color:var(--fg-2)}
+.cs-body{grid-column:4/11;min-width:0}
+.cs-body h2{margin:0 0 32px;font-size:clamp(30px,3.4vw,52px);font-weight:400;line-height:1.04;letter-spacing:-.04em;text-wrap:balance}
+.cs-body p{margin:0 0 22px;max-width:62ch;font-size:clamp(17px,1.3vw,19px);line-height:1.62;color:var(--fg-2)}
+.cs-body p:last-child{margin-bottom:0}
+.cs-body strong{font-weight:500;color:var(--fg)}
+.cs-body .cs-take{margin-bottom:32px;max-width:28ch;font-size:clamp(26px,2.8vw,42px);line-height:1.16;letter-spacing:-.035em;color:var(--fg);text-wrap:balance}
+.cs-fig{grid-column:4/13;min-width:0;margin:clamp(40px,5vw,72px) 0 0}
+.cs-fig img{display:block;width:100%;height:auto;border:1px solid var(--line)}
+.cs-fig figcaption{margin-top:14px;color:var(--fg-2)}
+/* the numbers: a ledger, before muted, after large */
+.cs-kpi{grid-column:4/13;margin:clamp(40px,5vw,64px) 0 0;border-top:1px solid var(--line)}
+.cs-kpi-row{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,1fr) minmax(0,1fr);align-items:baseline;column-gap:24px;padding:20px 0;border-bottom:1px solid var(--line)}
+.cs-kpi-head{padding:12px 0;color:var(--fg-2)}
+.cs-kpi-row b{display:block;font-size:clamp(18px,1.5vw,22px);font-weight:400;letter-spacing:-.02em}
+.cs-kpi-row i{display:block;margin-top:4px;font-style:normal;color:var(--fg-2)}
+.k-was{font-size:clamp(18px,1.5vw,22px);color:var(--fg-2);font-variant-numeric:tabular-nums}
+.k-now{font-size:clamp(26px,2.6vw,40px);letter-spacing:-.035em;font-variant-numeric:tabular-nums}
+.cs-list{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--line)}
+.cs-list li{display:grid;grid-template-columns:48px minmax(0,1fr);align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font-size:clamp(17px,1.3vw,19px);line-height:1.45}
+.cs-list li span{color:var(--fg-2)}
+.cs-end{display:flex;flex-wrap:wrap;gap:12px;padding-block:clamp(56px,8vw,112px) clamp(64px,9vw,128px);border-top:1px solid var(--line)}
+/* the back button carries its arrow on the left and swaps it leftwards */
+.btn-back .btn-a{border-left:0;border-right:1px solid color-mix(in srgb,currentColor 28%,transparent)}
+.btn-back .btn-a svg+svg{transform:translateX(130%)}
+.btn-back:hover .btn-a svg:first-child,.btn-back:focus-visible .btn-a svg:first-child{transform:translateX(-130%)}
+@media (max-width:980px){
+  .cs-facts{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:28px}
+  .cs-n,.cs-body,.cs-fig,.cs-kpi{grid-column:1/-1}
+  .cs-n{margin:0 0 20px}
+}
+@media (max-width:600px){
+  .cs-name{display:none}
+  .cs-bar-in{grid-template-columns:minmax(0,1fr) auto}
+  .cs-cover{padding-inline:0}
+  .cs-kpi-row{grid-template-columns:minmax(0,1fr) minmax(0,1fr);row-gap:8px}
+  .cs-kpi-row>span:first-child{grid-column:1/-1}
+  .cs-kpi-head>span:first-child{display:none}
+  .cs-end .btn{flex:1 1 100%}
+  .cs-end .btn-l{flex:1;justify-content:center}
+}
+.cs-body a{color:var(--fg);text-decoration:underline;text-decoration-color:var(--line-2);text-decoration-thickness:1px;text-underline-offset:3px;transition:text-decoration-color .3s}
+.cs-body a:hover{text-decoration-color:currentColor}
+.cs-list li>div{min-width:0}
+/* a hand-off chain: each step a cell, joined by arrows */
+.cs-flow{margin-top:clamp(32px,4vw,48px)}
+.cs-chain{display:flex;flex-wrap:wrap;align-items:center;row-gap:10px;margin:0;padding:0;list-style:none}
+.cs-chain li{display:flex;align-items:center}
+.cs-chain li+li::before{content:"→";padding:0 10px;color:var(--fg-2)}
+.cs-chain span{padding:10px 14px;border:1px solid var(--line-2);white-space:nowrap}
+.cs-chain.is-after span{border-color:var(--fg)}
+.cs-chain.is-after li:last-child span{background:var(--fg);color:var(--bg)}
+/* comparison tables: rows of hairlines like the KPI ledger; the first column names the row */
+.cs-tbl{grid-column:4/13;min-width:0;margin:clamp(32px,4vw,48px) 0 0;border-top:1px solid var(--line)}
+.cs-tr{display:grid;grid-template-columns:var(--cols);column-gap:24px;align-items:baseline;padding:16px 0;border-bottom:1px solid var(--line);font-size:15px;line-height:1.5;color:var(--fg-2)}
+.cs-tr>:first-child{color:var(--fg)}
+.cs-tr b{display:block;font-weight:400}
+.cs-tr i{display:block;margin-top:4px;font-style:normal;color:var(--fg-2)}
+.cs-tr a{color:inherit;text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:3px}
+.cs-tr a:hover{text-decoration-color:currentColor}
+.cs-th{padding:12px 0;color:var(--fg-2)}
+.cs-src{grid-column:4/13;margin:14px 0 0;color:var(--fg-2)}
+.cs-src a{color:inherit;text-decoration:underline;text-decoration-color:var(--line-2);text-underline-offset:3px}
+.cs-after{margin-top:clamp(40px,5vw,56px)}
+/* the use-case map, drawn in the page's own ink */
+.cs-diagram-in{overflow-x:auto;-webkit-overflow-scrolling:touch;padding-bottom:4px}
+.cs-diagram svg{display:block;width:100%;min-width:600px;height:auto;font-family:var(--f-sans);font-size:13px}
+.cs-swipe{display:none}
+@media (max-width:640px){.cs-swipe{display:inline}}
+.d-lane{font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;fill:var(--fg-2)}
+.d-grid{stroke:var(--line)}
+.d-edge path{fill:none;stroke:var(--fg-2);stroke-width:1.25}
+.d-head{fill:var(--fg-2)}
+.d-note{font-family:var(--f-mono);font-size:10.5px;fill:var(--fg-2)}
+.d-box{fill:none;stroke:var(--line-2);stroke-width:1.25}
+.d-box.is-key{fill:var(--fg);stroke:var(--fg)}
+.d-box.is-warn{fill:color-mix(in srgb,var(--fg) 8%,transparent);stroke:var(--fg);stroke-width:1.25}
+.d-box.is-good{stroke:var(--fg);stroke-width:1.5}
+.d-box.is-bad{stroke:var(--fg-2);stroke-dasharray:4 4}
+.d-t{fill:var(--fg)}
+.d-t.is-key{fill:var(--bg);font-weight:500}
+.d-t.is-bad{fill:var(--fg-2)}
+@media (max-width:980px){
+  .cs-tbl,.cs-src,.cs-diagram{grid-column:1/-1}
+  /* the four-column table becomes one card per row */
+  .cs-tbl.is-wide .cs-tr{grid-template-columns:minmax(0,1fr);row-gap:10px}
+  .cs-tbl.is-wide .cs-th{display:none}
+  .cs-tbl.is-wide .cs-tr>[data-l]::before{content:attr(data-l);display:block;margin-bottom:2px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-2)}
+  .cs-tbl.is-wide .cs-tr>:first-child{font-size:18px}
+}
+@media (max-width:600px){
+  .cs-tbl .cs-tr{grid-template-columns:minmax(0,1fr);row-gap:10px}
+  .cs-tbl .cs-th{display:none}
+  .cs-tbl .cs-tr>[data-l]::before{content:attr(data-l);display:block;margin-bottom:2px;font-family:var(--f-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--fg-2)}
+  .cs-tbl .cs-tr>:first-child{font-size:18px}
+}
+@media (prefers-reduced-motion:reduce){.case,.case.open{transition:none}}
+</style>
+<script>(function(d){d.classList.add('js');if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('rv-on');if(location.protocol==='file:'){var s=document.createElement('script');s.src='fonts/local.js';document.head.appendChild(s)}})(document.documentElement)</script>
+
+
+</head>
+<body>
+<svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false">
+  <filter id="lens" filterUnits="userSpaceOnUse" x="0" y="0" width="1440" height="80" color-interpolation-filters="sRGB">
+    <!-- grey ramps: across the width, and u² down the height (0 at the lens' lower edge, 1 at the top) -->
+    <feImage id="lens-x" x="0" y="0" width="1440" height="80" preserveAspectRatio="none" result="rx"/>
+    <feImage id="lens-y" x="0" y="0" width="1440" height="80" preserveAspectRatio="none" result="ry"/>
+    <!-- sideways: away from the centre on both sides, like water over a weir.
+         .5 + ry·(rx − .5) keeps alpha at 1 through every step, then a linear ramp sets the strength -->
+    <feComposite in="rx" in2="ry" operator="arithmetic" k1="1" k2="0" k3="0" k4="0" result="p"/>
+    <feComposite in="p" in2="ry" operator="arithmetic" k1="0" k2="1" k3="-.5" k4=".5" result="c"/>
+    <feComponentTransfer in="c" result="dxg"><feFuncR id="lens-k" type="linear" slope=".48" intercept=".26"/></feComponentTransfer>
+    <feColorMatrix in="dxg" type="matrix" values="1 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0 1" result="dx"/>
+    <!-- downward pull: a vertical stretch that grows toward the top -->
+    <feComponentTransfer in="ry" result="dyg"><feFuncG id="lens-dy" type="linear" slope=".27" intercept=".5"/></feComponentTransfer>
+    <feColorMatrix in="dyg" type="matrix" values="0 0 0 0 0  0 1 0 0 0  0 0 0 0 0  0 0 0 0 1" result="dy"/>
+    <feComposite in="dx" in2="dy" operator="arithmetic" k1="0" k2="1" k3="1" k4="0" result="map"/>
+    <feDisplacementMap in="SourceGraphic" in2="map" scale="120" xChannelSelector="R" yChannelSelector="G" result="bent"/>
+    <feGaussianBlur in="bent" stdDeviation="0 .6"/>
+  </filter>
+</svg>
+<div class="fog" aria-hidden="true"></div>
+<div class="hdr-fade" aria-hidden="true"></div>
+<header class="hdr">
+  <div class="hdr-in" data-blur style="--d:.1s">
+    <a class="brand" href="#top" aria-label="Yakov Bronnikov, back to top">Yakov Bronnikov</a>
+    <nav class="nav" aria-label="Main">
+      <a href="#work" aria-label="Work" data-scramble>Work</a>
+      <a href="#about" aria-label="About" data-scramble>About</a>
+      <a href="#contacts" aria-label="Contacts" data-scramble>Contacts</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <canvas class="bokeh bokeh-back" aria-hidden="true"></canvas>
+    <div class="wrap hero-in">
+      <dl class="meta meta-l">
+        <div data-blur style="--d:.25s"><dt class="mono">Status</dt><dd><span class="dot" aria-hidden="true"></span>Open to offers</dd></div>
+      </dl>
+
+      <div class="frame" id="frame">
+        <picture><source type="image/avif" srcset="img/portrait-480.avif 480w, img/portrait-768.avif 768w" sizes="(max-width: 600px) calc(68vw - 22px), (max-width: 980px) 372px, min(30vw, 381px)"><img src="img/portrait-768.webp" alt="Portrait of Yakov Bronnikov" width="768" height="768" fetchpriority="high" decoding="async"></picture>
+        <canvas aria-hidden="true"></canvas>
+      </div>
+
+      <dl class="meta meta-r">
+        <div data-blur style="--d:.32s"><dt class="mono">Based in</dt><dd>Belgrade, Serbia</dd></div>
+      </dl>
+
+      <div class="lede">
+        <h1 class="statement" data-words style="--d:.55s"><span class="muted">Hi, I’m Yakov.</span> Product designer with a&nbsp;background in Frontend and AI-native approach</h1>
+        <div class="links" data-blur style="--d:1.2s">
+          <a class="btn btn-solid" href="https://t.me/yakovbronnikov" target="_blank" rel="noopener" aria-label="Telegram"><span class="btn-l" data-scramble aria-hidden="true">Telegram</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></a>
+          <a class="btn" href="https://www.linkedin.com/in/yakovbronnikov/" target="_blank" rel="noopener" aria-label="LinkedIn"><span class="btn-l" data-scramble aria-hidden="true">LinkedIn</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></a>
+        </div>
+      </div>
+    </div>
+    <canvas class="bokeh bokeh-front" aria-hidden="true"></canvas>
+  </section>
+
+  <section class="work" id="work" aria-labelledby="work-title">
+    <div class="wrap">
+      <header class="work-head">
+        <p class="work-k mono" data-rv>Selected work</p>
+        <h2 class="work-title" id="work-title" data-rv>Work</h2>
+        <p class="work-note" data-rv style="--d:.12s">Three products from the last four years, in business banking, DeFi and payments. Full case studies are on the way.</p>
+      </header>
+
+      <ol class="projects">
+        <li class="proj" id="unlimit-accounts" data-case="unlimit-accounts">
+          <div class="proj-info">
+            <p class="proj-meta mono" data-rv><span>Unlimit</span><span>2025–2026</span><span>Web, iOS, Android</span></p>
+            <h3 class="proj-title" data-rv style="--d:.06s">Unlimit Accounts</h3>
+            <div class="proj-body">
+              <p class="proj-lede" data-rv style="--d:.12s">A business bank for Unlimit’s B2B clients: multi-currency accounts and cards, payments that need two signatures, recipients and templates.</p>
+              <div class="proj-cta" data-rv style="--d:.22s"><button type="button" class="btn btn-fwd" aria-label="Unlimit Accounts case study"><span class="btn-l" data-scramble aria-hidden="true">Case study</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button></div>
+            </div>
+          </div>
+          <figure class="proj-media" data-rv style="--d:.1s"><img srcset="img/accounts-800.webp 800w, img/accounts-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/accounts-1440.webp" alt="Unlimit Accounts: the web dashboard with balances, cards and transactions, a card payment in progress, and the card screen on mobile" width="1440" height="960" loading="lazy" decoding="async"></figure>
+        </li>
+
+        <li class="proj" id="stable-lending" data-case="stable-lending">
+          <div class="proj-info">
+            <p class="proj-meta mono" data-rv><span>Stable.com</span><span>2026</span><span>Web</span></p>
+            <h3 class="proj-title" data-rv style="--d:.06s">Lending Protocol</h3>
+            <div class="proj-body">
+              <p class="proj-lede" data-rv style="--d:.12s">A front end for Aave v3: deposit stablecoins to earn interest, or borrow against crypto collateral and keep an eye on loan health.</p>
+              <div class="proj-cta" data-rv style="--d:.22s"><button type="button" class="btn btn-fwd" aria-label="Lending Protocol case study"><span class="btn-l" data-scramble aria-hidden="true">Case study</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button></div>
+            </div>
+          </div>
+          <figure class="proj-media" data-rv style="--d:.1s"><img srcset="img/stable-800.webp 800w, img/stable-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/stable-1440.webp" alt="Lending Protocol: borrow review, a new borrow with loan health, and a successful borrow" width="1440" height="960" loading="lazy" decoding="async"></figure>
+        </li>
+
+        <li class="proj" id="payment-pages" data-case="payment-pages">
+          <div class="proj-info">
+            <p class="proj-meta mono" data-rv><span>Unlimit</span><span>2022–2025</span><span>Web</span></p>
+            <h3 class="proj-title" data-rv style="--d:.06s">Payment Pages</h3>
+            <div class="proj-body">
+              <p class="proj-lede" data-rv style="--d:.12s">Hosted checkout for Unlimit’s acquiring. Merchants accept payments worldwide across thousands of payment methods, from cards to PIX.</p>
+              <p class="proj-note" data-rv style="--d:.18s">The product started API-first, with the checkout left to merchants. Smaller merchants needed a ready interface, so we built one.</p>
+              <div class="proj-cta" data-rv style="--d:.22s"><button type="button" class="btn btn-fwd" aria-label="Payment Pages case study"><span class="btn-l" data-scramble aria-hidden="true">Case study</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button></div>
+            </div>
+          </div>
+          <figure class="proj-media" data-rv style="--d:.1s"><img srcset="img/payments-800.webp 800w, img/payments-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/payments-1440.webp" alt="Payment Pages: checkout screens for cards, MB WAY, Nequi, PayAttitude and PIX, with order details and a success page" width="1440" height="960" loading="lazy" decoding="async"></figure>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-label="About">
+    <div class="wrap">
+      <p class="about-text" data-scrub>The best ideas rarely arrive at the desk. They show up on the move, in unfamiliar streets, in the quiet after a long day outside. I keep making room for them.</p>
+    </div>
+  </section>
+
+  <section class="interests" id="interests" aria-labelledby="interests-title">
+    <div class="wrap interests-grid">
+      <div class="interests-copy">
+        <h2 class="interests-title" id="interests-title" data-rv>Follow along.</h2>
+        <p class="interests-note" data-rv style="--d:.08s">Off the clock I run, ride, hike and travel, with a camera close at hand. The moments that make it into a frame end up on Instagram.</p>
+        <div class="interests-cta" data-rv style="--d:.16s"><a class="btn btn-solid" href="https://www.instagram.com/yakovbronnikov/" target="_blank" rel="noopener" aria-label="Instagram"><span class="btn-l" data-scramble aria-hidden="true">Instagram</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></a></div>
+      </div>
+      <div class="gal" data-rv>
+        <figure class="gal-item"><img srcset="img/skiing-480.webp 480w, img/skiing-768.webp 768w" sizes="(max-width: 600px) 60vw, (max-width: 980px) 47vw, min(30vw, 420px)" src="img/skiing-768.webp" alt="Yakov in ski gear adjusting his goggles among snowy fir trees" width="768" height="1024" loading="lazy" decoding="async"><figcaption><span class="mono gal-n">01</span><span class="mono gal-t">Skiing</span></figcaption></figure>
+        <figure class="gal-item"><img srcset="img/cycling-240.webp 240w, img/cycling-480.webp 480w" sizes="(max-width: 600px) 30vw, (max-width: 980px) 23vw, min(15vw, 207px)" src="img/cycling-480.webp" alt="Yakov on an e-bike on a mountain trail among fir trees" width="480" height="640" loading="lazy" decoding="async"><figcaption><span class="mono gal-n">02</span><span class="mono gal-t">Cycling</span></figcaption></figure>
+        <figure class="gal-item"><img srcset="img/hiking-c480.webp 480w, img/hiking-c768.webp 768w" sizes="(max-width: 980px) 47vw, min(27vw, 384px)" src="img/hiking-c768.webp" alt="Snowy peaks above an autumn slope with a cable car" width="768" height="698" loading="lazy" decoding="async"><figcaption><span class="mono gal-n">03</span><span class="mono gal-t">Hiking</span></figcaption></figure>
+        <figure class="gal-item"><img srcset="img/running-240.webp 240w, img/running-480.webp 480w" sizes="(max-width: 600px) 27vw, (max-width: 980px) 23vw, min(13.5vw, 188px)" src="img/running-480.webp" alt="Yakov running a race, smiling and flashing a peace sign" width="480" height="712" loading="lazy" decoding="async"><figcaption><span class="mono gal-n">04</span><span class="mono gal-t">Running</span></figcaption></figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="contacts" id="contacts" aria-labelledby="contacts-title">
+    <div class="wrap">
+      <div class="contacts-head">
+        <h2 class="contacts-title" id="contacts-title" data-rv>Let’s work <span class="muted">together.</span></h2>
+        <p class="contacts-note" data-rv style="--d:.1s">Open to new roles and projects in fintech, crypto and AI products. Telegram is the fastest way to reach me.</p>
+      </div>
+      <ul class="c-list">
+        <li data-rv style="--d:0s"><a class="c-row" href="https://t.me/yakovbronnikov" target="_blank" rel="noopener" aria-label="Telegram @yakovbronnikov"><span class="c-name">Telegram</span><span class="c-handle" data-scramble aria-hidden="true">@yakovbronnikov</span><span class="c-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></i></span></a></li>
+        <li data-rv style="--d:.06s"><a class="c-row" href="https://www.linkedin.com/in/yakovbronnikov/" target="_blank" rel="noopener" aria-label="LinkedIn in/yakovbronnikov"><span class="c-name">LinkedIn</span><span class="c-handle" data-scramble aria-hidden="true">in/yakovbronnikov</span><span class="c-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></i></span></a></li>
+        <li data-rv style="--d:.12s"><a class="c-row" href="https://www.instagram.com/yakovbronnikov/" target="_blank" rel="noopener" aria-label="Instagram @yakovbronnikov"><span class="c-name">Instagram</span><span class="c-handle" data-scramble aria-hidden="true">@yakovbronnikov</span><span class="c-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></i></span></a></li>
+        <li data-rv style="--d:.18s"><a class="c-row" href="https://dribbble.com/yakovbronnikov" target="_blank" rel="noopener" aria-label="Dribbble dribbble.com/yakovbronnikov"><span class="c-name">Dribbble</span><span class="c-handle" data-scramble aria-hidden="true">dribbble.com/yakovbronnikov</span><span class="c-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.2"/></svg></i></span></a></li>
+        <li data-rv style="--d:.24s"><button class="c-row is-copy" type="button" id="copy-email" data-email="yakovbronn@gmail.com" aria-label="Email yakovbronn@gmail.com, copy to clipboard"><span class="c-name">Email</span><span class="c-handle" data-scramble aria-hidden="true">yakovbronn@gmail.com</span><span class="c-a" aria-hidden="true"><i><svg viewBox="0 0 12 12"><rect x="3.5" y="3.5" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M1.5 8.5v-7h7" fill="none" stroke="currentColor" stroke-width="1.1"/></svg><svg viewBox="0 0 12 12"><rect x="3.5" y="3.5" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M1.5 8.5v-7h7" fill="none" stroke="currentColor" stroke-width="1.1"/></svg></i></span></button></li>
+      </ul>
+      <p class="sr-only" id="copy-status" aria-live="polite"></p>
+    </div>
+  </section>
+  <footer class="wrap foot mono"><span>© 2026 Yakov Bronnikov</span><span>Belgrade, Serbia</span><span>Product designer</span></footer>
+</main>
+
+<!-- ---------- case study: Unlimit Accounts. Opens over the page as an article (#case/unlimit-accounts) ---------- -->
+<article class="case" id="case-accounts" data-case="unlimit-accounts" aria-labelledby="cs-title" tabindex="-1" hidden>
+  <div class="cs-bar">
+    <div class="wrap cs-bar-in">
+      <button type="button" class="cs-back mono" data-case-close><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M11 6H1.5M5.5 2 1.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><span data-scramble>Back to work</span></button>
+      <span class="cs-name mono" aria-hidden="true">Unlimit Accounts</span>
+      <a class="btn btn-solid btn-sm cs-contact" href="https://t.me/yakovbronnikov" target="_blank" rel="noopener" aria-label="Contact me on Telegram"><span class="btn-l" data-scramble aria-hidden="true">Contact me</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></a>
+    </div>
+    <span class="cs-prog" aria-hidden="true"></span>
+  </div>
+
+  <header class="wrap cs-hero">
+    <p class="proj-meta mono" data-rv><span>Unlimit</span><span>2025–2026</span><span>Web, iOS, Android</span></p>
+    <h1 class="cs-title" id="cs-title" data-rv style="--d:.06s">Unlimit Accounts</h1>
+    <p class="cs-dek" data-rv style="--d:.12s">Redesigning a B2B bank on a design system: from an audit of the old backend to a phone that signs every payment.</p>
+    <dl class="cs-facts" data-rv style="--d:.18s">
+      <div><dt class="mono">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono">Platforms</dt><dd>Web and mobile app</dd></div>
+      <div><dt class="mono">Year</dt><dd>2025–2026</dd></div>
+      <div><dt class="mono">Company</dt><dd>Unlimit</dd></div>
+    </dl>
+  </header>
+
+  <figure class="wrap cs-cover" data-rv>
+    <img srcset="img/accounts-800.webp 800w, img/accounts-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(94vw, 1348px)" src="img/accounts-1440.webp" alt="Unlimit Accounts: the web dashboard with currencies, cards and transactions, a card payment in progress, and the card screen on mobile" width="1440" height="960" loading="lazy" decoding="async">
+  </figure>
+
+  <div class="wrap cs-main">
+    <section class="cs-sec" aria-labelledby="cs-h1">
+      <p class="cs-n mono" data-rv>01 — Before</p>
+      <div class="cs-body">
+        <h2 id="cs-h1" data-rv>A powerful bank in an awkward wrapper</h2>
+        <p data-rv>A B2B bank is more complex than a retail one. A payment can’t simply be sent: it is created, then it collects two signatures, <strong>signature A and signature B</strong>, and only then goes out. Behind this sits a <strong>model of roles and access rights</strong>: who creates, who signs, who can only view. Add <strong>multi-currency accounts and cards</strong>, and you get a product where every interface mistake costs the client money and time.</p>
+        <p data-rv>The old interface technically handled all of this, but it looked dated and did a poor job of explaining what was going on. Clients couldn’t tell what stage a payment was at or whose signature was needed next, and their questions piled up with support managers. The data confirmed it: the old interface scored 58 out of 100 on SUS against an industry average of 68, and one client in seven contacted support every month. The job wasn’t to refresh the visuals. It was to make complex logic clear, without losing a single scenario on the way, and to prove the result with metrics.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-old-drafts-800.avif 800w, img/case-old-drafts-1200.avif 1200w, img/case-old-drafts-1600.avif 1600w, img/case-old-drafts-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-old-drafts-1600.webp" alt="The old Unlimit web bank: a Drafts list of four payments from Account 000001 to United Kingdom Suppliers, each with two small signature ticks, and Send, Sign, Unsign and Delete buttons above the list" width="1600" height="889" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The old interface: the list of payment drafts. Two small ticks per row were the only hint of whose signature was missing</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cs-h2">
+      <p class="cs-n mono" data-rv>02 — Research</p>
+      <div class="cs-body">
+        <h2 id="cs-h2" data-rv>First, understand what already works</h2>
+        <p data-rv>I started with an audit, not with screens. I went through the old bank’s backend to see the real functionality: which operations, statuses and roles actually exist, not only the ones the interface shows. In parallel I talked to <strong>support managers</strong>, who see every day where clients stumble, and to the <strong>clients</strong> themselves.</p>
+        <p data-rv>The third source was <strong>product analytics</strong>. I broke down the funnels of the key scenarios, found the steps where people get stuck and matched them with the topics of support requests. Together with NPS, CSAT and SUS surveys, this gave us baseline KPIs, the starting point we later measured the redesign against.</p>
+        <p data-rv>The outcome was a set of <strong>functional requirements</strong>: a full map of what the bank can do, plus the changes users and support had been waiting for. This document became a shared language for design, engineering and business, and a safeguard against losing a critical scenario in the redesign. I came back to it at every step that followed.</p>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cs-h3">
+      <p class="cs-n mono" data-rv>03 — Solution</p>
+      <div class="cs-body">
+        <h2 id="cs-h3" data-rv>A design system as the foundation</h2>
+        <p data-rv>To keep the redesign from turning into a repaint, I started with the <strong>design system</strong>: tokens, typography, components and patterns for banking scenarios, such as transaction tables, payment statuses, and amount and currency fields. <strong>Light and dark themes</strong> are built in at the token level, so every new screen works in both from day one.</p>
+        <p data-rv>The most unusual part was how the mockups came about. I built the design system together with an <strong>AI agent</strong>, and then the agent assembled every screen on top of it. I deliberately didn’t fix mockups by hand. When a screen came out wrong, I fixed the cause, the requirement or the component, not the symptom. That way every fix improved the whole system, not just one screen.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-accounts-ds-800.avif 800w, img/case-accounts-ds-1200.avif 1200w, img/case-accounts-ds-1600.avif 1600w, img/case-accounts-ds-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-accounts-ds-1600.webp" alt="Design system components side by side in the light and dark themes: buttons such as Send, Details, Cancel, Top up, Delete and Exchange with disabled, loading and icon variants; search, account and amount inputs including an error state; checkboxes, radios, toggles and a Day, Week, Month switch; status chips and date filters; toasts and a tooltip" width="1600" height="900" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The same components in the light and dark themes: buttons, inputs, controls, statuses and feedback</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cs-h4">
+      <p class="cs-n mono" data-rv>04 — Impact</p>
+      <div class="cs-body">
+        <h2 id="cs-h4" data-rv>Before → after</h2>
+        <p data-rv>The new bank closed the pain points found in research, above all in the scenarios that are hardest for B2B. We measured the effect with product metrics, comparing the quarter before launch with the quarter after.</p>
+      </div>
+      <div class="cs-kpi" role="table" aria-label="KPIs before and after the redesign" data-rv>
+        <div class="cs-kpi-row cs-kpi-head mono" role="row"><span role="columnheader">KPI</span><span role="columnheader">Before</span><span role="columnheader">After</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>NPS</b><i class="mono">Net Promoter Score</i></span><span role="cell" class="k-was">+12</span><span role="cell" class="k-now">+38</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>CSAT</b><i class="mono">Customer Satisfaction Score</i></span><span role="cell" class="k-was">3.6 / 5</span><span role="cell" class="k-now">4.4 / 5</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>SUS</b><i class="mono">System Usability Scale</i></span><span role="cell" class="k-was">58 / 100</span><span role="cell" class="k-now">82 / 100</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>TSR</b><i class="mono">Task Success Rate</i></span><span role="cell" class="k-was">74%</span><span role="cell" class="k-now">92%</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>Contact rate</b><i class="mono">Clients contacting support in a month</i></span><span role="cell" class="k-was">14%</span><span role="cell" class="k-now">8%</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>TTM</b><i class="mono">Time to Market</i></span><span role="cell" class="k-was">~6 weeks</span><span role="cell" class="k-now">~2 weeks</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>Feature adoption</b><i class="mono">Clients using new features</i></span><span role="cell" class="k-was">23%</span><span role="cell" class="k-now">51%</span></div>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-accounts-ba-800.avif 800w, img/case-accounts-ba-1200.avif 1200w, img/case-accounts-ba-1600.avif 1600w, img/case-accounts-ba-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-accounts-ba-1600.webp" alt="Before and after on mobile. Before: a card screen with recent transactions and a draft details sheet with two small signature ticks. After: a card sheet with balance, Apple Wallet and card actions, and a payment sheet with an approvals timeline, the amount breakdown and an Approve and send button" width="1600" height="814" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The old and the new screens</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cs-h5">
+      <p class="cs-n mono" data-rv>05 — Mobile</p>
+      <div class="cs-body">
+        <h2 id="cs-h5" data-rv>The second key to every payment</h2>
+        <p data-rv>The mobile app was built in parallel on the same design system, and it has a special role. It works as the <strong>second authentication factor</strong>: to sign a payment, the user confirms it through a push notification. The balance matters here. Confirming should take seconds, yet before tapping, the person sees whose login it is, what will happen and the exact amount, with a timer running, so they never sign more than they meant to. Signing stopped being a bottleneck, which is one of the reasons CSAT grew.</p>
+        <p data-rv>The same app gives a one-time passcode for signing in on the web, and keeps the security settings in one place: passcode, QR scanner, PIN and biometrics. Beyond that, it holds what is handier in a pocket: accounts and cards, transaction history, notifications. Thanks to the shared component system, web and mobile look and behave like one product.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-accounts-mobile-800.avif 800w, img/case-accounts-mobile-1200.avif 1200w, img/case-accounts-mobile-1600.avif 1600w, img/case-accounts-mobile-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-accounts-mobile-1600.webp" alt="Three mobile screens. Settings with the profile, company and a security group: passcode, QR scanner, change PIN and biometrics. A passcode sheet with a six-digit one-time code for the current login. An approve transaction request with a countdown, the login, the action and the amount, and Reject and Approve buttons" width="1600" height="1035" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The phone as the second key: security settings, a one-time passcode and a payment approval</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cs-h6">
+      <p class="cs-n mono" data-rv>06 — Result</p>
+      <div class="cs-body">
+        <h2 id="cs-h6" data-rv>More than a redesign</h2>
+        <p data-rv>The bank got a modern interface where complex B2B scenarios make sense without a call to support, and the team got a single source of truth for design and engineering. NPS rose from +12 to +38, and thanks to the design system new features reach clients three times faster.</p>
+        <p data-rv>Most importantly, the design system outgrew a single product. The <strong>onboarding system for new clients</strong> and the <strong>brand’s crypto products</strong> are built on it, so the project set the direction for the whole ecosystem.</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span>The web bank and the mobile app on one design system</li>
+          <li><span class="mono">02</span>Light and dark themes out of the box</li>
+          <li><span class="mono">03</span>A foundation for onboarding and crypto products</li>
+          <li><span class="mono">04</span>Mockups assembled by an agent from the system and the requirements, with no drawing by hand</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cs-h7">
+      <p class="cs-n mono" data-rv>07 — Takeaways</p>
+      <div class="cs-body">
+        <h2 id="cs-h7" class="sr-only">What I took away</h2>
+        <p class="cs-take" data-rv>The project changed how I see a designer’s role. When an agent assembles the mockups, the value moves to understanding the product, precise requirements and a well-built system: the agent only scales what is already well described.</p>
+        <p data-rv>In B2B, where every screen involves money and access rights, that precision is what separates a convenient product from a risky one. And KPIs fixed before the start turned the conversation about design from “like it or not” into a conversation about results.</p>
+      </div>
+    </section>
+
+    <footer class="cs-end">
+      <button type="button" class="btn btn-back" data-case-close aria-label="Back to work"><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span><span class="btn-l" data-scramble aria-hidden="true">Back to work</span></button>
+      <button type="button" class="btn btn-solid btn-fwd" data-case-next="stable-lending" aria-label="Next case: Lending Protocol"><span class="btn-l" data-scramble aria-hidden="true">Next case</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button>
+    </footer>
+  </div>
+</article>
+
+<!-- ---------- case study: Payment Pages (#case/payment-pages) ---------- -->
+<article class="case" id="case-payments" data-case="payment-pages" aria-labelledby="cp-title" tabindex="-1" hidden>
+  <div class="cs-bar">
+    <div class="wrap cs-bar-in">
+      <button type="button" class="cs-back mono" data-case-close><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M11 6H1.5M5.5 2 1.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><span data-scramble>Back to work</span></button>
+      <span class="cs-name mono" aria-hidden="true">Payment Pages</span>
+      <a class="btn btn-solid btn-sm cs-contact" href="https://t.me/yakovbronnikov" target="_blank" rel="noopener" aria-label="Contact me on Telegram"><span class="btn-l" data-scramble aria-hidden="true">Contact me</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></a>
+    </div>
+    <span class="cs-prog" aria-hidden="true"></span>
+  </div>
+
+  <header class="wrap cs-hero">
+    <p class="proj-meta mono" data-rv><span>Unlimit</span><span>2022–2025</span><span>Web</span></p>
+    <h1 class="cs-title" id="cp-title" data-rv style="--d:.06s">Payment Pages</h1>
+    <p class="cs-dek" data-rv style="--d:.12s">Hosted checkout for a thousand payment methods: a design system, a JSON configurator and a customiser merchants run themselves.</p>
+    <dl class="cs-facts" data-rv style="--d:.18s">
+      <div><dt class="mono">Role</dt><dd>Product Designer</dd></div>
+      <div><dt class="mono">Platforms</dt><dd>Payment pages for web and mobile web, a customiser in the merchant dashboard</dd></div>
+      <div><dt class="mono">Years</dt><dd>2022–2025</dd></div>
+      <div><dt class="mono">Company</dt><dd>Unlimit</dd></div>
+    </dl>
+  </header>
+
+  <figure class="wrap cs-cover" data-rv>
+    <img srcset="img/payments-800.webp 800w, img/payments-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(94vw, 1348px)" src="img/payments-1440.webp" alt="Payment Pages: checkout screens for cards, MB WAY, Nequi, PayAttitude and PIX, with order details and a success page" width="1440" height="960" loading="lazy" decoding="async">
+  </figure>
+
+  <div class="wrap cs-main">
+    <section class="cs-sec" aria-labelledby="cp-h1">
+      <p class="cs-n mono" data-rv>01 — Before</p>
+      <div class="cs-body">
+        <h2 id="cp-h1" data-rv>Pages nobody had designed</h2>
+        <p data-rv>Payment Pages was meant to be a product without a front end: merchants were expected to plug in an SDK and build the interface themselves. So when I joined, the backend generated the pages as bare HTML, with no framework and no design system. Each of the <strong>~80 payment methods</strong> had to be drawn, coded and built into the backend separately.</p>
+        <p data-rv>Customisation was even harder. To make a page look like the merchant’s site, a request went through a chain of <strong>merchant → support → CSS file → merchant → support → designer → engineering</strong>. The designer checked by hand that the styles didn’t break the page, and engineering made a separate build for each client.</p>
+        <p data-rv>Meanwhile the company was entering <strong>Latin America and Africa</strong>, and a wave of merchants and new methods was on its way. The look of a payment page isn’t cosmetic. It opens in a new tab, and if it doesn’t look like the shop, the buyer starts to doubt. According to <a href="https://baymard.com/research-articles/perceived-security-of-payment-form" target="_blank" rel="noopener">Baymard Institute</a>, 19% of users abandon checkout because they don’t trust the site with their card details. The old process would not have survived that scale.</p>
+      </div>
+      <figure class="cs-fig cs-flow" data-rv>
+        <ol class="cs-chain mono" aria-label="Customisation before: merchant, support, CSS file, merchant, support, designer, engineering">
+          <li><span>Merchant</span></li><li><span>Support</span></li><li><span>CSS file</span></li><li><span>Merchant</span></li><li><span>Support</span></li><li><span>Designer</span></li><li><span>Engineering</span></li>
+        </ol>
+        <figcaption class="mono">One customisation request, before: seven hand-offs</figcaption>
+      </figure>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-pay-old-800.avif 800w, img/case-pay-old-1200.avif 1200w, img/case-pay-old-1600.avif 1600w, img/case-pay-old-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-pay-old-1600.webp" alt="Two old payment pages. A card form for a demo store: card number, cardholder name, expiry and CVV fields with Cancel and Pay buttons and a row of card scheme logos. A SPEI page: Payment at SPEI with the order number, amount, beneficiary, CLABE, payment code and expiry date, short instructions on how to pay, and Back and Save buttons. Sensitive details are blurred" width="1600" height="617" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The old pages: a card form and SPEI transfer details, each method built by hand</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cp-h2">
+      <p class="cs-n mono" data-rv>02 — Initiative</p>
+      <div class="cs-body">
+        <h2 id="cp-h2" data-rv>Spot the bottleneck before it becomes a crisis</h2>
+        <p data-rv>Nobody gave me this task; I came to it myself. I measured how long it took to launch one method and to deliver one customisation, went through the support requests and laid all of it over the plan for new markets. The picture was clear: at the expected growth the team would drown in launches, and the customisation queue would grow faster than anyone could clear it.</p>
+        <p data-rv>I brought two initiatives to the business:</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div><strong>A design system for payment pages</strong>, to cut the time to market of new methods.</div></li>
+          <li><span class="mono">02</span><div><strong>Self-serve customisation in the merchant dashboard</strong>, with a limited set of colours and fonts: a merchant can’t break the page, but can make it their own.</div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cp-h3">
+      <p class="cs-n mono" data-rv>03 — Design system</p>
+      <div class="cs-body">
+        <h2 id="cp-h3" data-rv>One system for a thousand different methods</h2>
+        <p data-rv>The hardest part was the variety of methods. A card form, a <a href="https://www.payretailers.com/en/blog/latam-payment-methods-pix-vs-oxxo" target="_blank" rel="noopener">PIX</a> QR code in Brazil, an OXXO voucher with a barcode that people pay in cash at a shop, a PagoEfectivo code, a long step-by-step instruction: all of it had to live in one system. Buyers in these markets are used to their own methods, so I studied local patterns and built them into the components instead of inventing new ones.</p>
+        <p data-rv>That is how the <strong>design system of universal blocks</strong> came about: amount and order details, QR code, barcode, step-by-step instructions, payment deadline, statuses. Together with engineering we built a <strong>JSON configurator</strong>: a method’s page is assembled from a JSON description, and any change shows on the page at once. Launching a new method turned from coding HTML into describing a configuration.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-pay-json-800.avif 800w, img/case-pay-json-1200.avif 1200w, img/case-pay-json-1600.avif 1600w, img/case-pay-json-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-pay-json-1600.webp" alt="Before and after. On the left, a dense block of tangled, unreadable code. An arrow points to the right, to a short JSON description of a page: two fields, email and full name, each with a type, label and placeholder, and two buttons, Pay and Back to the shop, each with an action" width="1600" height="682" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">From hand-written code for every method to a few lines of JSON: fields, labels and buttons</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cp-h4">
+      <p class="cs-n mono" data-rv>04 — Customisation</p>
+      <div class="cs-body">
+        <h2 id="cp-h4" data-rv>Customisation merchants do themselves</h2>
+        <p data-rv>The second part is the customiser in the merchant dashboard. At its heart is a <strong>colour algorithm</strong> I came up with: the merchant sets one or two colours, the brand colour and the background, and the algorithm picks the other shades for buttons, fields, text and states. Whatever colours they choose, the page looks whole and stays readable.</p>
+        <p data-rv>I deliberately limited the rest: a <strong>curated list of fonts</strong> and <strong>three corner styles</strong>, from square through medium to fully rounded pill buttons. These limits are a guarantee. A merchant can’t break the page, so a designer no longer has to check every customisation by hand. The seven-link chain shrank to one: the merchant sets up the page and sees the result straight away.</p>
+      </div>
+      <figure class="cs-fig cs-flow" data-rv>
+        <ol class="cs-chain is-after mono" aria-label="Customisation after: the merchant sets up the page and it goes live">
+          <li><span>Merchant</span></li><li><span>Live page</span></li>
+        </ol>
+        <figcaption class="mono">The same request, after: one step in the dashboard</figcaption>
+      </figure>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-pay-custom-800.avif 800w, img/case-pay-custom-1200.avif 1200w, img/case-pay-custom-1600.avif 1600w, img/case-pay-custom-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-pay-custom-1600.webp" alt="The customiser in the merchant dashboard. On the left, a preview of a card payment page for an online store: the amount, the order number, card fields, a lime Pay now button and Back to the shop. On the right, the settings panel: a preset, brand colours primary and secondary, linked page colours general and background, a font family, an order details switch and a Save button" width="1600" height="825" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The customiser: a preset, brand and page colours and a font, with the page preview right beside them</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cp-h5">
+      <p class="cs-n mono" data-rv>05 — Impact</p>
+      <div class="cs-body">
+        <h2 id="cp-h5" data-rv>Before → after</h2>
+        <p data-rv>We tracked the result with product and business metrics, from launch speed to conversion and merchant loyalty.</p>
+      </div>
+      <div class="cs-kpi" role="table" aria-label="KPIs before and after" data-rv>
+        <div class="cs-kpi-row cs-kpi-head mono" role="row"><span role="columnheader">KPI</span><span role="columnheader">Before</span><span role="columnheader">After</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>TTM</b><i class="mono">Time to market of a new method</i></span><span role="cell" class="k-was">~3–4 weeks</span><span role="cell" class="k-now">2–3 days</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>Payment methods</b></span><span role="cell" class="k-was">~80</span><span role="cell" class="k-now">1000+</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>Active merchants</b></span><span role="cell" class="k-was">~120</span><span role="cell" class="k-now">~3000</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>Customisation adoption</b><i class="mono">Merchants with a custom page</i></span><span role="cell" class="k-was">&lt;15%</span><span role="cell" class="k-now">~90%</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>Lead time</b><i class="mono">From a customisation request to a ready page</i></span><span role="cell" class="k-was">~2 weeks</span><span role="cell" class="k-now">~15 min</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>CR</b><i class="mono">Payment page conversion rate</i></span><span role="cell" class="k-was">68%</span><span role="cell" class="k-now">74%</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>CSAT</b><i class="mono">Merchant satisfaction</i></span><span role="cell" class="k-was">3.5 / 5</span><span role="cell" class="k-now">4.6 / 5</span></div>
+        <div class="cs-kpi-row" role="row"><span role="cell"><b>NPS</b><i class="mono">Merchant Net Promoter Score</i></span><span role="cell" class="k-was">+15</span><span role="cell" class="k-now">+42</span></div>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cp-h6">
+      <p class="cs-n mono" data-rv>06 — Result</p>
+      <div class="cs-body">
+        <h2 id="cp-h6" data-rv>Trust that converts</h2>
+        <p data-rv>The product grew from ~120 to ~3000 merchants and from ~80 to more than 1000 methods, and neither design nor support became a bottleneck. About 90% of merchants now use customisation: it used to be too complex, and now it takes minutes.</p>
+        <p data-rv>Conversion grew too, and I see two effects behind it. The pages started to look modern even without customisation, so it is clear at once they aren’t a scam. And customised pages look like the merchant’s own site, so the buyer doesn’t lose trust when the new tab opens.</p>
+        <p data-rv>We measured merchant satisfaction through two channels: feedback via support and a survey right inside the customiser. CSAT and NPS rose noticeably: merchants find it convenient, and they stay.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-pay-brands-800.avif 800w, img/case-pay-brands-1200.avif 1200w, img/case-pay-brands-1600.avif 1600w, img/case-pay-brands-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-pay-brands-1600.webp" alt="The same card payment page in four merchant styles: dark green with a bright green Pay now button, light lavender with a serif font and a purple button, plain white with a monospaced font and a black button, and dark navy with a yellow button. The layout, fields and order details stay the same in all four" width="1600" height="1027" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">One page in four merchant brands: colours, fonts and backgrounds change, the layout stays</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cp-h7">
+      <p class="cs-n mono" data-rv>07 — Takeaways</p>
+      <div class="cs-body">
+        <h2 id="cp-h7" class="sr-only">What I took away</h2>
+        <p class="cs-take" data-rv>It is systems and rules that scale, not screens. I couldn’t draw a thousand methods or check three thousand customisations by hand, so I designed the limits, the algorithm and the configurator that do it for the team.</p>
+        <p data-rv>Strong product decisions start with noticing a bottleneck before anyone else, and coming to the business with numbers and a plan, not a complaint.</p>
+      </div>
+    </section>
+
+    <footer class="cs-end">
+      <button type="button" class="btn btn-back" data-case-close aria-label="Back to work"><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span><span class="btn-l" data-scramble aria-hidden="true">Back to work</span></button>
+      <button type="button" class="btn btn-solid btn-fwd" data-case-next="unlimit-accounts" aria-label="Next case: Unlimit Accounts"><span class="btn-l" data-scramble aria-hidden="true">Next case</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button>
+    </footer>
+  </div>
+</article>
+
+<!-- ---------- case study: Lending Protocol (#case/stable-lending) ---------- -->
+<article class="case" id="case-lending" data-case="stable-lending" aria-labelledby="cl-title" tabindex="-1" hidden>
+  <div class="cs-bar">
+    <div class="wrap cs-bar-in">
+      <button type="button" class="cs-back mono" data-case-close><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M11 6H1.5M5.5 2 1.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><span data-scramble>Back to work</span></button>
+      <span class="cs-name mono" aria-hidden="true">Lending Protocol</span>
+      <a class="btn btn-solid btn-sm cs-contact" href="https://t.me/yakovbronnikov" target="_blank" rel="noopener" aria-label="Contact me on Telegram"><span class="btn-l" data-scramble aria-hidden="true">Contact me</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></a>
+    </div>
+    <span class="cs-prog" aria-hidden="true"></span>
+  </div>
+
+  <header class="wrap cs-hero">
+    <p class="proj-meta mono" data-rv><span>Stable.com</span><span>2026</span><span>Web</span></p>
+    <h1 class="cs-title" id="cl-title" data-rv style="--d:.06s">Lending Protocol</h1>
+    <p class="cs-dek" data-rv style="--d:.12s">Crypto loans and deposits for people who aren’t DeFi experts: first the choice of protocol, then risk that anyone can read.</p>
+    <dl class="cs-facts" data-rv style="--d:.18s">
+      <div><dt class="mono">Role</dt><dd>Product Designer, with product analytics and product management</dd></div>
+      <div><dt class="mono">Product</dt><dd>Crypto loans and deposits inside Stable.com</dd></div>
+      <div><dt class="mono">Platforms</dt><dd>Web on desktop and mobile, light and dark themes</dd></div>
+      <div><dt class="mono">Year</dt><dd>2026, from idea to hand-off to engineering</dd></div>
+    </dl>
+  </header>
+
+  <figure class="wrap cs-cover" data-rv>
+    <img srcset="img/stable-800.webp 800w, img/stable-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(94vw, 1348px)" src="img/stable-1440.webp" alt="Lending Protocol: borrow review, a new borrow with loan health, and a successful borrow" width="1440" height="960" loading="lazy" decoding="async">
+  </figure>
+
+  <div class="wrap cs-main">
+    <section class="cs-sec" aria-labelledby="cl-h1">
+      <p class="cs-n mono" data-rv>01 — Context</p>
+      <div class="cs-body">
+        <h2 id="cl-h1" data-rv>Money that just sits there</h2>
+        <p data-rv>Stable.com could do three things: buy stablecoins, sell them and swap one for another. A user moved dollars into crypto, and then the money just sat on the balance. The next step suggested itself: put that money to work. Deposit stablecoins to earn interest, or borrow against crypto without selling it.</p>
+        <p data-rv>That is how the idea of a <strong>lending protocol</strong> came about. I joined in 2026, when the project had nothing but this idea: no chosen technology, no requirements, no screens. Formally I was the product designer, but at the idea stage design starts long before mockups, so I also had to answer the analyst’s questions and the product manager’s.</p>
+        <p data-rv>The difficulty wasn’t the number of screens but the nature of the product. DeFi lending speaks the language of <strong>LTV, health factor and liquidation threshold</strong>. A mistake in the interface costs money, not an extra click: if the collateral price falls too far, the protocol automatically sells part of it, and the person loses funds. The task: a user with no DeFi experience should see at a glance how much they will earn, how much they can borrow and at what point they risk losing their collateral.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-lending-before-800.avif 800w, img/case-lending-before-1200.avif 1200w, img/case-lending-before-1600.avif 1600w, img/case-lending-before-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-lending-before-1600.webp" alt="Two Stable.com forms on a dark background with Swap, Sell and Buy tabs. Swap: 100 USDT to USDT on Ethereum, the wallet address, a Review swap button, slippage, estimated time and the total fee. Sell: 100 US dollars to USDT, the payout method set to a bank card, a Continue button, the processing fee and the rate" width="1600" height="967" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">Stable.com before lending: buying, selling and swapping stablecoins</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h2">
+      <p class="cs-n mono" data-rv>02 — Protocol</p>
+      <div class="cs-body">
+        <h2 id="cl-h2" data-rv>One protocol or two</h2>
+        <p data-rv>The first big question wasn’t about the interface but about the foundation: which protocol to build on. The shortlist had three candidates, and it came down to two market leaders, <strong>Aave v3</strong> and <strong>Morpho</strong>. And to a tempting idea from the business side: why not take both and show the user the best rate?</p>
+        <p data-rv>I took both protocols apart not as a developer but as a designer: what picture of the world does each one impose on the user? It turned out that under the same words, deposit, collateral and liquidation, live two different logics.</p>
+      </div>
+      <div class="cs-tbl" style="--cols:minmax(0,.75fr) minmax(0,1fr) minmax(0,1fr)" role="table" aria-label="Aave v3 and Morpho compared" data-rv>
+        <div class="cs-tr cs-th mono" role="row"><span role="columnheader"></span><span role="columnheader">Aave v3</span><span role="columnheader">Morpho</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Structure</span><span role="cell" data-l="Aave v3">One shared pool: all of an account’s collateral works together</span><span role="cell" data-l="Morpho">Isolated markets: one collateral → loan pair with its own oracle and threshold</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Borrower risk</span><span role="cell" data-l="Aave v3">One health factor for the whole account</span><span role="cell" data-l="Morpho">Each position has its own liquidation threshold (LLTV)</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Liquidation</span><span role="cell" data-l="Aave v3">When the health factor drops below 1; usually up to 50% of the debt at once</span><span role="cell" data-l="Morpho">When LTV reaches LLTV; the position can be closed in full</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Risk parameters</span><span role="cell" data-l="Aave v3">Changed by governance votes</span><span role="cell" data-l="Morpho">Fixed when the market is created</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Depositor</span><span role="cell" data-l="Aave v3">Puts an asset into the pool and receives aTokens</span><span role="cell" data-l="Morpho">Puts it into a vault; a curator spreads the money across markets</span></div>
+      </div>
+      <p class="cs-src mono" data-rv>Sources: <a href="https://aave.com/docs/developers/aave-v3/overview" target="_blank" rel="noopener">Aave v3 documentation</a>, <a href="https://otomato.xyz/blog/morpho-vs-aave" target="_blank" rel="noopener">Morpho vs Aave</a></p>
+      <div class="cs-body cs-after">
+        <p data-rv>Combining both would make the user hold two risk models in their head. In one card the safety margin is a single number for the whole account; in the next, one number per loan. For a product whose main job is to explain risk, that is the worst case. For the team it meant a double integration, double risk monitoring and twice as many edge cases.</p>
+        <p data-rv>I proposed staying on <strong>Morpho</strong> and not combining protocols, for four reasons:</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div><strong>A clear mental model.</strong> An isolated market is “one loan, one collateral”, as at a bank. A drop in one asset doesn’t touch the other positions.</div></li>
+          <li><span class="mono">02</span><div><strong>A simple deposit.</strong> A vault gives the depositor a “put it in and earn” scenario, and a professional curator spreads the money across markets.</div></li>
+          <li><span class="mono">03</span><div><strong>Stable terms.</strong> Market parameters won’t change by a vote halfway through a loan, so they are easier to explain and to promise.</div></li>
+          <li><span class="mono">04</span><div><strong>Proven in mass products.</strong> Coinbase, Ledger and Crypto.com already build loans and deposits on Morpho; more on that in the next section.</div></li>
+        </ol>
+        <p data-rv>The business accepted the arguments. Instead of “the best rate on the market” we chose understandable risk, and that decision shaped all the design that followed.</p>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h3">
+      <p class="cs-n mono" data-rv>03 — Research</p>
+      <div class="cs-body">
+        <h2 id="cl-h3" data-rv>How others packaged it</h2>
+        <p data-rv>To keep the protocol recommendation from staying theory, I looked at how companies with the same audience as Stable.com, people with crypto but not DeFi experts, built loans and deposits into their apps. Separately I studied the pro interfaces of Aave and Morpho themselves as an anti-reference: every protocol number is on screen at once, and a newcomer drowns in them.</p>
+      </div>
+      <div class="cs-tbl is-wide" style="--cols:minmax(0,.7fr) minmax(0,.75fr) minmax(0,1.2fr) minmax(0,1.45fr)" role="table" aria-label="How other products package loans and deposits" data-rv>
+        <div class="cs-tr cs-th mono" role="row"><span role="columnheader">Product</span><span role="columnheader">Protocol</span><span role="columnheader">What it offers</span><span role="columnheader">What I took for Stable.com</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><a href="https://morpho.org/stories/coinbase/" target="_blank" rel="noopener">Coinbase</a></span><span role="cell" data-l="Protocol">Morpho, Base network</span><span role="cell" data-l="What it offers">USDC loans against BTC, ETH and other assets; USDC deposits through a curator’s vaults</span><span role="cell" data-l="What I took">The protocol is invisible: “borrow USDC against BTC”, not “the cbBTC/USDC market”. No repayment schedule: repay whenever it suits you</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><a href="https://morpho.org/stories/ledger" target="_blank" rel="noopener">Ledger Wallet</a></span><span role="cell" data-l="Protocol">Morpho</span><span role="cell" data-l="What it offers">An Earn section: yield on USDC and USDT</span><span role="cell" data-l="What I took">Buy, swap and earn interest in one app: exactly the Stable.com user’s path</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><a href="https://finance.yahoo.com/news/crypto-com-launch-crypto-lending-083118564.html" target="_blank" rel="noopener">Crypto.com</a></span><span role="cell" data-l="Protocol">Morpho, Cronos network</span><span role="cell" data-l="What it offers">Yield on stablecoins and loans against ETH and BTC</span><span role="cell" data-l="What I took">Lending lives inside the main interface, with no separate wallet or platform</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><a href="https://www.theblock.co/amp/post/379080/aave-labs-high-yield-savings-app-insurance-backed-protection-deposits-1-million" target="_blank" rel="noopener">Aave App</a></span><span role="cell" data-l="Protocol">Aave</span><span role="cell" data-l="What it offers">A stablecoin savings account you can top up by card</span><span role="cell" data-l="What I took">The “savings account” metaphor for deposits: earnings instead of APY jargon</span></div>
+      </div>
+      <div class="cs-body cs-after">
+        <p data-rv>Three conclusions came out of it, and they later became design principles:</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div><strong>Sell the task, not the protocol.</strong> None of the mass products make you pick a market or a vault; the user chooses “earn” or “borrow”.</div></li>
+          <li><span class="mono">02</span><div><strong>Lending continues the main scenario.</strong> Buy, swap, earn interest: one chain in one product.</div></li>
+          <li><span class="mono">03</span><div><strong>Risk is explained worst of all.</strong> Coinbase’s loans page describes it in one sentence in percentages: LTV must stay below 86%, or the collateral is sold (<a href="https://www.coinbase.com/en-gb/loans" target="_blank" rel="noopener">source</a>). For someone without DeFi experience that is an abstraction. This is where I saw a chance to do better than the market.</div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h4">
+      <p class="cs-n mono" data-rv>04 — Use cases</p>
+      <div class="cs-body">
+        <h2 id="cl-h4" data-rv>From an idea to a map of scenarios</h2>
+        <p data-rv>Next I gathered the business requirements. Not only the “what”, loans and deposits, but also the “how”: lending had to feel like part of Stable.com, not a DeFi terminal bolted on. The same language, the same visual style, the same logic as buying, selling and swapping.</p>
+        <p data-rv>The requirements grew into <strong>use cases</strong>. I described each one as a scenario with preconditions, steps, errors and edge cases, so that design, development and testing could all work from them at once. The edge cases aren’t a formality here: the loan rate floats, the collateral price can move between the quote and the confirmation, and a deposit can only be withdrawn within the available liquidity.</p>
+        <p data-rv>Laying out the scenarios, I noticed the main thing: <strong>for a borrower, the most important scenario is not getting a loan but living with it</strong>. Watching the safety margin and reacting in time when the collateral price falls. That loop became the centre of the design.</p>
+      </div>
+      <figure class="cs-fig cs-diagram" data-rv>
+        <div class="cs-diagram-in">
+          <svg viewBox="24 0 688 348" role="img" aria-label="Use-case map. Depositor: make a deposit, interest accrues, withdraw. Borrower: calculate and borrow, watch the margin, repay and get the collateral back. When the collateral price falls, a warning says the margin is shrinking; the borrower adds collateral or repays part and the margin is restored; with no reaction, part of the collateral is liquidated.">
+            <defs><marker id="cl-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="d-head"/></marker></defs>
+            <text x="24" y="30" class="d-lane">DEPOSITOR</text>
+            <line x1="24" x2="712" y1="114" y2="114" class="d-grid"/>
+            <text x="24" y="142" class="d-lane">BORROWER</text>
+            <g class="d-edge">
+              <path d="M224 70H268" marker-end="url(#cl-arrow)"/><path d="M468 70H512" marker-end="url(#cl-arrow)"/>
+              <path d="M224 178H268" marker-end="url(#cl-arrow)"/><path d="M468 178H512" marker-end="url(#cl-arrow)"/>
+              <path d="M340 202V272" marker-end="url(#cl-arrow)"/>
+              <path d="M268 300H224" stroke-dasharray="4 4" marker-end="url(#cl-arrow)"/>
+              <path d="M468 300H512" marker-end="url(#cl-arrow)"/>
+              <path d="M560 272V237H400V202" marker-end="url(#cl-arrow)"/>
+            </g>
+            <text x="332" y="241" text-anchor="end" class="d-note">collateral price falls</text>
+            <text x="480" y="229" text-anchor="middle" class="d-note">margin restored</text>
+            <rect x="24" y="46" width="200" height="48" class="d-box"/><text x="124" y="74" text-anchor="middle" class="d-t">Make a deposit</text>
+            <rect x="268" y="46" width="200" height="48" class="d-box"/><text x="368" y="74" text-anchor="middle" class="d-t">Interest accrues</text>
+            <rect x="512" y="46" width="200" height="48" class="d-box"/><text x="612" y="74" text-anchor="middle" class="d-t">Withdraw</text>
+            <rect x="24" y="154" width="200" height="48" class="d-box"/><text x="124" y="182" text-anchor="middle" class="d-t">Calculate and borrow</text>
+            <rect x="268" y="154" width="200" height="48" class="d-box is-key"/><text x="368" y="182" text-anchor="middle" class="d-t is-key">Watch the margin</text>
+            <rect x="512" y="154" width="200" height="48" class="d-box"/><text x="612" y="182" text-anchor="middle" class="d-t">Repay, get collateral back</text>
+            <rect x="24" y="272" width="200" height="56" class="d-box is-bad"/><text text-anchor="middle" class="d-t is-bad"><tspan x="124" y="297">No reaction: part of the</tspan><tspan x="124" y="315">collateral is liquidated</tspan></text>
+            <rect x="268" y="272" width="200" height="56" class="d-box is-warn"/><text text-anchor="middle" class="d-t"><tspan x="368" y="297">Warning:</tspan><tspan x="368" y="315">the margin is shrinking</tspan></text>
+            <rect x="512" y="272" width="200" height="56" class="d-box is-good"/><text text-anchor="middle" class="d-t"><tspan x="612" y="297">Add collateral</tspan><tspan x="612" y="315">or repay part</tspan></text>
+          </svg>
+        </div>
+        <figcaption class="mono">The use-case map: for a borrower the centre is the risk loop, not the loan itself<span class="cs-swipe"> · swipe to see all of it</span></figcaption>
+      </figure>
+      <div class="cs-body cs-after">
+        <p data-rv>When the collateral price falls, the user gets a warning and brings the loan back into the safe zone. Without a reaction the protocol liquidates part of the collateral, and that is exactly the outcome the design has to prevent.</p>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h5">
+      <p class="cs-n mono" data-rv>05 — Drafts</p>
+      <div class="cs-body">
+        <h2 id="cl-h5" data-rv>Show the risk without scaring people</h2>
+        <p data-rv>In the drafts I pitted two opposite concepts against each other. The first was a <strong>“pro dashboard”</strong> in the spirit of the protocols’ own interfaces: every parameter of the position on one screen. The second was a <strong>“financial product”</strong>: the deposit looks like a savings account, the loan like a bank loan, and protocol details open on request. The second won. It continued the language of Stable.com and answered the main finding of the research: risk has to be explained, not just shown.</p>
+        <p data-rv>Six key decisions grew out of this concept:</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div><strong>The language of the task, not of the protocol.</strong> Buttons say Earn and Borrow; the protocol’s Supply never appears. Words like Morpho, vault and LLTV live in a “How it works” block, not in the main flow.</div></li>
+          <li><span class="mono">02</span><div><strong>Risk in money, not in ratios.</strong> Instead of a health factor, a “margin to liquidation” scale with three zones and the collateral price at which liquidation starts: “If BTC drops to $61,400, part of your collateral will be sold.”</div></li>
+          <li><span class="mono">03</span><div><strong>A safe default.</strong> The loan calculator starts at an amount in the green zone, not at the maximum. To borrow more, the user deliberately moves the slider and watches the margin shrink.</div></li>
+          <li><span class="mono">04</span><div><strong>Everything visible before confirming.</strong> As soon as an amount is entered, the rate, the monthly cost of the loan and the liquidation price are calculated. The confirmation screen repeats it all in one summary.</div></li>
+          <li><span class="mono">05</span><div><strong>An honest floating rate.</strong> The rate is labelled “now”, with its recent history next to it. Nobody should find out after the fact that the rate went up.</div></li>
+          <li><span class="mono">06</span><div><strong>A warning before liquidation.</strong> When a loan moves into the yellow or red zone, a notification arrives with Add collateral and Repay part buttons. Fixing it takes one tap.</div></li>
+        </ol>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-lending-earn-800.avif 800w, img/case-lending-earn-1200.avif 1200w, img/case-lending-earn-1600.avif 1600w, img/case-lending-earn-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-lending-earn-1600.webp" alt="Two Earn screens on a dark background. The first: the headline Start earning yield on your assets, a list of stablecoins with the current APY and the balance for each, and a Make your first deposit button. The second: a new deposit of 100 USDC with 25, 50, 75 percent and Max shortcuts, the current APY of 5.45 percent, a Review deposit button and estimated yearly and monthly earnings" width="1600" height="975" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">Earn, the short way: pick an asset, enter an amount and see the earnings before depositing</figcaption>
+      </figure>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-lending-loan-800.avif 800w, img/case-lending-loan-1200.avif 1200w, img/case-lending-loan-1600.avif 1600w, img/case-lending-loan-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-lending-loan-1600.webp" alt="Three loan screens on a dark background. Withdraw collateral: the current position, target LTV presets of 50, 60 and 70 percent, and a loan health scale from the current LTV to the liquidation LTV. Withdraw review: the amount, LTV going from 41 to 50 percent, the liquidation price before and after, a risk note and a Confirm in wallet button. The WETH and USDC borrow position: the loan health scale and four actions, add collateral and repay debt marked as decreasing risk, withdraw and borrow more marked as increasing risk" width="1600" height="770" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">Managing the loan: target LTV presets, the health scale, the liquidation price before and after, and every action labelled by risk</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h6">
+      <p class="cs-n mono" data-rv>06 — Build</p>
+      <div class="cs-body">
+        <h2 id="cl-h6" data-rv>A design system and AI agents</h2>
+        <p data-rv>Lending didn’t start from a blank page. I already had the <strong>Stable.com design system</strong>, on which I had built buying, selling and swapping. I only added what was missing: the safety margin scale, the loan card, the loan calculator, the floating rate block. The new components worked in light and dark themes, on desktop and mobile, from the start.</p>
+        <p data-rv>The mockups were assembled by <strong>AI agents</strong>. The use cases lived in Confluence as a table with a separate UI column. An agent took a scenario and assembled the flow in Figma from the system’s ready components only, in four variants at once: desktop and mobile, light and dark. Then it checked the flow against the scenario and wrote the link to the screens back into the UI column.</p>
+        <p data-rv>This created an end-to-end link: <strong>every requirement has a screen, and every screen has a requirement</strong>. When a screen came out wrong, I fixed the cause, the wording of the use case or the component, not the mockup, and rebuilt. Every fix improved the system, not one screen.</p>
+        <p data-rv>What went to engineering wasn’t a set of pictures but a single package: use cases, requirements and screens, linked to each other. A developer doesn’t have to guess which rule a screen belongs to; the answer is in the same table row.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-lending-conf-800.avif 800w, img/case-lending-conf-1200.avif 1200w, img/case-lending-conf-1600.avif 1600w, img/case-lending-conf-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-lending-conf-1600.webp" alt="The 2.2 Use cases page in Confluence: a short intro to Earn and Borrow, then a Flows table with the columns Section, Flow, Use cases, Page, Mockups and Jira. Rows such as Create a new deposit, Withdraw funds, Request a new loan, Add collateral and Repay a loan, each with a use case code, a link to its page, a Figma link and a Jira task" width="1600" height="1044" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The use cases in Confluence: every flow links to its scenarios, its Figma mockups and its Jira task</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h7">
+      <p class="cs-n mono" data-rv>07 — Metrics</p>
+      <div class="cs-body">
+        <h2 id="cl-h7" data-rv>How we’ll know it works</h2>
+        <p data-rv>I set the metrics before hand-off, so that after launch we discuss the result in numbers, not impressions. Each one tests a specific design decision, and the main one is the liquidation rate: if people lose collateral, the interface has failed at its main job.</p>
+      </div>
+      <div class="cs-tbl" style="--cols:minmax(0,1.15fr) minmax(0,1fr)" role="table" aria-label="Launch metrics and what each one tests" data-rv>
+        <div class="cs-tr cs-th mono" role="row"><span role="columnheader">Metric</span><span role="columnheader">What it tests</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Liquidation rate</b><i class="mono">Share of loans that reach liquidation</i></span><span role="cell" data-l="What it tests">Whether the whole risk-control system works: the main trust metric</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Warning response</b><i class="mono">Share who add collateral or repay part after a notification</i></span><span role="cell" data-l="What it tests">One-tap notifications</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Loans in the green zone</b></span><span role="cell" data-l="What it tests">The safe default and the safety margin scale</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>TSR</b><i class="mono">Task success rate of the deposit and loan flows</i></span><span role="cell" data-l="What it tests">Whether the calculator and the summary before confirming are clear</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Activation rate</b><i class="mono">Stable.com users with a first deposit or loan within 30 days</i></span><span role="cell" data-l="What it tests">Whether lending reads as a continuation of buying and swapping</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Contact rate</b><i class="mono">Support requests per 100 open positions</i></span><span role="cell" data-l="What it tests">Task language and risk in money: is the product clear without support</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Deposit and loan volume</b></span><span role="cell" data-l="What it tests">The product’s business result</span></div>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h8">
+      <p class="cs-n mono" data-rv>08 — Result</p>
+      <div class="cs-body">
+        <h2 id="cl-h8" data-rv>From one sentence to a product in development</h2>
+        <p data-rv>Lending went from an idea to a package for engineering, and at every step I was responsible for the decision, not just the screens.</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div>The stack is chosen: Morpho, without mixing protocols. The team avoided a double integration, and users avoided two risk models</div></li>
+          <li><span class="mono">02</span><div>The competitor review turned into three design principles</div></li>
+          <li><span class="mono">03</span><div>Depositor and borrower use cases are described together with their edge cases</div></li>
+          <li><span class="mono">04</span><div>Every scenario is assembled in four variants and linked to its requirements</div></li>
+          <li><span class="mono">05</span><div>The Stable.com design system gained components for financial risk that the next products will use</div></li>
+          <li><span class="mono">06</span><div>KPIs are fixed before launch</div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="cl-h9">
+      <p class="cs-n mono" data-rv>09 — Takeaways</p>
+      <div class="cs-body">
+        <h2 id="cl-h9" class="sr-only">What I took away</h2>
+        <p class="cs-take" data-rv>Design starts before screens. Choosing a protocol looked like a technical task, but it was the first UX decision: the protocol sets how the user will think about their risk.</p>
+        <p data-rv>Had I joined at the mockup stage, we would have been drawing an interface on top of two incompatible logics.</p>
+        <p data-rv>Second, in a financial product clarity matters more than yield. The best rate sells the first deposit; understandable risk sells the second and the tenth.</p>
+        <p data-rv>Third, agents only scale what is well described. The more precise the use case and the better thought-out the system, the less manual work, and the closer the mockups are to what ships. The designer’s role shifts from drawing to decisions, and that is where it brings the most value.</p>
+      </div>
+    </section>
+
+    <footer class="cs-end">
+      <button type="button" class="btn btn-back" data-case-close aria-label="Back to work"><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span><span class="btn-l" data-scramble aria-hidden="true">Back to work</span></button>
+      <button type="button" class="btn btn-solid btn-fwd" data-case-next="payment-pages" aria-label="Next case: Payment Pages"><span class="btn-l" data-scramble aria-hidden="true">Next case</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button>
+    </footer>
+  </div>
+</article>
+
+<div class="pcur" aria-hidden="true"><canvas></canvas><i class="pg" data-g="dot"></i><i class="pg" data-g="right"><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width=".9"/></svg></i><i class="pg" data-g="ext"><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width=".9"/></svg></i><i class="pg" data-g="copy"><svg viewBox="0 0 12 12"><rect x="3.5" y="3.5" width="7" height="7" fill="none" stroke="currentColor" stroke-width="1"/><path d="M1.5 8.5v-7h7" fill="none" stroke="currentColor" stroke-width="1"/></svg></i><i class="pg" data-g="read"><b></b><b></b><b></b></i></div>
+
+<script>
+(() => {
+  const root = document.documentElement;
+  const reduce = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const $ = (s, c = document) => c.querySelector(s);
+  const $$ = (s, c = document) => Array.from(c.querySelectorAll(s));
+
+  /* ---------- safety net: plain photo if the particle portrait doesn't start ---------- */
+  (() => {
+    const f = $('#frame'), im = f && $('img', f);
+    if (!im) return;
+    const check = () => setTimeout(() => { if (!f.classList.contains('gl')) f.classList.add('nogl'); }, 1500);
+    if (im.complete && im.naturalWidth) check(); else im.addEventListener('load', check, { once: true });
+  })();
+
+  /* ---------- split the statement into words ---------- */
+  $$('[data-words]').forEach(el => {
+    let i = 0;
+    const walk = node => {
+      Array.from(node.childNodes).forEach(c => {
+        if (c.nodeType === 3) {
+          const frag = document.createDocumentFragment();
+          c.textContent.split(/([\s ]+)/).forEach(part => {
+            if (!part) return;
+            if (/^[\s ]+$/.test(part)) { frag.appendChild(document.createTextNode(part)); return; }
+            const s = document.createElement('span');
+            s.className = 'w'; s.style.setProperty('--i', i++); s.textContent = part;
+            frag.appendChild(s);
+          });
+          c.replaceWith(frag);
+        } else if (c.nodeType === 1) walk(c);
+      });
+    };
+    walk(el);
+    el.classList.add('split');
+  });
+
+  /* ---------- start the load sequence once fonts are in ---------- */
+  let started = false;
+  const start = () => {
+    if (started) return; started = true;
+    requestAnimationFrame(() => requestAnimationFrame(() => {
+      root.classList.add('is-in');
+      window.dispatchEvent(new Event('yb:in'));
+    }));
+  };
+  const fontsReady = (window.__fontCss || Promise.resolve()).then(() => document.fonts
+    ? Promise.all(['400 1em Geist', '400 1em "Geist Mono"'].map(f => document.fonts.load(f))) : null).catch(() => {});
+  Promise.race([fontsReady, new Promise(r => setTimeout(r, 1500))]).then(start);
+  setTimeout(start, 2500);
+
+  /* ---------- header lens: content passing under the header bends as if through glass ---------- */
+  (() => {
+    const fog = $('.fog'), flt = $('#lens'), fx = $('#lens-x'), fy = $('#lens-y'), fk = $('#lens-k'), fdy = $('#lens-dy');
+    const ua = navigator.userAgent;
+    // SVG filters inside backdrop-filter only render in Chromium; other browsers keep the soft blur
+    const chromium = /Chrome\/|Edg\//.test(ua) && !/Firefox|FxiOS|CriOS|EdgiOS/.test(ua);
+    if (!fog || !flt || !fx || !fy || !fk || !fdy || !chromium || reduce) return;
+    const S = 120;          // feDisplacementMap scale
+    const PULL = .4;        // vertical: the top row shows content from 40% of the lens height below
+    const SPREAD = .04;     // sideways: at the top corners content moves out by 2% of the width
+    const ramp = (w, h, f) => {
+      const c = document.createElement('canvas'); c.width = w; c.height = h;
+      const g = c.getContext('2d'), im = g.createImageData(w, h);
+      for (let i = 0; i < w * h; i++) { const v = Math.round(255 * f(i)); im.data[i * 4] = im.data[i * 4 + 1] = im.data[i * 4 + 2] = v; im.data[i * 4 + 3] = 255; }
+      g.putImageData(im, 0, 0);
+      return c.toDataURL('image/png');
+    };
+    const href = (el, url) => { el.setAttribute('href', url); el.setAttributeNS('http://www.w3.org/1999/xlink', 'xlink:href', url); };
+    const build = (w, h) => {
+      const W = Math.max(2, Math.round(w)), L = Math.max(2, Math.round(h));
+      const cw = Math.max(2, Math.round(W / 4));
+      href(fx, ramp(cw, 1, i => 1 - (i + .5) / cw));                       // 1 at the left edge, 0 at the right
+      href(fy, ramp(1, L, i => { const u = 1 - (i + .5) / L; return u * u; }));
+      for (const el of [flt, fx, fy]) { el.setAttribute('width', W); el.setAttribute('height', L); }
+      const K = W * SPREAD / S;
+      fk.setAttribute('slope', K); fk.setAttribute('intercept', .5 - K / 2);
+      fdy.setAttribute('slope', L * PULL / S);
+    };
+    fog.classList.add('lens');
+    if ('ResizeObserver' in window) {
+      let tm = 0, first = true;
+      new ResizeObserver(([e]) => {
+        const b = e.borderBoxSize && e.borderBoxSize[0];
+        const w = b ? b.inlineSize : e.contentRect.width, h = b ? b.blockSize : e.contentRect.height;
+        clearTimeout(tm);
+        if (first) { first = false; build(w, h); } else tm = setTimeout(() => build(w, h), 150);
+      }).observe(fog);
+    } else { const r = fog.getBoundingClientRect(); build(r.width, r.height); }
+  })();
+
+  /* ---------- reveal sections below the first screen ---------- */
+  const rv = $$('[data-rv]');
+  if ('IntersectionObserver' in window && !reduce) {
+    root.classList.add('rv-on');
+    const io = new IntersectionObserver(es => es.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); }
+    }), { rootMargin: '0px 0px -16% 0px', threshold: 0 });
+    rv.forEach(el => io.observe(el));
+  }
+
+  /* ---------- the cursor: on desktop a soft mote ringed with fine dust, like the motes on the first screen,
+     follows the mouse over the whole page and says what is under it: forward into a case, up and out for
+     another site, dots where there is text to read, a copy mark on the email.
+     Elsewhere it settles into a small mote with a dot. The dust lags a moving cursor, so it trails like a cloud. ---------- */
+  (() => {
+    const pc = $('.pcur');
+    const mq = matchMedia('(min-width:1024px) and (hover:hover) and (pointer:fine)');
+    if (!pc) return;
+    const cv = $('canvas', pc), g = cv && cv.getContext('2d');
+    if (!g) return;
+    const glyphs = {};
+    $$('.pg', pc).forEach(el => { glyphs[el.dataset.g] = el; });
+
+    // what each part of the page asks for; the nearest tagged ancestor of the element under the mouse wins
+    const tag = (sel, v) => $$(sel).forEach(el => { if (!el.dataset.cur) el.dataset.cur = v; });
+    tag('#copy-email', 'copy');
+    tag('a[target="_blank"]', 'ext');
+    tag('.proj', 'right');
+    tag('.about', 'read');
+    tag('[data-case-next]', 'right');
+    tag('a[href^="#"], button', 'link');
+    // disc radius, dust spread and dust strength per state
+    const ST = {
+      none: { R: 14, sp: .6, da: .55, g: 'dot' },
+      link: { R: 21, sp: .78, da: .75, g: 'dot' },
+      right: { R: 32, sp: 1, da: 1, g: 'right' },
+      ext: { R: 32, sp: 1, da: 1, g: 'ext' },
+      copy: { R: 32, sp: 1, da: 1, g: 'copy' },
+      read: { R: 32, sp: 1, da: 1, g: 'read' }
+    };
+
+    const HALF = 200;                       // the canvas is 400px square, centred on the pointer
+    const rgba = (c, a) => 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')';
+    const lift = (c, k) => c.map(v => Math.round(v + (255 - v) * k));
+    const mk = (stops, n = 64) => {
+      const c = document.createElement('canvas'); c.width = c.height = n;
+      const x = c.getContext('2d'), gr = x.createRadialGradient(n / 2, n / 2, 0, n / 2, n / 2, n / 2);
+      stops.forEach(([o, col, a]) => gr.addColorStop(o, rgba(col, a)));
+      x.fillStyle = gr; x.fillRect(0, 0, n, n);
+      return c;
+    };
+    // the hero palette, white through ice blue to mint. The cursor is inverted by a difference blend: on the dark
+    // page it looks as drawn, on the light page and over white type or a filled button it turns dark.
+    const TINTS_DARK = [[236, 244, 255], [196, 224, 255], [166, 210, 252], [166, 240, 222], [196, 250, 214]];
+    const TINTS_BLEND = [[255, 255, 255], [238, 246, 255], [228, 240, 255], [228, 252, 246], [236, 252, 240]];
+    let dpr = 1, spr = null;
+    const setup = () => {
+      const dark = /dark/.test(getComputedStyle(root).colorScheme || '');
+      pc.classList.toggle('dark', dark);
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      cv.width = cv.height = Math.round(HALF * 2 * dpr);
+      const T = dark ? TINTS_DARK : TINTS_BLEND, c0 = T[0], c1 = T[1];
+      spr = {
+        // barely there: a faint body and a thin, soft rim; the glyph and the dust carry the shape
+        disc: mk([[0, c1, .035], [.6, c1, .04], [.8, lift(c0, .3), .11], [.9, c0, .06], [1, c1, 0]], 256),
+        halo: mk([[0, c1, .025], [.45, c1, .01], [1, c1, 0]], 128),
+        dots: T.map(c => mk([[0, lift(c, .55), 1], [.11, lift(c, .3), 1], [.2, c, .55], [.42, c, .14], [.7, c, .03], [1, c, 0]])),
+        boke: T.map(c => mk([[0, c, .3], [.62, c, .3], [.86, lift(c, .4), .38], [1, c, 0]]))
+      };
+    };
+    // the dust: mostly fine sharp motes, a few small soft discs, each on its own slow orbit and with its own lag
+    let sd = 7;
+    const rnd = () => (sd = (sd * 16807) % 2147483647) / 2147483647;
+    const D = Array.from({ length: 44 }, () => {
+      const big = rnd() < .2;
+      return {
+        a: rnd() * 6.283, r: 40 + Math.pow(rnd(), 1.5) * 92, w: (rnd() < .5 ? -1 : 1) * (.1 + rnd() * .38),
+        k: .05 + rnd() * .12, ph: rnd() * 6.283, tw: .8 + rnd() * 1.6, big,
+        sz: big ? 2.2 + rnd() * 2.2 : .7 + rnd() * .9, tn: Math.floor(rnd() * 5) % 5, x: 0, y: 0
+      };
+    });
+    let cx = -400, cy = -400, tx = -400, ty = -400, s = 0, ts = 0, raf = 0, last = 0, mx = -1, my = -1, moved = 0;
+    let state = 'none';
+    const cur = { R: ST.none.R, sp: ST.none.sp, da: ST.none.da };
+    const tick = now => {
+      raf = 0;
+      const dt = Math.min(.05, last ? (now - last) / 1000 : 1 / 60); last = now;
+      const t = reduce ? 0 : now / 1000;
+      const f = r => reduce ? 1 : 1 - Math.pow(1 - r, dt * 60);   // frame-rate independent easing
+      const st = ST[state];
+      cx += (tx - cx) * f(.24); cy += (ty - cy) * f(.24);
+      s += (ts - s) * f(ts ? .12 : .09);
+      if (Math.abs(ts - s) < .003) s = ts;
+      cur.R += (st.R - cur.R) * f(.14); cur.sp += (st.sp - cur.sp) * f(.1); cur.da += (st.da - cur.da) * f(.1);
+      pc.style.transform = `translate3d(${cx.toFixed(1)}px,${cy.toFixed(1)}px,0)`;
+      g.setTransform(dpr, 0, 0, dpr, 0, 0);
+      g.globalCompositeOperation = 'source-over'; g.globalAlpha = 1;
+      g.clearRect(0, 0, HALF * 2, HALF * 2);
+      g.globalCompositeOperation = 'lighter';
+      // dust: out from the centre on the way in, wider and fading on the way out
+      const spread = (ts ? .3 + .7 * s : 1.75 - .75 * s) * cur.sp;
+      for (const p of D) {
+        const a = p.a + t * p.w;
+        const gx = cx + Math.cos(a) * p.r * spread + Math.sin(t * .7 + p.ph) * 6;
+        const gy = cy + Math.sin(a) * p.r * spread * .9 + Math.cos(t * .6 + p.ph) * 6;
+        p.x += (gx - p.x) * f(p.k); p.y += (gy - p.y) * f(p.k);
+        let lx = p.x - cx, ly = p.y - cy;
+        const d = Math.hypot(lx, ly), lim = HALF - 12;
+        if (d > lim) { lx *= lim / d; ly *= lim / d; }
+        lx += HALF; ly += HALF;
+        const tw = .65 + .35 * Math.sin(t * p.tw + p.ph * 3);
+        if (p.big) {
+          const R = p.sz * 2.2;
+          g.globalAlpha = .34 * s * tw * cur.da;
+          g.drawImage(spr.boke[p.tn], lx - R, ly - R, 2 * R, 2 * R);
+        } else {
+          const r = p.sz * 4;
+          g.globalAlpha = .8 * s * tw * cur.da;
+          g.drawImage(spr.dots[p.tn], lx - r, ly - r, 2 * r, 2 * r);
+        }
+      }
+      // the large mote itself, breathing a little
+      const R = cur.R * (.35 + .65 * s) * (1 + .025 * Math.sin(t * 1.4));
+      g.globalAlpha = s;
+      g.drawImage(spr.halo, HALF - R * 1.9, HALF - R * 1.9, R * 3.8, R * 3.8);
+      g.drawImage(spr.disc, HALF - R, HALF - R, 2 * R, 2 * R);
+      // keep drifting while the mouse is around; rest after a few still seconds, or once faded out
+      const settling = s !== ts || Math.abs(tx - cx) > .3 || Math.abs(ty - cy) > .3 || Math.abs(st.R - cur.R) > .1;
+      if (settling || (ts && now - moved < 6000)) raf = requestAnimationFrame(tick);
+      else last = 0;
+    };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(tick); };
+    const glyph = () => {
+      const want = ts ? ST[state].g : '';
+      for (const k in glyphs) glyphs[k].classList.toggle('on', k === want);
+    };
+    const setState = v => {
+      v = ST[v] ? v : 'none';
+      if (v === state) return;
+      state = v; glyph(); kick();
+    };
+    const stateAt = el => { const c = el && el.closest && el.closest('[data-cur]'); return c ? c.dataset.cur : 'none'; };
+    const show = on => {
+      if (on && !mq.matches) on = false;
+      if (on && s < .05) {                       // start right under the pointer, dust gathered in the middle
+        cx = tx; cy = ty;
+        D.forEach(p => { p.x = cx; p.y = cy; });
+      }
+      ts = on ? 1 : 0;
+      glyph(); kick();
+    };
+    const enable = () => root.classList.toggle('cur-on', mq.matches);
+    setup(); enable();
+    const mqDark = matchMedia('(prefers-color-scheme: dark)');
+    if (mqDark.addEventListener) mqDark.addEventListener('change', () => { setup(); kick(); });
+    new MutationObserver(() => { setup(); kick(); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    window.addEventListener('pointermove', e => {
+      if (e.pointerType !== 'mouse' || !mq.matches) return;
+      mx = tx = e.clientX; my = ty = e.clientY; moved = performance.now();
+      setState(stateAt(e.target));
+      if (!ts) show(true); else kick();
+    }, { passive: true });
+    // out of the window: fade away, come back where the mouse re-enters
+    document.addEventListener('mouseout', e => { if (!e.relatedTarget) show(false); });
+    // the page can scroll under a still mouse: check what is under it now
+    let sc = 0;
+    const recheck = () => {
+      if (mx < 0 || sc || !ts) return;
+      sc = requestAnimationFrame(() => { sc = 0; moved = performance.now(); setState(stateAt(document.elementFromPoint(mx, my))); kick(); });
+    };
+    document.addEventListener('scroll', recheck, { passive: true, capture: true });
+    // a layer wiping in or out changes what is under the mouse: look again as it starts and once it has settled
+    window.addEventListener('yb:layer', () => { setTimeout(recheck, 60); setTimeout(recheck, 950); });
+    if (mq.addEventListener) mq.addEventListener('change', () => { enable(); if (!mq.matches) show(false); });
+  })();
+
+  /* ---------- case studies: each opens over the page from its project, has its own address (#case/<slug>),
+     closes with Back, Esc or the browser's back button and returns to where the reader was ---------- */
+  (() => {
+    const cases = {};
+    $$('.case[data-case]').forEach(c => { cases[c.dataset.case] = c; });
+    if (!Object.keys(cases).length) return;
+    const hashOf = slug => '#case/' + slug;
+    const slugOf = h => { const m = /^#case\/([\w-]+)$/.exec(h || ''); return m && cases[m[1]] ? m[1] : null; };
+    let cur = null, lastY = 0, opener = null, pushed = false;
+    const timers = new Map();
+    // the page keeps its own scroll position across a case's history entry
+    try { if ('scrollRestoration' in history) history.scrollRestoration = 'manual'; } catch (e) {}
+    const open = (slug, from, push) => {
+      const cs = cases[slug];
+      if (!cs || cur === slug) return;
+      if (cur) close(true);
+      opener = from || null; lastY = window.scrollY; cur = slug;
+      clearTimeout(timers.get(cs));
+      const prog = $('.cs-prog', cs);
+      cs.hidden = false; cs.scrollTop = 0; if (prog) prog.style.transform = 'scaleX(0)';
+      root.classList.add('case-open');
+      requestAnimationFrame(() => requestAnimationFrame(() => cs.classList.add('open')));
+      if (push) { try { history.pushState({ case: slug }, '', hashOf(slug)); pushed = true; } catch (e) { pushed = false; } }
+      window.dispatchEvent(new Event('yb:layer'));
+      setTimeout(() => cs.focus({ preventScroll: true }), 450);
+    };
+    const close = fromPop => {
+      if (!cur) return;
+      const cs = cases[cur]; cur = null;
+      cs.classList.remove('open');
+      root.classList.remove('case-open');
+      window.scrollTo(0, lastY);
+      requestAnimationFrame(() => window.scrollTo(0, lastY));
+      timers.set(cs, setTimeout(() => { cs.hidden = true; if (!cur) window.scrollTo(0, lastY); }, 950));
+      if (!fromPop) {
+        if (pushed) { pushed = false; try { history.back(); } catch (e) {} }
+        else if (slugOf(location.hash)) { try { history.replaceState(null, '', location.pathname + location.search); } catch (e) {} }
+      } else pushed = false;
+      window.dispatchEvent(new Event('yb:layer'));
+      if (opener && opener.focus && opener.offsetParent && getComputedStyle(opener).clipPath === 'none') opener.focus({ preventScroll: true });
+    };
+    // the whole card opens its case on a desktop; the "Case study" button does on a tablet or a phone
+    $$('.proj[data-case]').forEach(p => {
+      const slug = p.dataset.case;
+      if (!cases[slug]) return;
+      p.addEventListener('click', e => { if (e.target.closest('a')) return; open(slug, $('.proj-cta .btn', p), true); });
+    });
+    Object.values(cases).forEach(cs => {
+      $$('[data-case-close]', cs).forEach(b => b.addEventListener('click', () => close(false)));
+      const prog = $('.cs-prog', cs);
+      cs.addEventListener('scroll', () => {
+        if (!prog) return;
+        const max = cs.scrollHeight - cs.clientHeight;
+        prog.style.transform = `scaleX(${max > 0 ? Math.min(1, cs.scrollTop / max).toFixed(4) : 0})`;
+      }, { passive: true });
+    });
+    // next case: the new one wipes up over the current one; the address follows, the way back still leads to Work
+    const go = slug => {
+      const from = cur && cases[cur], to = cases[slug];
+      if (!from || !to || cur === slug) return;
+      clearTimeout(timers.get(to));
+      const prog = $('.cs-prog', to);
+      to.hidden = false; to.scrollTop = 0; if (prog) prog.style.transform = 'scaleX(0)';
+      cur = slug;
+      requestAnimationFrame(() => requestAnimationFrame(() => { to.classList.add('open'); from.classList.remove('open'); }));
+      timers.set(from, setTimeout(() => { from.hidden = true; }, 950));
+      try { history.replaceState({ case: slug }, '', hashOf(slug)); } catch (e) {}
+      window.dispatchEvent(new Event('yb:layer'));
+      setTimeout(() => to.focus({ preventScroll: true }), 450);
+    };
+    $$('[data-case-next]').forEach(b => b.addEventListener('click', () => go(b.dataset.caseNext)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape' && cur) close(false); });
+    window.addEventListener('popstate', () => { const s = slugOf(location.hash); if (s) open(s, null, false); else close(true); });
+    const first = slugOf(location.hash);
+    if (first) open(first, null, false);
+  })();
+
+  /* ---------- contacts: the email row copies the address ---------- */
+  const mailBtn = $('#copy-email');
+  if (mailBtn) {
+    const handle = $('.c-handle', mailBtn), status = $('#copy-status'), addr = mailBtn.dataset.email;
+    let tm = 0;
+    const flash = msg => {
+      clearTimeout(tm);
+      handle.textContent = msg; status.textContent = msg;
+      tm = setTimeout(() => { handle.textContent = addr; }, 1600);
+    };
+    const selectIt = () => { const r = document.createRange(); handle.textContent = addr; r.selectNodeContents(handle); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
+    mailBtn.addEventListener('click', () => {
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(addr).then(() => flash('Copied to clipboard'), () => { selectIt(); status.textContent = 'Press Ctrl+C or ⌘C to copy'; });
+      else { selectIt(); status.textContent = 'Press Ctrl+C or ⌘C to copy'; }
+    });
+  }
+
+  /* ---------- nav: letters scramble, then settle ---------- */
+  const CH = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789#/_';
+  $$('[data-scramble]').forEach(a => {
+    const orig = a.textContent;
+    let raf = 0;
+    const run = () => {
+      if (reduce) return;
+      cancelAnimationFrame(raf);
+      const t0 = performance.now();
+      const step = now => {
+        const p = (now - t0) / 420;
+        const fixed = Math.floor(p * orig.length);
+        let out = '';
+        for (let i = 0; i < orig.length; i++) {
+          const ch = orig[i];
+          // letters and digits flicker; symbols like @ . / stay put, and lowercase stays lowercase
+          if (i < fixed || !/[A-Za-z0-9]/.test(ch)) { out += ch; continue; }
+          const r = CH[(Math.random() * 36) | 0];
+          out += ch === ch.toLowerCase() && ch !== ch.toUpperCase() ? r.toLowerCase() : r;
+        }
+        a.textContent = p >= 1 ? orig : out;
+        if (p < 1) raf = requestAnimationFrame(step);
+      };
+      raf = requestAnimationFrame(step);
+    };
+    const host = a.closest('a,button') || a;
+    host.addEventListener('mouseenter', run);
+    host.addEventListener('focus', run);
+  });
+
+  /* ---------- about: the statement lights up word by word as it scrolls past ---------- */
+  $$('[data-scrub]').forEach(el => {
+    const words = [];
+    el.innerHTML = el.textContent.split(/(\s+)/).map(p => /^\s+$/.test(p) ? p : '<span class="sw">' + p + '</span>').join('');
+    words.push(...el.querySelectorAll('.sw'));
+    if (reduce) { words.forEach(w => w.classList.add('on')); return; }
+    let lit = -1, near = true;
+    const update = force => {
+      if (!near && !force) return;
+      const r = el.getBoundingClientRect(), vh = innerHeight;
+      const p = Math.min(1, Math.max(0, (vh * .82 - r.top) / (r.height + vh * .32)));
+      const n = Math.round(p * words.length);
+      if (n === lit) return;
+      lit = n;
+      words.forEach((w, i) => w.classList.toggle('on', i < n));
+    };
+    window.addEventListener('scroll', () => update(), { passive: true });
+    window.addEventListener('resize', () => update());
+    // only words within a screen of the viewport are tracked; the observer also gives the first position without a forced layout
+    if ('IntersectionObserver' in window) {
+      new IntersectionObserver(([e]) => {
+        if (e.isIntersecting) { near = true; el.classList.remove('far'); update(); }
+        else { update(true); near = false; el.classList.toggle('far', e.boundingClientRect.top > 0); }
+      }, { rootMargin: '100% 0px' }).observe(el);
+    } else update();
+  });
+
+  /* ---------- background: a field of faint motes at several depths ---------- */
+  (() => {
+    const hero = $('.hero');
+    const back = $('.bokeh-back'), front = $('.bokeh-front');
+    const cb = back.getContext('2d'), cf = front.getContext('2d');
+    if (!cb || !cf) return;
+    const FOCUS = .46;   // depth that is in focus (0 far, 1 near)
+    const SPLIT = .6;    // motes nearer than this are drawn in front of the portrait
+    let W = 0, H = 0, dpr = 1, P = [], spr = null, dark = 1, raf = 0, visible = true, last = performance.now();
+    let SX, SY, LN, CR, BL, DB;
+    const ptr = { cx: -1e4, cy: -1e4, on: false, k: 0 };
+    const par = { x: .5, y: .5, tx: .5, ty: .5 };
+    const rgba = (c, a) => 'rgba(' + c[0] + ',' + c[1] + ',' + c[2] + ',' + a + ')';
+    const mk = stops => {
+      const c = document.createElement('canvas'); c.width = c.height = 64;
+      const g = c.getContext('2d'), gr = g.createRadialGradient(32, 32, 0, 32, 32, 32);
+      stops.forEach(([o, col, a]) => gr.addColorStop(o, rgba(col, a)));
+      g.fillStyle = gr; g.fillRect(0, 0, 64, 64);
+      return c;
+    };
+    // palette: white through ice blue to mint; each mote takes one tint
+    const TINTS_DARK = [[236, 244, 255], [196, 224, 255], [166, 210, 252], [166, 240, 222], [196, 250, 214]];
+    // light light is invisible on a light page, so there the same hues turn deep and inky
+    const TINTS_LIGHT = [[58, 66, 80], [46, 74, 104], [40, 82, 110], [36, 92, 86], [44, 96, 78]];
+    const lift = (c, k) => c.map(v => Math.round(v + (255 - v) * k));
+    const sprites = () => {
+      dark = /dark/.test(getComputedStyle(root).colorScheme || '') ? 1 : 0;
+      spr = (dark ? TINTS_DARK : TINTS_LIGHT).map(c => dark ? {
+        dot: mk([[0, lift(c, .55), 1], [.11, lift(c, .3), 1], [.2, c, .55], [.42, c, .14], [.7, c, .03], [1, c, 0]]),
+        bokeh: mk([[0, c, .3], [.62, c, .3], [.86, lift(c, .4), .38], [1, c, 0]])
+      } : {
+        dot: mk([[0, c, .9], [.26, c, .8], [.36, c, .24], [.52, c, .03], [1, c, 0]]),
+        bokeh: mk([[0, c, .09], [.74, c, .12], [.88, c, .15], [1, c, 0]])
+      });
+    };
+    const seed = () => {
+      const n = Math.round(Math.min(1000, Math.max(260, W * H / 1500)));
+      let s = 911;
+      const r = () => (s = (s * 16807) % 2147483647) / 2147483647;
+      // most motes sit near the focus plane and stay sharp; the rest spread out into bokeh
+      P = Array.from({ length: n }, () => ({
+        x: r() * W, y: r() * H, z: r() < .6 ? FOCUS + (r() - .5) * .2 : r(),
+        a0: r() * 6.283, w: (r() - .5) * .16, ph: r() * 6.283, sp: .5 + r() * .9, sz: .6 + r() * .8, tw: .8 + r() * 1.8, ox: 0, oy: 0, tn: Math.min(4, Math.floor(r() * 5))
+      }));
+      SX = new Float32Array(n); SY = new Float32Array(n); LN = new Float32Array(n);
+      CR = new Float32Array(n); BL = new Float32Array(n); DB = new Float32Array(n);
+    };
+    const resize = () => {
+      const rc = hero.getBoundingClientRect();
+      dpr = Math.min(window.devicePixelRatio || 1, 2);
+      const w = Math.round(rc.width), h = Math.round(rc.height);
+      if (w === W && h === H) return;
+      W = w; H = h;
+      [back, front].forEach(c => { c.width = Math.max(1, Math.round(W * dpr)); c.height = Math.max(1, Math.round(H * dpr)); });
+      seed();
+    };
+    const ss = (a, b, x) => { const k = Math.min(1, Math.max(0, (x - a) / (b - a))); return k * k * (3 - 2 * k); };
+    const draw = now => {
+      raf = 0;
+      if (!W || !H) return;
+      const dt = Math.min(.05, (now - last) / 1000); last = now;
+      const t = reduce ? 0 : now / 1000;
+      const rc = hero.getBoundingClientRect();
+      ptr.k += ((ptr.on ? 1 : 0) - ptr.k) * .08;
+      par.x += (par.tx - par.x) * .04; par.y += (par.ty - par.y) * .04;
+      const px = ptr.cx - rc.left, py = ptr.cy - rc.top;
+      const K = Math.min(W, H);
+      const core0 = Math.max(.7, K * .0014);   // in-focus core, about 1.3px
+      const bmax = K * .0065, dof = K * .018;  // bokeh discs stay small, under ~6px
+      const Rp = Math.max(180, K * .32);            // reach of the cursor or finger
+      const sy = window.scrollY, n = P.length;
+
+      for (let i = 0; i < n; i++) {
+        const p = P[i];
+        if (!reduce) {
+          // each mote wanders: its heading turns slowly and sways, so the drift has no single direction
+          const a = p.a0 + t * p.w + Math.sin(t * .2 * p.sp + p.ph) * .9;
+          const v = (4 + 10 * p.z) * p.sp;
+          p.x += Math.cos(a) * v * dt; p.y += Math.sin(a) * v * dt;
+          if (p.x < -40) p.x += W + 80; else if (p.x > W + 40) p.x -= W + 80;
+          if (p.y < -40) p.y += H + 80; else if (p.y > H + 40) p.y -= H + 80;
+        }
+        const depth = p.z - FOCUS;
+        const X = p.x + (par.x - .5) * -50 * depth;
+        let Y = p.y + (par.y - .5) * -30 * depth - sy * depth * .3;
+        Y = ((Y + 40) % (H + 80) + (H + 80)) % (H + 80) - 40;
+        // the cursor or a finger nudges motes aside
+        let tx = 0, ty = 0, ln = 0;
+        if (ptr.k > .01) {
+          const dx = X - px, dy = Y - py, d = Math.hypot(dx, dy);
+          if (d < Rp) { const q = 1 - d / Rp; ln = q * q * ptr.k; const push = ln * (26 + 34 * p.z); tx = dx / (d + .001) * push; ty = dy / (d + .001) * push; }
+        }
+        p.ox += (tx - p.ox) * .12; p.oy += (ty - p.oy) * .12;
+        SX[i] = X + p.ox; SY[i] = Y + p.oy; LN[i] = ln;
+        CR[i] = core0 * (.55 + .9 * p.z) * p.sz;
+        BL[i] = Math.min(bmax, Math.abs(depth) * dof);
+        DB[i] = .3 + .7 * ss(0, .7, p.z);
+      }
+
+      for (const g of [cb, cf]) {
+        g.setTransform(dpr, 0, 0, dpr, 0, 0);
+        g.globalCompositeOperation = 'source-over'; g.globalAlpha = 1;
+        g.clearRect(0, 0, W, H);
+        g.globalCompositeOperation = dark ? 'lighter' : 'source-over';
+      }
+
+      // motes: sharp in the focus plane, small bokeh discs in front of and behind it
+      for (let i = 0; i < n; i++) {
+        const p = P[i], core = CR[i], bl = BL[i], R = core + bl;
+        const tw = .7 + .3 * Math.sin(t * p.tw + p.ph * 3);
+        const g = p.z > SPLIT ? cf : cb, s = spr[p.tn];
+        if (bl < core * .9) {
+          const r = core * 4;
+          g.globalAlpha = Math.min(1, (dark ? .55 : .32) * DB[i] * tw + LN[i] * .35);
+          g.drawImage(s.dot, SX[i] - r, SY[i] - r, 2 * r, 2 * r);
+        } else {
+          g.globalAlpha = Math.min(.3, (dark ? .45 : .28) * DB[i] * tw * Math.min(1, Math.pow(core / R, 1.1) * 1.8) + LN[i] * .15);
+          g.drawImage(s.bokeh, SX[i] - R, SY[i] - R, 2 * R, 2 * R);
+        }
+      }
+      if (!reduce && visible) raf = requestAnimationFrame(draw);
+    };
+    const kick = () => { if (!raf) raf = requestAnimationFrame(draw); };
+    sprites(); resize();
+    const mq = matchMedia('(prefers-color-scheme: dark)');
+    if (mq.addEventListener) mq.addEventListener('change', () => { sprites(); kick(); });
+    new MutationObserver(() => { sprites(); kick(); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    if (!reduce) {
+      const at = (x, y) => { ptr.cx = x; ptr.cy = y; ptr.on = true; par.tx = x / innerWidth; par.ty = y / innerHeight; kick(); };
+      window.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') at(e.clientX, e.clientY); }, { passive: true });
+      document.addEventListener('mouseleave', () => { ptr.on = false; });
+      window.addEventListener('touchstart', e => { const p = e.touches[0]; if (p) at(p.clientX, p.clientY); }, { passive: true });
+      window.addEventListener('touchmove', e => { const p = e.touches[0]; if (p) at(p.clientX, p.clientY); }, { passive: true });
+      window.addEventListener('touchend', () => { ptr.on = false; }, { passive: true });
+      window.addEventListener('touchcancel', () => { ptr.on = false; }, { passive: true });
+    }
+    if ('ResizeObserver' in window) new ResizeObserver(() => { resize(); kick(); }).observe(hero);
+    window.addEventListener('resize', () => { resize(); kick(); });
+    window.addEventListener('scroll', kick, { passive: true });
+    if ('IntersectionObserver' in window) new IntersectionObserver(es => es.forEach(e => { visible = e.isIntersecting; if (visible) { last = performance.now(); kick(); } })).observe(hero);
+    kick();
+  })();
+
+  /* ---------- portrait: a point cloud made of the photo's pixels ---------- */
+  const frame = $('#frame');
+  const canvas = $('canvas', frame);
+  const img = $('img', frame);
+  const hdr = $('.hdr');
+  let gl = null;
+  try { gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: true, antialias: false }); } catch (e) {}
+  if (!gl) { frame.classList.add('nogl'); return; }
+
+  const VS = `precision highp float;
+attribute vec2 aPos;    // -1..1, y up
+attribute vec4 aCol;    // the photo's colour and alpha at this point
+attribute vec4 aRnd;    // seed, scatter direction
+uniform float uTime, uReveal, uVel, uBand, uFit, uPx, uSpace, uCover;
+uniform vec3 uTrail[10];  // recent cursor positions (clip space) and their strength
+varying vec3 vCol;
+varying float vA;
+void main(){
+  float lum = dot(aCol.rgb, vec3(.299, .587, .114));
+  vec2 p = aPos;
+  // idle: every point drifts inside its own cell, so the picture itself never warps
+  p += vec2(sin(uTime * (.5 + aRnd.x * .7) + aRnd.y * 6.283), cos(uTime * (.7 + aRnd.z * .4) + aRnd.w * 6.283)) * uSpace * .4;
+
+  // load: points fly in from a cloud, top rows first
+  float delay = (.5 - aPos.y * .5) * .5 + aRnd.x * .3;
+  float t = clamp((uReveal * 1.4 - delay) / .6, 0., 1.);
+  t = 1. - pow(1. - t, 3.);
+  p = mix(p + aRnd.yz * 1.3, p, t);
+
+  vec2 sp = p * uFit;
+
+  // hover: along the cursor's path points break loose like dust, each in its own direction, and settle back.
+  // Nothing outside that path moves, and nothing is squeezed or stretched, so the face keeps its shape.
+  float f = 0.;
+  for (int i = 0; i < 10; i++) f = max(f, smoothstep(.36, 0., length(sp - uTrail[i].xy)) * uTrail[i].z);
+  float k = f * f * (3. - 2. * f);
+  vec2 away = sp - uTrail[0].xy;
+  vec2 dir = normalize(mix(normalize(aRnd.yz + 1e-4), normalize(away + 1e-4), .3));
+  sp += dir * (.035 + .12 * aRnd.x) * k;
+  sp += vec2(sin(uTime * 1.3 + aRnd.x * 20.), cos(uTime * 1.1 + aRnd.w * 20.)) * .008 * k;
+
+  // fast scroll: a light sparkle, a few cells at most
+  sp += uVel * aRnd.yz * uSpace * uFit * 3.;
+
+  float a = t * aCol.a * (1. - .4 * k);
+  // the shirt dissolves toward the bottom and the sides, points twinkle
+  a *= smoothstep(-1., -.6, aPos.y) * smoothstep(1., .86, abs(aPos.x));
+  a *= .9 + .1 * sin(uTime * 1.7 + aRnd.x * 40.);
+
+  gl_Position = vec4(sp, 0., 1.);
+  gl_PointSize = max(1., uPx * uCover * (.8 + .35 * lum) * (1. - .2 * k));
+  vCol = aCol.rgb;
+  vA = clamp(a, 0., 1.);
+}`;
+  const FS = `precision mediump float;
+varying vec3 vCol;
+varying float vA;
+void main(){
+  float r = length(gl_PointCoord - .5);
+  float al = vA * (1. - smoothstep(.38, .5, r));
+  if (al < .004) discard;
+  gl_FragColor = vec4(vCol * al, al);
+}`;
+
+  const sh = (type, src) => { const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) { console.warn(gl.getShaderInfoLog(s)); return null; } return s; };
+  const vs = sh(gl.VERTEX_SHADER, VS), fs = sh(gl.FRAGMENT_SHADER, FS);
+  if (!vs || !fs) return;
+  const prog = gl.createProgram();
+  gl.attachShader(prog, vs); gl.attachShader(prog, fs); gl.linkProgram(prog);
+  if (!gl.getProgramParameter(prog, gl.LINK_STATUS)) { console.warn(gl.getProgramInfoLog(prog)); frame.classList.add('nogl'); return; }
+  gl.useProgram(prog);
+  gl.enable(gl.BLEND);
+  gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+
+  const A = { pos: gl.getAttribLocation(prog, 'aPos'), col: gl.getAttribLocation(prog, 'aCol'), rnd: gl.getAttribLocation(prog, 'aRnd') };
+  const U = {};
+  ['uTime', 'uReveal', 'uVel', 'uBand', 'uFit', 'uPx', 'uSpace', 'uCover', 'uTrail'].forEach(n => U[n] = gl.getUniformLocation(prog, n));
+
+  let dark = 0;
+  const readTheme = () => { dark = /dark/.test(getComputedStyle(root).colorScheme || '') ? 1 : 0; };
+  readTheme();
+  const mq = matchMedia('(prefers-color-scheme: dark)');
+  if (mq.addEventListener) mq.addEventListener('change', () => { readTheme(); kick(); });
+  new MutationObserver(() => { readTheme(); kick(); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+
+  const CROP = { x: .08, y: .01, s: .84 };   // tighter framing: the head fills more of the frame
+  const buf = gl.createBuffer();
+  let count = 0, builtN = 0;
+  let job = null;
+  const startBuild = N => {
+    const c = document.createElement('canvas');
+    c.width = N; c.height = N;
+    const x = c.getContext('2d', { willReadFrequently: true });
+    x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high';
+    const W = img.naturalWidth, H = img.naturalHeight;
+    x.drawImage(img, W * CROP.x, H * CROP.y, W * CROP.s, H * CROP.s, 0, 0, N, N);
+    job = { N, px: x.getImageData(0, 0, N, N).data, out: new Float32Array(N * N * 10), n: 0, j: 0, s: 20261023 };
+  };
+  const stepBuild = ms => {             // true once the cloud is complete
+    const t = performance.now(), { N, px, out } = job;
+    let { n, j, s } = job;
+    const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
+    for (; j < N && performance.now() - t < ms; j++) for (let i = 0; i < N; i++) {
+      const k = (j * N + i) * 4;
+      const r = px[k] / 255, g = px[k + 1] / 255, b = px[k + 2] / 255, al = px[k + 3] / 255;
+      const q0 = rnd(), q1 = rnd(), q2 = rnd(), q3 = rnd(), q4 = rnd(), q5 = rnd();
+      if (al < .04) continue;   // transparent background: no point
+      out[n++] = ((i + .5 + (q4 - .5) * .25) / N) * 2 - 1;
+      out[n++] = 1 - ((j + .5 + (q5 - .5) * .25) / N) * 2;
+      out[n++] = r; out[n++] = g; out[n++] = b; out[n++] = al;
+      out[n++] = q0; out[n++] = q1 * 2 - 1; out[n++] = q2 * 2 - 1; out[n++] = q3 * 2 - 1;
+    }
+    Object.assign(job, { n, j, s });
+    if (j < N) return false;
+    const data = out.subarray(0, n);
+    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+    gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
+    const st = 40;
+    gl.enableVertexAttribArray(A.pos); gl.vertexAttribPointer(A.pos, 2, gl.FLOAT, false, st, 0);
+    gl.enableVertexAttribArray(A.col); gl.vertexAttribPointer(A.col, 4, gl.FLOAT, false, st, 8);
+    gl.enableVertexAttribArray(A.rnd); gl.vertexAttribPointer(A.rnd, 4, gl.FLOAT, false, st, 24);
+    count = n / 10;
+    builtN = N;
+    job = null;
+    return true;
+  };
+
+  let ready = false, visible = true, raf = 0;
+  let reveal = reduce ? 1 : 0, revealT0 = null;
+  // a short trail of cursor (or finger) positions; each one fades, so the dust settles behind the cursor
+  const TRAIL = 10, trail = new Float32Array(TRAIL * 3);
+  for (let i = 0; i < TRAIL; i++) trail[i * 3] = trail[i * 3 + 1] = 9;
+  let over = false, head = null;
+  let vel = 0, lastY = window.scrollY;
+  const t0 = performance.now();
+
+  window.addEventListener('yb:in', () => { revealT0 = performance.now() + 100; kick(); });
+  if (root.classList.contains('is-in')) revealT0 = performance.now();
+
+  const touchAt = (cx, cy) => {
+    const r = canvas.getBoundingClientRect();
+    const x = ((cx - r.left) / r.width) * 2 - 1, y = 1 - ((cy - r.top) / r.height) * 2;
+    over = true;
+    // trail[0] is always the live position; older samples shift down once the cursor has moved far enough
+    if (!head || Math.hypot(x - head[0], y - head[1]) > .07) {
+      trail.copyWithin(3, 0, (TRAIL - 1) * 3);
+      head = [x, y];
+    }
+    trail[0] = x; trail[1] = y; trail[2] = 1;
+    kick();
+  };
+  const leave = () => { over = false; head = null; };
+  if (!reduce) {
+    frame.addEventListener('pointermove', e => touchAt(e.clientX, e.clientY));
+    frame.addEventListener('pointerleave', leave);
+    frame.addEventListener('touchstart', e => { const p = e.touches[0]; if (p) touchAt(p.clientX, p.clientY); }, { passive: true });
+    frame.addEventListener('touchmove', e => { const p = e.touches[0]; if (p) touchAt(p.clientX, p.clientY); }, { passive: true });
+    frame.addEventListener('touchend', leave, { passive: true });
+    frame.addEventListener('touchcancel', leave, { passive: true });
+  }
+
+  const draw = now => {
+    raf = 0;
+    if (!ready) return;
+    const r = canvas.getBoundingClientRect();
+    const fr = frame.getBoundingClientRect();
+    const dpr = Math.min(window.devicePixelRatio || 1, 2);
+    const w = Math.max(1, Math.round(r.width * dpr)), h = Math.max(1, Math.round(r.height * dpr));
+    if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; gl.viewport(0, 0, w, h); }
+    // one point per ~1.75 device pixels: very small dots, high detail
+    const N = Math.max(220, Math.min(720, Math.round(fr.width * dpr / 1.75)));
+    if (!job && (!builtN || Math.abs(N - builtN) / builtN > .12)) {
+      try { startBuild(N); }
+      catch (e) { console.warn(e); ready = false; frame.classList.remove('gl'); frame.classList.add('nogl'); return; }
+    }
+    if (job) {
+      const first = !builtN;
+      if (stepBuild(8)) {
+        // the reveal starts when the cloud is complete, not part-way through
+        if (first && revealT0 !== null) revealT0 = Math.max(revealT0, performance.now() + 60);
+      } else if (first) { raf = requestAnimationFrame(draw); return; }   // nothing to draw yet
+    }
+
+    const time = reduce ? 0 : (now - t0) / 1000;
+    const y = window.scrollY, dy = y - lastY; lastY = y;
+    if (!reduce) vel += (Math.max(-1, Math.min(1, dy / 70)) - vel) * .12;
+    for (let i = over ? 1 : 0; i < TRAIL; i++) trail[i * 3 + 2] *= .955;
+
+    if (!reduce && revealT0 !== null) reveal = Math.max(0, Math.min(1, (now - revealT0) / 2600));
+    else if (!reduce) reveal = 0;
+
+    const fit = fr.width / r.width;
+    const hb = hdr.getBoundingClientRect().bottom;
+    const band = reduce ? 10 : 1 - 2 * (hb + 36 - r.top) / r.height;
+
+    gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT);
+    gl.uniform1f(U.uTime, time);
+    gl.uniform1f(U.uReveal, reveal);
+    gl.uniform1f(U.uVel, vel);
+    gl.uniform1f(U.uBand, band);
+    gl.uniform1f(U.uFit, fit);
+    gl.uniform1f(U.uPx, (w * fit / builtN) * 1.0);
+    gl.uniform1f(U.uSpace, 2 / builtN);
+    gl.uniform1f(U.uCover, dark ? 1 : 1.6);   // light page: fuller dots so the face does not wash out
+    gl.uniform3fv(U.uTrail, trail);
+    gl.drawArrays(gl.POINTS, 0, count);
+
+    if (!reduce && visible) raf = requestAnimationFrame(draw);
+  };
+  const kick = () => { if (!raf && ready) raf = requestAnimationFrame(draw); };
+
+  if ('IntersectionObserver' in window) {
+    new IntersectionObserver(es => es.forEach(e => { visible = e.isIntersecting; if (visible) kick(); }), { rootMargin: '160px 0px' }).observe(frame);
+  }
+  window.addEventListener('scroll', kick, { passive: true });
+  window.addEventListener('resize', kick);
+  if ('ResizeObserver' in window) new ResizeObserver(kick).observe(frame);
+
+  const go = () => {
+    // if the photo arrived after the intro started, start the particle reveal now instead of mid-way
+    if (revealT0 !== null) revealT0 = Math.max(revealT0, performance.now() + 60);
+    try { ready = true; frame.classList.remove('nogl'); frame.classList.add('gl'); kick(); }
+    catch (e) { console.warn(e); frame.classList.remove('gl'); frame.classList.add('nogl'); }
+  };
+  const startPortrait = () => {
+    if (img.complete && img.naturalWidth) go();
+    else if (img.decode) img.decode().then(go).catch(() => img.addEventListener('load', go, { once: true }));
+    else img.addEventListener('load', go, { once: true });
+  };
+  // Opened straight from disk (file://), a browser won't let the canvas read a local photo's pixels.
+  // The hosting build carries the photo once more as a small script that is only fetched in that case.
+  if (location.protocol === 'file:') {
+    const s = document.createElement('script');
+    s.src = 'img/portrait-local.js';
+    s.onload = () => { if (window.__portrait) { $$('source', frame).forEach(x => x.remove()); img.src = window.__portrait; } startPortrait(); };
+    s.onerror = startPortrait;
+    document.head.appendChild(s);
+  } else startPortrait();
+})();
+</script>
+
+</body>
+</html>
