@@ -1,11 +1,11 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Yakov Bronnikov · Product designer</title>
 <meta name="description" content="Yakov Bronnikov, a product designer in Belgrade with a background in frontend and an AI-native approach. Case studies in business banking, DeFi lending and payment pages.">
-<meta name="color-scheme" content="dark">
+<meta name="color-scheme" content="dark light">
 <meta name="theme-color" content="#0A0A0B">
 <link rel="canonical" href="https://yakovbronnikov.com/">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
@@ -32,7 +32,7 @@
    faint white, ice-blue and mint motes wanders at several depths, sharp at the focus plane and opening into
    bokeh discs away from it; it parts around the cursor or a finger. */
 :root{
-  --bg:#F3F3F3;
+  --bg:#FFFFFF;
   --fg:#0C0C0D;
   --fg-2:#6E6E73;
   --fg-3:#A8A8AC;
@@ -80,6 +80,19 @@ a{color:inherit;text-decoration:none}
 .nav a::after{content:"";position:absolute;left:0;right:0;bottom:4px;height:1px;background:currentColor;transform:scaleX(0);transform-origin:100% 50%;transition:transform .6s var(--ease)}
 .nav a:hover::after,.nav a:focus-visible::after{transform:scaleX(1);transform-origin:0 50%}
 @media (max-width:520px){.nav{gap:16px}.nav a{font-size:11px;letter-spacing:.03em}.brand{font-size:14px}}
+/* theme switch: a disc, half filled; it turns over when the theme changes */
+.theme-tg{pointer-events:auto;flex:none;display:grid;place-items:center;width:32px;height:32px;margin-right:-8px;padding:0;border:0;background:none;color:inherit;cursor:pointer}
+.theme-tg svg{display:block;width:16px;height:16px;transition:transform .7s var(--ease)}
+.theme-tg:hover svg{transform:rotate(-30deg)}
+:root[data-theme="light"] .theme-tg svg{transform:rotate(180deg)}
+:root[data-theme="light"] .theme-tg:hover svg{transform:rotate(150deg)}
+:root[data-theme="light"]{color-scheme:light}
+@media (max-width:520px){.hdr-in{gap:16px}}
+/* the new theme opens as a circle from the switch */
+::view-transition-old(root),::view-transition-new(root){animation:none;mix-blend-mode:normal}
+::view-transition-new(root){animation:theme-in .9s cubic-bezier(.65,0,.35,1) both}
+@keyframes theme-in{from{clip-path:circle(8px at var(--tx,100%) var(--ty,0))}to{clip-path:circle(var(--tr,150vmax) at var(--tx,100%) var(--ty,0))}}
+html.theming *,html.theming *::before,html.theming *::after{transition:none!important}
 
 /* ---------- hero ---------- */
 .hero{position:relative;isolation:isolate;overflow-x:clip;padding-top:calc(var(--hh) + 32px);padding-bottom:clamp(56px,9vh,112px)}
@@ -164,6 +177,10 @@ html.js .frame:not(.gl):not(.nogl) img{opacity:0}
 .proj-media{grid-column:7/13;grid-row:1;position:relative;margin:0;aspect-ratio:3/2;max-width:100%;overflow:hidden}
 .proj-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
 .proj:hover .proj-media img{transform:scale(1.025)}
+/* each cover has a light twin; only the one for the current theme is shown (and downloaded) */
+.proj-media img.cv-l{display:none}
+:root[data-theme="light"] .proj-media img.cv-l{display:block}
+:root[data-theme="light"] .proj-media img.cv-d{display:none}
 .proj-meta{margin:0;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--fg-2)}
 .proj-title{margin:0;font-size:clamp(30px,2.8vw,44px);font-weight:400;line-height:1.02;letter-spacing:-.035em;text-wrap:balance}
 .proj-lede{margin:0;max-width:44ch;font-size:16px;line-height:1.55;color:var(--fg)}
@@ -469,7 +486,7 @@ html.case-open{overflow:hidden}
 }
 @media (prefers-reduced-motion:reduce){.case,.case.open{transition:none}}
 </style>
-<script>(function(d){d.classList.add('js');if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('rv-on');if(location.protocol==='file:'){var s=document.createElement('script');s.src='fonts/local.js';document.head.appendChild(s)}})(document.documentElement)</script>
+<script>(function(d){var t;try{t=localStorage.getItem('theme')}catch(e){}d.setAttribute('data-theme',t==='light'||t==='dark'?t:matchMedia('(prefers-color-scheme: dark)').matches?'dark':'light');d.classList.add('js');if('IntersectionObserver' in window&&!matchMedia('(prefers-reduced-motion: reduce)').matches)d.classList.add('rv-on');if(location.protocol==='file:'){var s=document.createElement('script');s.src='fonts/local.js';document.head.appendChild(s)}})(document.documentElement)</script>
 
 
 </head>
@@ -503,6 +520,7 @@ html.case-open{overflow:hidden}
       <a href="#about" aria-label="About" data-scramble>About</a>
       <a href="#contacts" aria-label="Contacts" data-scramble>Contacts</a>
     </nav>
+    <button class="theme-tg" type="button" aria-label="Light theme" aria-pressed="false"><svg viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="6.4" fill="none" stroke="currentColor" stroke-width="1.1"/><path d="M8 1.6a6.4 6.4 0 0 0 0 12.8z" fill="currentColor"/></svg></button>
   </div>
 </header>
 
@@ -552,7 +570,7 @@ html.case-open{overflow:hidden}
               <div class="proj-cta" data-rv style="--d:.22s"><button type="button" class="btn btn-fwd" aria-label="Unlimit Accounts case study"><span class="btn-l" data-scramble aria-hidden="true">Case study</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button></div>
             </div>
           </div>
-          <figure class="proj-media" data-rv style="--d:.1s"><img srcset="img/accounts-800.webp 800w, img/accounts-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/accounts-1440.webp" alt="Unlimit Accounts: the web dashboard with balances, cards and transactions, a card payment in progress, and the card screen on mobile" width="1440" height="960" loading="lazy" decoding="async"></figure>
+          <figure class="proj-media" data-rv style="--d:.1s"><img class="cv-d" srcset="img/accounts-800.webp 800w, img/accounts-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/accounts-1440.webp" alt="Unlimit Accounts: the web dashboard with balances, cards and transactions, a card payment in progress, and the card screen on mobile" width="1440" height="960" loading="lazy" decoding="async"><img class="cv-l" srcset="img/accounts-light-800.webp 800w, img/accounts-light-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/accounts-light-1440.webp" alt="Unlimit Accounts: the web dashboard with balances, cards and transactions, a card payment in progress, and the card screen on mobile" width="1440" height="960" loading="lazy" decoding="async"></figure>
         </li>
 
         <li class="proj" id="stable-lending" data-case="stable-lending">
@@ -577,7 +595,7 @@ html.case-open{overflow:hidden}
               <div class="proj-cta" data-rv style="--d:.22s"><button type="button" class="btn btn-fwd" aria-label="Payment Pages case study"><span class="btn-l" data-scramble aria-hidden="true">Case study</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button></div>
             </div>
           </div>
-          <figure class="proj-media" data-rv style="--d:.1s"><img srcset="img/payments-800.webp 800w, img/payments-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/payments-1440.webp" alt="Payment Pages: checkout screens for cards, MB WAY, Nequi, PayAttitude and PIX, with order details and a success page" width="1440" height="960" loading="lazy" decoding="async"></figure>
+          <figure class="proj-media" data-rv style="--d:.1s"><img class="cv-d" srcset="img/payments-800.webp 800w, img/payments-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/payments-1440.webp" alt="Payment Pages: checkout screens for cards, MB WAY, Nequi, PayAttitude and PIX, with order details and a success page" width="1440" height="960" loading="lazy" decoding="async"><img class="cv-l" srcset="img/payments-light-800.webp 800w, img/payments-light-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/payments-light-1440.webp" alt="Payment Pages: checkout screens for cards, MB WAY, Nequi, PayAttitude and PIX, with order details and a success page" width="1440" height="960" loading="lazy" decoding="async"></figure>
         </li>
       </ol>
     </div>
@@ -1218,6 +1236,54 @@ html.case-open{overflow:hidden}
     } else { const r = fog.getBoundingClientRect(); build(r.width, r.height); }
   })();
 
+  /* ---------- theme switch: dark by default, light on request; the choice is remembered ---------- */
+  (() => {
+    const btn = $('.theme-tg');
+    if (!btn) return;
+    const meta = $('meta[name="theme-color"]');
+    const sync = () => {
+      const light = root.getAttribute('data-theme') === 'light';
+      btn.setAttribute('aria-pressed', light ? 'true' : 'false');
+      if (meta) meta.setAttribute('content', light ? '#FFFFFF' : '#0A0A0B');
+    };
+    // a theme picked with the switch is remembered; until then the page follows the system theme, live
+    const apply = (theme, remember = true) => {
+      root.setAttribute('data-theme', theme);
+      if (remember) { try { localStorage.setItem('theme', theme); } catch (e) {} }
+      sync();
+    };
+    const sys = matchMedia('(prefers-color-scheme: dark)');
+    const picked = () => { try { return /^(light|dark)$/.test(localStorage.getItem('theme') || ''); } catch (e) { return false; } };
+    const follow = () => { if (!picked()) apply(sys.matches ? 'dark' : 'light', false); };
+    if (sys.addEventListener) sys.addEventListener('change', follow); else if (sys.addListener) sys.addListener(follow);
+    const warm = () => {
+      window.dispatchEvent(new Event('yb:warm'));
+      $$('.proj-media img').forEach(el => {
+        if (el.dataset.warm || getComputedStyle(el).display !== 'none') return;
+        el.dataset.warm = '1';
+        const im = new Image();
+        if (el.getAttribute('sizes')) im.sizes = el.getAttribute('sizes');
+        if (el.getAttribute('srcset')) im.srcset = el.getAttribute('srcset');
+        im.src = el.getAttribute('src');
+      });
+    };
+    ['pointerenter', 'focus', 'touchstart'].forEach(ev => btn.addEventListener(ev, warm, { passive: true }));
+    btn.addEventListener('click', () => {
+      warm();
+      const next = root.getAttribute('data-theme') === 'light' ? 'dark' : 'light';
+      if (!document.startViewTransition || reduce) { apply(next); return; }
+      const r = btn.getBoundingClientRect(), x = r.left + r.width / 2, y = r.top + r.height / 2;
+      root.style.setProperty('--tx', x + 'px');
+      root.style.setProperty('--ty', y + 'px');
+      root.style.setProperty('--tr', Math.hypot(Math.max(x, innerWidth - x), Math.max(y, innerHeight - y)) + 'px');
+      root.classList.add('theming');                       // no colour transitions: the new look is final at once
+      const vt = document.startViewTransition(() => apply(next));
+      vt.ready.then(() => root.classList.add('vt-run'), () => {});   // canvases hold their frame while the circle opens
+      vt.finished.finally(() => root.classList.remove('theming', 'vt-run'));
+    });
+    sync();
+  })();
+
   /* ---------- reveal sections below the first screen ---------- */
   const rv = $$('[data-rv]');
   if ('IntersectionObserver' in window && !reduce) {
@@ -1568,7 +1634,7 @@ html.case-open{overflow:hidden}
     // palette: white through ice blue to mint; each mote takes one tint
     const TINTS_DARK = [[236, 244, 255], [196, 224, 255], [166, 210, 252], [166, 240, 222], [196, 250, 214]];
     // light light is invisible on a light page, so there the same hues turn deep and inky
-    const TINTS_LIGHT = [[58, 66, 80], [46, 74, 104], [40, 82, 110], [36, 92, 86], [44, 96, 78]];
+    const TINTS_LIGHT = [[52, 60, 76], [38, 72, 118], [30, 86, 130], [24, 100, 92], [38, 104, 74]];
     const lift = (c, k) => c.map(v => Math.round(v + (255 - v) * k));
     const sprites = () => {
       dark = /dark/.test(getComputedStyle(root).colorScheme || '') ? 1 : 0;
@@ -1576,8 +1642,8 @@ html.case-open{overflow:hidden}
         dot: mk([[0, lift(c, .55), 1], [.11, lift(c, .3), 1], [.2, c, .55], [.42, c, .14], [.7, c, .03], [1, c, 0]]),
         bokeh: mk([[0, c, .3], [.62, c, .3], [.86, lift(c, .4), .38], [1, c, 0]])
       } : {
-        dot: mk([[0, c, .9], [.26, c, .8], [.36, c, .24], [.52, c, .03], [1, c, 0]]),
-        bokeh: mk([[0, c, .09], [.74, c, .12], [.88, c, .15], [1, c, 0]])
+        dot: mk([[0, c, 1], [.3, c, .95], [.42, c, .4], [.56, c, .06], [1, c, 0]]),
+        bokeh: mk([[0, c, .2], [.72, c, .26], [.88, c, .34], [1, c, 0]])
       });
     };
     const seed = () => {
@@ -1605,6 +1671,7 @@ html.case-open{overflow:hidden}
     const draw = now => {
       raf = 0;
       if (!W || !H) return;
+      if (root.classList.contains('vt-run')) { raf = requestAnimationFrame(draw); return; }   // theme reveal running
       const dt = Math.min(.05, (now - last) / 1000); last = now;
       const t = reduce ? 0 : now / 1000;
       const rc = hero.getBoundingClientRect();
@@ -1657,11 +1724,11 @@ html.case-open{overflow:hidden}
         const tw = .7 + .3 * Math.sin(t * p.tw + p.ph * 3);
         const g = p.z > SPLIT ? cf : cb, s = spr[p.tn];
         if (bl < core * .9) {
-          const r = core * 4;
-          g.globalAlpha = Math.min(1, (dark ? .55 : .32) * DB[i] * tw + LN[i] * .35);
+          const r = core * (dark ? 4 : 4.4);
+          g.globalAlpha = Math.min(1, (dark ? .55 : .24) * DB[i] * tw + LN[i] * .35);
           g.drawImage(s.dot, SX[i] - r, SY[i] - r, 2 * r, 2 * r);
         } else {
-          g.globalAlpha = Math.min(.3, (dark ? .45 : .28) * DB[i] * tw * Math.min(1, Math.pow(core / R, 1.1) * 1.8) + LN[i] * .15);
+          g.globalAlpha = Math.min(dark ? .3 : .14, (dark ? .45 : .18) * DB[i] * tw * Math.min(1, Math.pow(core / R, 1.1) * 1.8) + LN[i] * .15);
           g.drawImage(s.bokeh, SX[i] - R, SY[i] - R, 2 * R, 2 * R);
         }
       }
@@ -1671,7 +1738,7 @@ html.case-open{overflow:hidden}
     sprites(); resize();
     const mq = matchMedia('(prefers-color-scheme: dark)');
     if (mq.addEventListener) mq.addEventListener('change', () => { sprites(); kick(); });
-    new MutationObserver(() => { sprites(); kick(); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+    new MutationObserver(() => { sprites(); if (raf) cancelAnimationFrame(raf); raf = 0; draw(performance.now()); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
     if (!reduce) {
       const at = (x, y) => { ptr.cx = x; ptr.cy = y; ptr.on = true; par.tx = x / innerWidth; par.ty = y / innerHeight; kick(); };
       window.addEventListener('pointermove', e => { if (e.pointerType === 'mouse') at(e.clientX, e.clientY); }, { passive: true });
@@ -1693,15 +1760,33 @@ html.case-open{overflow:hidden}
   const canvas = $('canvas', frame);
   const img = $('img', frame);
   const hdr = $('.hdr');
+  // the photos: the dark one is the file the <img> picked (size and format); the light one is its twin
+  let base = null;
+  const SRC = { src: img.getAttribute('src'), sets: $$('source', frame).map(s => s.getAttribute('srcset')) };
+  const toLight = u => u.replace(/portrait-(?=\d)/g, 'portrait-light-');
+  const lightOf = u => frame.dataset.light || (/^data:/.test(u) ? null : toLight(u));
+  // the plain photo (seen when there is no WebGL) follows the theme as well
+  const showImg = () => {
+    if (!base || !lightOf(SRC.src || '')) return;
+    const light = !/dark/.test(getComputedStyle(root).colorScheme || '');
+    $$('source', frame).forEach((s, i) => s.setAttribute('srcset', light ? toLight(SRC.sets[i]) : SRC.sets[i]));
+    img.setAttribute('src', light ? lightOf(SRC.src) : SRC.src);
+  };
+  const takeBase = () => { if (!base) base = img.currentSrc || img.src; showImg(); };
+  new MutationObserver(showImg).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
   let gl = null;
   try { gl = canvas.getContext('webgl', { alpha: true, premultipliedAlpha: true, antialias: false }); } catch (e) {}
-  if (!gl) { frame.classList.add('nogl'); return; }
+  if (!gl) {
+    frame.classList.add('nogl');
+    if (img.complete && img.naturalWidth) takeBase(); else img.addEventListener('load', takeBase, { once: true });
+    return;
+  }
 
   const VS = `precision highp float;
 attribute vec2 aPos;    // -1..1, y up
 attribute vec4 aCol;    // the photo's colour and alpha at this point
 attribute vec4 aRnd;    // seed, scatter direction
-uniform float uTime, uReveal, uVel, uBand, uFit, uPx, uSpace, uCover;
+uniform float uTime, uReveal, uVel, uBand, uFit, uPx, uSpace, uCover, uInk;
 uniform vec3 uTrail[10];  // recent cursor positions (clip space) and their strength
 varying vec3 vCol;
 varying float vA;
@@ -1738,7 +1823,7 @@ void main(){
   a *= .9 + .1 * sin(uTime * 1.7 + aRnd.x * 40.);
 
   gl_Position = vec4(sp, 0., 1.);
-  gl_PointSize = max(1., uPx * uCover * (.8 + .35 * lum) * (1. - .2 * k));
+  gl_PointSize = max(1., uPx * uCover * (.8 + .35 * mix(lum, 1. - lum, uInk)) * (1. - .2 * k));
   vCol = aCol.rgb;
   vA = clamp(a, 0., 1.);
 }`;
@@ -1764,31 +1849,42 @@ void main(){
 
   const A = { pos: gl.getAttribLocation(prog, 'aPos'), col: gl.getAttribLocation(prog, 'aCol'), rnd: gl.getAttribLocation(prog, 'aRnd') };
   const U = {};
-  ['uTime', 'uReveal', 'uVel', 'uBand', 'uFit', 'uPx', 'uSpace', 'uCover', 'uTrail'].forEach(n => U[n] = gl.getUniformLocation(prog, n));
+  ['uTime', 'uReveal', 'uVel', 'uBand', 'uFit', 'uPx', 'uSpace', 'uCover', 'uInk', 'uTrail'].forEach(n => U[n] = gl.getUniformLocation(prog, n));
 
   let dark = 0;
   const readTheme = () => { dark = /dark/.test(getComputedStyle(root).colorScheme || '') ? 1 : 0; };
   readTheme();
   const mq = matchMedia('(prefers-color-scheme: dark)');
-  if (mq.addEventListener) mq.addEventListener('change', () => { readTheme(); kick(); });
-  new MutationObserver(() => { readTheme(); kick(); }).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
+  if (mq.addEventListener) mq.addEventListener('change', () => onTheme());
+  new MutationObserver(() => onTheme()).observe(root, { attributes: true, attributeFilter: ['data-theme'] });
 
   const CROP = { x: .08, y: .01, s: .84 };   // tighter framing: the head fills more of the frame
-  const buf = gl.createBuffer();
-  let count = 0, builtN = 0;
-  let job = null, pix = null;          // pix: a plain copy of the photo file, read pixel by pixel
-  const startBuild = N => {
+  // each theme has its own photo and its own point cloud; both stay in memory, so a switch only swaps buffers
+  const clouds = {};                 // theme -> { buf, count, N }
+  let count = 0, builtN = 0, shown = null;
+  let job = null, pre = null;        // job: the cloud for the theme on screen; pre: the other theme's, built in the background
+  const pixOk = {}, PIX = {};        // theme -> a plain copy of its photo (read pixel by pixel) / the promise of it
+  const theme = () => dark ? 'dark' : 'light';
+  const makeJob = (N, th) => {
     const c = document.createElement('canvas');
     c.width = N; c.height = N;
     const x = c.getContext('2d', { willReadFrequently: true });
     x.imageSmoothingEnabled = true; x.imageSmoothingQuality = 'high';
-    const W = pix.naturalWidth, H = pix.naturalHeight;
+    const pix = pixOk[th], W = pix.naturalWidth, H = pix.naturalHeight;
     x.drawImage(pix, W * CROP.x, H * CROP.y, W * CROP.s, H * CROP.s, 0, 0, N, N);
-    job = { N, px: x.getImageData(0, 0, N, N).data, out: new Float32Array(N * N * 10), n: 0, j: 0, s: 20261023 };
+    return { N, th, px: x.getImageData(0, 0, N, N).data, out: new Float32Array(N * N * 10), n: 0, j: 0, s: 20261023 };
   };
-  const stepBuild = ms => {             // true once the cloud is complete
-    const t = performance.now(), { N, px, out } = job;
-    let { n, j, s } = job;
+  const bind = th => {
+    const c = clouds[th], st = 40;
+    gl.bindBuffer(gl.ARRAY_BUFFER, c.buf);
+    gl.enableVertexAttribArray(A.pos); gl.vertexAttribPointer(A.pos, 2, gl.FLOAT, false, st, 0);
+    gl.enableVertexAttribArray(A.col); gl.vertexAttribPointer(A.col, 4, gl.FLOAT, false, st, 8);
+    gl.enableVertexAttribArray(A.rnd); gl.vertexAttribPointer(A.rnd, 4, gl.FLOAT, false, st, 24);
+    count = c.count; builtN = c.N; shown = th;
+  };
+  const stepJob = (jb, ms) => {        // true once that cloud is complete
+    const t = performance.now(), { N, px, out } = jb;
+    let { n, j, s } = jb;
     const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
     for (; j < N && performance.now() - t < ms; j++) for (let i = 0; i < N; i++) {
       const k = (j * N + i) * 4;
@@ -1800,20 +1896,34 @@ void main(){
       out[n++] = r; out[n++] = g; out[n++] = b; out[n++] = al;
       out[n++] = q0; out[n++] = q1 * 2 - 1; out[n++] = q2 * 2 - 1; out[n++] = q3 * 2 - 1;
     }
-    Object.assign(job, { n, j, s });
+    Object.assign(jb, { n, j, s });
     if (j < N) return false;
-    const data = out.subarray(0, n);
-    gl.bindBuffer(gl.ARRAY_BUFFER, buf);
-    gl.bufferData(gl.ARRAY_BUFFER, data, gl.STATIC_DRAW);
-    const st = 40;
-    gl.enableVertexAttribArray(A.pos); gl.vertexAttribPointer(A.pos, 2, gl.FLOAT, false, st, 0);
-    gl.enableVertexAttribArray(A.col); gl.vertexAttribPointer(A.col, 4, gl.FLOAT, false, st, 8);
-    gl.enableVertexAttribArray(A.rnd); gl.vertexAttribPointer(A.rnd, 4, gl.FLOAT, false, st, 24);
-    count = n / 10;
-    builtN = N;
-    job = null;
+    const c = clouds[jb.th] || (clouds[jb.th] = { buf: gl.createBuffer() });
+    gl.bindBuffer(gl.ARRAY_BUFFER, c.buf);
+    gl.bufferData(gl.ARRAY_BUFFER, out.subarray(0, n), gl.STATIC_DRAW);
+    c.count = n / 10; c.N = N;
+    if (jb.th === theme()) bind(jb.th);
+    else if (shown) gl.bindBuffer(gl.ARRAY_BUFFER, clouds[shown].buf);
     return true;
   };
+
+  const loadPix = th => PIX[th] || (PIX[th] = new Promise(res => {
+    const pix = new Image();
+    const done = () => { pixOk[th] = pix; res(pix); };
+    pix.onload = () => pix.decode ? pix.decode().then(done, done) : done();
+    pix.src = th === 'dark' ? base : (lightOf(base) || base);
+  }));
+  // the other theme's cloud: after the intro it is built 3 ms per frame, so the switch finds it ready
+  const prebuild = () => {
+    const th = dark ? 'light' : 'dark';
+    if (clouds[th] || pre || !builtN) return;
+    loadPix(th).then(() => {
+      if (clouds[th] || pre || theme() === th || !builtN) return;
+      try { pre = makeJob(builtN, th); } catch (e) { console.warn(e); }
+      kick();
+    });
+  };
+  window.addEventListener('yb:warm', prebuild);
 
   let ready = false, visible = true, raf = 0;
   let reveal = reduce ? 1 : 0, revealT0 = null;
@@ -1849,9 +1959,11 @@ void main(){
     frame.addEventListener('touchcancel', leave, { passive: true });
   }
 
-  const draw = now => {
+  let warmed = false;
+  const draw = (now, sync) => {
     raf = 0;
     if (!ready) return;
+    if (root.classList.contains('vt-run')) { raf = requestAnimationFrame(draw); return; }     // theme reveal running
     const r = canvas.getBoundingClientRect();
     const fr = frame.getBoundingClientRect();
     const dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -1859,17 +1971,25 @@ void main(){
     if (canvas.width !== w || canvas.height !== h) { canvas.width = w; canvas.height = h; gl.viewport(0, 0, w, h); }
     // one point per ~1.75 device pixels: very small dots, high detail
     const N = Math.max(220, Math.min(720, Math.round(fr.width * dpr / 1.75)));
-    if (!job && (!builtN || Math.abs(N - builtN) / builtN > .12)) {
-      try { startBuild(N); }
-      catch (e) { console.warn(e); ready = false; frame.classList.remove('gl'); frame.classList.add('nogl'); return; }
+    const th = theme(), have = clouds[th];
+    if (job && job.th !== th) job = null;                     // the theme changed while its cloud was being built
+    if (have && shown !== th) bind(th);
+    if (!job && (!have || Math.abs(N - have.N) / have.N > .12)) {
+      if (pre && pre.th === th) { job = pre; pre = null; }    // this theme's background build was under way: finish it
+      else if (pixOk[th]) {
+        try { job = makeJob(N, th); }
+        catch (e) { console.warn(e); ready = false; frame.classList.remove('gl'); frame.classList.add('nogl'); return; }
+      } else loadPix(th).then(kick);                           // its photo is still on the way; the current cloud stays
     }
     if (job) {
       const first = !builtN;
-      if (stepBuild(8)) {
+      if (stepJob(job, sync ? 1e9 : 8)) {
+        job = null;
         // the reveal starts when the cloud is complete, not part-way through
         if (first && revealT0 !== null) revealT0 = Math.max(revealT0, performance.now() + 60);
       } else if (first) { raf = requestAnimationFrame(draw); return; }   // nothing to draw yet
-    }
+    } else if (pre && stepJob(pre, 3)) pre = null;
+    if (!count) return;
 
     const time = reduce ? 0 : (now - t0) / 1000;
     const y = window.scrollY, dy = y - lastY; lastY = y;
@@ -1878,6 +1998,7 @@ void main(){
 
     if (!reduce && revealT0 !== null) reveal = Math.max(0, Math.min(1, (now - revealT0) / 2600));
     else if (!reduce) reveal = 0;
+    if (reveal >= 1 && !warmed) { warmed = true; prebuild(); }   // after the intro: get the other theme ready
 
     const fit = fr.width / r.width;
     const hb = hdr.getBoundingClientRect().bottom;
@@ -1891,7 +2012,8 @@ void main(){
     gl.uniform1f(U.uFit, fit);
     gl.uniform1f(U.uPx, (w * fit / builtN) * 1.0);
     gl.uniform1f(U.uSpace, 2 / builtN);
-    gl.uniform1f(U.uCover, dark ? 1 : 1.6);   // light page: fuller dots so the face does not wash out
+    gl.uniform1f(U.uCover, dark ? 1 : 1.9);   // light page: fuller dots so the face does not wash out
+    gl.uniform1f(U.uInk, dark ? 0 : 1);
     gl.uniform3fv(U.uTrail, trail);
     gl.drawArrays(gl.POINTS, 0, count);
 
@@ -1915,21 +2037,26 @@ void main(){
   // the <img> picks the file (srcset), but reports a density-corrected size; the cloud is built from a plain
   // copy of that same file (already loaded, so it comes from the cache), whose size is its real pixel size
   const startPortrait = () => {
-    const copy = () => {
-      pix = new Image();
-      pix.src = img.currentSrc || img.src;
-      if (pix.decode) pix.decode().then(go).catch(() => pix.addEventListener('load', go, { once: true }));
-      else pix.addEventListener('load', go, { once: true });
-    };
-    if (img.complete && img.naturalWidth) copy();
-    else img.addEventListener('load', copy, { once: true });
+    const begin = () => { takeBase(); loadPix(theme()).then(go); };
+    if (img.complete && img.naturalWidth) begin();
+    else img.addEventListener('load', begin, { once: true });
+  };
+  // a theme switch: the new theme's cloud is drawn at once (finished on the spot if it is not ready yet)
+  const onTheme = () => {
+    readTheme();
+    if (!ready) return;
+    const th = theme();
+    if (pre && pre.th === th) { while (!stepJob(pre, 1e9)); pre = null; }
+    if (raf) cancelAnimationFrame(raf);
+    raf = 0;
+    draw(performance.now(), true);
   };
   // Opened straight from disk (file://), a browser won't let the canvas read a local photo's pixels.
   // The hosting build carries the photo once more as a small script that is only fetched in that case.
   if (location.protocol === 'file:') {
     const s = document.createElement('script');
     s.src = 'img/portrait-local.js';
-    s.onload = () => { if (window.__portrait) { $$('source', frame).forEach(x => x.remove()); img.src = window.__portrait; } startPortrait(); };
+    s.onload = () => { if (window.__portraitLight) frame.dataset.light = window.__portraitLight; if (window.__portrait) { $$('source', frame).forEach(x => x.remove()); img.src = window.__portrait; } startPortrait(); };
     s.onerror = startPortrait;
     document.head.appendChild(s);
   } else startPortrait();
