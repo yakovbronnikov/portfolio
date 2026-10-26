@@ -1537,10 +1537,20 @@ html.case-open{overflow:hidden}
     if (first) open(first, null, false);
   })();
 
-  /* ---------- contacts: the email row copies the address ---------- */
+  /* ---------- contacts: the email row copies the address; on phones and tablets it opens the mail app ---------- */
   const mailBtn = $('#copy-email');
   if (mailBtn) {
     const handle = $('.c-handle', mailBtn), status = $('#copy-status'), addr = mailBtn.dataset.email;
+    const touch = matchMedia('(hover: none) and (pointer: coarse)');
+    const icon = $('.c-a i', mailBtn), COPY = icon.innerHTML, ARROW = ($('.c-row:not(.is-copy) .c-a i') || icon).innerHTML;
+    const mode = () => {                // a finger: the row writes an email and looks like the other links
+      const m = touch.matches;
+      mailBtn.classList.toggle('is-copy', !m);
+      icon.innerHTML = m ? ARROW : COPY;
+      mailBtn.setAttribute('aria-label', 'Email ' + addr + (m ? ', write an email' : ', copy to clipboard'));
+    };
+    mode();
+    if (touch.addEventListener) touch.addEventListener('change', mode); else if (touch.addListener) touch.addListener(mode);
     let tm = 0;
     const flash = msg => {
       clearTimeout(tm);
@@ -1549,6 +1559,7 @@ html.case-open{overflow:hidden}
     };
     const selectIt = () => { const r = document.createRange(); handle.textContent = addr; r.selectNodeContents(handle); const s = getSelection(); s.removeAllRanges(); s.addRange(r); };
     mailBtn.addEventListener('click', () => {
+      if (touch.matches) { location.href = 'mailto:' + addr; return; }
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText(addr).then(() => flash('Copied to clipboard'), () => { selectIt(); status.textContent = 'Press Ctrl+C or ⌘C to copy'; });
       else { selectIt(); status.textContent = 'Press Ctrl+C or ⌘C to copy'; }
     });
