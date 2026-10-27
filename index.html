@@ -471,6 +471,8 @@ html.case-open{overflow:hidden}
 .d-t{fill:var(--fg)}
 .d-t.is-key{fill:var(--bg);font-weight:500}
 .d-t.is-bad{fill:var(--fg-2)}
+.d-sub{font-size:11.5px;fill:var(--fg-2)}
+.d-sub.is-key{fill:var(--bg);opacity:.72}
 @media (max-width:980px){
   .cs-tbl,.cs-src,.cs-diagram{grid-column:1/-1}
   /* the four-column table becomes one card per row */
@@ -558,7 +560,7 @@ html.case-open{overflow:hidden}
       <header class="work-head">
         <p class="work-k mono" data-rv>Selected work</p>
         <h2 class="work-title" id="work-title" data-rv>Work</h2>
-        <p class="work-note" data-rv style="--d:.12s">Three products from the last four years, in business banking, DeFi and payments. Full case studies are on the way.</p>
+        <p class="work-note" data-rv style="--d:.12s">Four products from the last four years, in business banking, a super app, DeFi and payments. Full case studies are on the way.</p>
       </header>
 
       <ol class="projects">
@@ -572,6 +574,18 @@ html.case-open{overflow:hidden}
             </div>
           </div>
           <figure class="proj-media" data-rv style="--d:.1s"><img class="cv-d" srcset="img/accounts-800.webp 800w, img/accounts-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/accounts-1440.webp" alt="Unlimit Accounts: the web dashboard with balances, cards and transactions, a card payment in progress, and the card screen on mobile" width="1440" height="960" loading="lazy" decoding="async"><img class="cv-l" srcset="img/accounts-light-800.webp 800w, img/accounts-light-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/accounts-light-1440.webp" alt="Unlimit Accounts: the web dashboard with balances, cards and transactions, a card payment in progress, and the card screen on mobile" width="1440" height="960" loading="lazy" decoding="async"></figure>
+        </li>
+
+        <li class="proj" id="kaspi-cinema" data-case="kaspi-cinema">
+          <div class="proj-info">
+            <p class="proj-meta mono" data-rv><span>Kaspi.kz</span><span>2026</span><span>Mobile app</span></p>
+            <h3 class="proj-title" data-rv style="--d:.06s">Cinema Tickets</h3>
+            <div class="proj-body">
+              <p class="proj-lede" data-rv style="--d:.12s">Cinema and event tickets inside the Kaspi.kz super app: from a competitor review and interviews to a user flow that ends with the QR code at the door.</p>
+              <div class="proj-cta" data-rv style="--d:.22s"><button type="button" class="btn btn-fwd" aria-label="Cinema Tickets case study"><span class="btn-l" data-scramble aria-hidden="true">Case study</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button></div>
+            </div>
+          </div>
+          <figure class="proj-media" data-rv style="--d:.1s"><img srcset="img/kaspi-800.webp 800w, img/kaspi-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(46vw, 662px)" src="img/kaspi-1440.webp" alt="Cinema Tickets in Kaspi.kz: the list of services, the film listing, payment, the reminder in the chat, the ticket with the QR code, my tickets, the film page and the purchase confirmation" width="1440" height="960" loading="lazy" decoding="async"></figure>
         </li>
 
         <li class="proj" id="stable-lending" data-case="stable-lending">
@@ -763,6 +777,193 @@ html.case-open{overflow:hidden}
         <h2 id="cs-h7" class="sr-only">What I took away</h2>
         <p class="cs-take" data-rv>The project changed how I see a designer’s role. When an agent assembles the mockups, the value moves to understanding the product, precise requirements and a well-built system: the agent only scales what is already well described.</p>
         <p data-rv>In B2B, where every screen involves money and access rights, that precision is what separates a convenient product from a risky one. And KPIs fixed before the start turned the conversation about design from “like it or not” into a conversation about results.</p>
+      </div>
+    </section>
+
+    <footer class="cs-end">
+      <button type="button" class="btn btn-back" data-case-close aria-label="Back to work"><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M9 5H1M4.4 1.6 1 5l3.4 3.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span><span class="btn-l" data-scramble aria-hidden="true">Back to work</span></button>
+      <button type="button" class="btn btn-solid btn-fwd" data-case-next="kaspi-cinema" aria-label="Next case: Cinema Tickets"><span class="btn-l" data-scramble aria-hidden="true">Next case</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1 5h8M5.6 1.6 9 5 5.6 8.4" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></button>
+    </footer>
+  </div>
+</article>
+
+<!-- ---------- case study: Cinema Tickets, Kaspi.kz (#case/kaspi-cinema) ---------- -->
+<article class="case" id="case-kaspi" data-case="kaspi-cinema" aria-labelledby="ck-title" tabindex="-1" hidden>
+  <div class="cs-bar">
+    <div class="wrap cs-bar-in">
+      <button type="button" class="cs-back mono" data-case-close><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M11 6H1.5M5.5 2 1.5 6l4 4" fill="none" stroke="currentColor" stroke-width="1.2"/></svg><span data-scramble>Back to work</span></button>
+      <span class="cs-name mono" aria-hidden="true">Cinema Tickets</span>
+      <a class="btn btn-solid btn-sm cs-contact" href="https://t.me/yakovbronnikov" target="_blank" rel="noopener" aria-label="Contact me on Telegram"><span class="btn-l" data-scramble aria-hidden="true">Contact me</span><span class="btn-a" aria-hidden="true"><i><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg><svg viewBox="0 0 10 10"><path d="M1.5 8.5 8.5 1.5M3 1.5h5.5V7" fill="none" stroke="currentColor" stroke-width="1.3"/></svg></i></span></a>
+    </div>
+    <span class="cs-prog" aria-hidden="true"></span>
+  </div>
+
+  <header class="wrap cs-hero">
+    <p class="proj-meta mono" data-rv><span>Kaspi.kz</span><span>2026</span><span>Mobile app</span></p>
+    <h1 class="cs-title" id="ck-title" data-rv style="--d:.06s">Cinema Tickets</h1>
+    <p class="cs-dek" data-rv style="--d:.12s">A new service in a super app that already has everything: how people buy tickets today, and a path from the search results to the QR code at the door.</p>
+    <dl class="cs-facts" data-rv style="--d:.18s">
+      <div><dt class="mono">Role</dt><dd>Product Designer / UX Researcher</dd></div>
+      <div><dt class="mono">Product</dt><dd>Cinema and event tickets inside the Kaspi.kz super app</dd></div>
+      <div><dt class="mono">Platform</dt><dd>Kaspi.kz mobile app</dd></div>
+      <div><dt class="mono">Year</dt><dd>2026, from competitor analysis to the final user flow</dd></div>
+    </dl>
+  </header>
+
+  <figure class="wrap cs-cover" data-rv>
+    <img srcset="img/kaspi-800.webp 800w, img/kaspi-1440.webp 1440w" sizes="(max-width: 600px) 100vw, min(94vw, 1348px)" src="img/kaspi-1440.webp" alt="Cinema Tickets in Kaspi.kz: the list of services, the film listing, payment, the reminder in the chat, the ticket with the QR code, my tickets, the film page and the purchase confirmation" width="1440" height="960" loading="lazy" decoding="async">
+  </figure>
+
+  <div class="wrap cs-main">
+    <section class="cs-sec" aria-labelledby="ck-h1">
+      <p class="cs-n mono" data-rv>01 — Context</p>
+      <div class="cs-body">
+        <h2 id="ck-h1" data-rv>Kaspi.kz has everything but cinema</h2>
+        <p data-rv>In Kazakhstan, Kaspi.kz is more than a bank. Almost everyone in the country has an account here, and the app has long been home to the Kaspi Magazin marketplace, train and plane tickets, hotel bookings, utility payments and dozens of other services. You can live a whole day in this app, yet for a cinema ticket people still went somewhere else.</p>
+        <p data-rv>Kaspi.kz decided to close this gap and add cinema and event tickets. My job as the product designer and researcher was to understand how people buy tickets today and to design the path from looking for a film to a ticket on the phone screen.</p>
+        <p data-rv>The difficulty wasn’t the screens but the habits. People already have <strong>Kino.kz</strong> and <strong>Ticketon</strong>, familiar services they trust. It isn’t enough for a new service to be “one more place that sells tickets”: it has to be more convenient, and it has to catch the eye at the moment someone is planning to go to the cinema.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-kino-entry-800.avif 800w, img/case-kino-entry-1200.avif 1200w, img/case-kino-entry-1600.avif 1600w, img/case-kino-entry-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-kino-entry-1600.webp" alt="Three screens. Google results for a film with tickets: Kaspi.kz first, then Ticketon and Yandex Afisha. The Kaspi.kz home screen with a new Cinema icon among the shop, bank, payments and transfers. The Kaspi.kz list of services with a new Cinema tickets item" width="1600" height="867" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The ways in to the new service: Kaspi.kz in the search results, a cinema icon on the home screen and in the list of services</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="ck-h2">
+      <p class="cs-n mono" data-rv>02 — Competitors</p>
+      <div class="cs-body">
+        <h2 id="ck-h2" data-rv>What to take and what to avoid</h2>
+        <p data-rv>I started with the two closest competitors, <strong>Kino.kz</strong> and <strong>Ticketon</strong>, and went through each one screen by screen, the whole way from looking for a film or an event to a ticket on the phone. Each had something worth taking and something not to repeat.</p>
+      </div>
+      <div class="cs-tbl" style="--cols:minmax(0,.6fr) minmax(0,1.5fr) minmax(0,1fr)" role="table" aria-label="Kino.kz and Ticketon, step by step" data-rv>
+        <div class="cs-tr cs-th mono" role="row"><span role="columnheader">Step</span><span role="columnheader">What I saw</span><span role="columnheader">Takeaway for Kaspi.kz</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Film page</span><span role="cell" data-l="What I saw">Kino.kz: dates and the first showtimes are on the first screen. Ticketon: a banner takes the whole first screen, then comes the description, and the tickets are far below</span><span role="cell" data-l="Takeaway for Kaspi.kz">Dates and the nearest showtimes on the first screen, no scrolling</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Payment</span><span role="cell" data-l="What I saw">Ticketon sends you to pay on a third-party service and doesn’t bring you back to the ticket</span><span role="cell" data-l="Takeaway for Kaspi.kz">Payment inside Kaspi.kz, without leaving for other sites</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">After payment</span><span role="cell" data-l="What I saw">Kino.kz opens a list of tickets, and you still have to open the ticket itself. Ticketon sends the ticket by text message</span><span role="cell" data-l="Takeaway for Kaspi.kz">The ticket itself opens right after payment</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader">Ticket</span><span role="cell" data-l="What I saw">Kino.kz puts the cover and the details at the top, and the QR code at the very bottom of the page</span><span role="cell" data-l="Takeaway for Kaspi.kz">The QR code first, the showtime details below</span></div>
+      </div>
+      <div class="cs-body cs-after">
+        <p data-rv>On top of that came the overall impression: the Ticketon web interface looks dated and lags noticeably. Each of these is a small thing, but together they make up how a service feels.</p>
+        <p data-rv>The review came down to two moments that decide everything: how fast a person sees the showtimes, and how fast they find the QR code at the entrance to the hall.</p>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-kino-rivals-800.avif 800w, img/case-kino-rivals-1200.avif 1200w, img/case-kino-rivals-1600.avif 1600w, img/case-kino-rivals-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-kino-rivals-1600.webp" alt="Two film pages side by side. Kino.kz: the city and language at the top, a trailer, the title and genre tags, a cashback banner, tabs for tickets, the film and reviews, the April dates, filters by time and by cinema, and the first showtime at Kinoforum 15. Ticketon: a Freedom ecosystem banner with service icons, the Ticketon header and categories, breadcrumbs and a film poster that fills the whole first screen" width="1600" height="1010" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The film page in Kino.kz and Ticketon: Kino.kz shows the dates and the first showtime on the first screen, Ticketon fills it with the poster</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="ck-h3">
+      <p class="cs-n mono" data-rv>03 — Interviews</p>
+      <div class="cs-body">
+        <h2 id="ck-h3" data-rv>How people actually buy tickets</h2>
+        <p data-rv>The competitor review showed interfaces, not people. To hear the users, I ran <strong>6 in-depth interviews</strong>. The respondents were 24 to 39 years old, go to the cinema 1 to 5 times a year, buy tickets online, use super apps and had already tried several ticketing services.</p>
+        <p data-rv>I was looking for answers to three questions: how people buy tickets now, which scenarios matter most to them and where they stumble. Five insights came out of the conversations.</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div><strong>The path to a ticket starts in a search engine.</strong> Four out of six look for tickets in Google or Yandex and follow familiar links: Kino.kz, Ticketon, cinema websites. The habit is already formed, and the main way in for a new service is the search results.</div></li>
+          <li><span class="mono">02</span><div><strong>In a super app, people buy for cashback and speed.</strong> Two out of six already buy tickets inside a super app, for the cashback and the fast payment. So people are ready to buy tickets in their bank’s app, if the service catches their eye.</div></li>
+          <li><span class="mono">03</span><div><strong>People forget the date and time.</strong> To check, they open the ticket again, and one respondent had missed a showing several times. A reminder a few hours before the start suggests itself.</div></li>
+          <li><span class="mono">04</span><div><strong>Sometimes people choose a cinema, not a film.</strong> For some it matters to see the showtimes at one particular cinema, the one that’s convenient to get to. Not every service can do this, and a cinema filter is needed both in search and on the film page.</div></li>
+          <li><span class="mono">05</span><div><strong>A cinema’s name isn’t an address.</strong> Names can be confusingly similar, like Chaplin MEGA Alma-Ata, and people don’t immediately understand where to go. The address belongs next to the name.</div></li>
+        </ol>
+        <p data-rv>The first two insights are about bringing people to the service. The other three are about making it convenient inside, and making sure people get to the hall.</p>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="ck-h4">
+      <p class="cs-n mono" data-rv>04 — Hypotheses</p>
+      <div class="cs-body">
+        <h2 id="ck-h4" data-rv>From insights to numbers</h2>
+        <p data-rv>The insights had to become bets that can be tested. I phrased each one as “if we do X, metric Y grows by Z within a period” and backed it with a second source where there was one.</p>
+        <p data-rv>I had no analytics: the product didn’t exist inside Kaspi.kz yet. So for a first check I used search query data from Yandex Wordstat, and set the target values by expert estimate. They are reference points, to be refined after launch.</p>
+      </div>
+      <div class="cs-tbl is-wide" style="--cols:minmax(0,1.3fr) minmax(0,.7fr) minmax(0,1.2fr)" role="table" aria-label="Hypotheses, their targets and what backs them" data-rv>
+        <div class="cs-tr cs-th mono" role="row"><span role="columnheader">Hypothesis</span><span role="columnheader">Target</span><span role="columnheader">Backed by</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Bring in</b><i>If the service shows up in search results, people who are already looking for tickets will come</i></span><span role="cell" data-l="Target"><b>MAU</b><i class="mono">+30% in 3 months</i></span><span role="cell" data-l="Backed by">The search engine insight. Wordstat: 118,084 searches for “cinema tickets” a month, 2,384 of them from Kazakhstan</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Sell</b><i>If we add a cinema filter, it gets easier to find the right showing</i></span><span role="cell" data-l="Target"><b>Conversion rate</b><i class="mono">+5% in a month</i></span><span role="cell" data-l="Backed by">The cinema choice insight. Wordstat: of 775 searches for “cinema tickets” in Almaty, 253 (about 33%) mention a cinema</span></div>
+        <div class="cs-tr" role="row"><span role="rowheader"><b>Bring back</b><i>If we remind people of the showing a few hours ahead, they stop missing showings and come back more often</i></span><span role="cell" data-l="Target"><b>Retention rate</b><i class="mono">+24% in six months</i></span><span role="cell" data-l="Backed by">The forgotten showings insight</span></div>
+      </div>
+      <div class="cs-body cs-after">
+        <p data-rv>Three hypotheses cover the whole funnel: bring people in, help them buy and make them come back. And each metric tests a specific design decision, not “a better experience” in general.</p>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="ck-h5">
+      <p class="cs-n mono" data-rv>05 — User flow</p>
+      <div class="cs-body">
+        <h2 id="ck-h5" data-rv>From search to the QR code</h2>
+        <p data-rv>Next I put together the complete user flow with all its branches, straight in final mockups. On every screen I marked which insight or competitor finding it accounts for, so any decision can be traced back to its reason.</p>
+      </div>
+      <figure class="cs-fig cs-diagram" data-rv>
+        <div class="cs-diagram-in">
+          <svg viewBox="0 0 688 548" role="img" aria-label="User flow. Two ways in, search results with a link that opens the app, and the Kaspi.kz home screen with an icon during the launch, from insights 1 and 2 and the MAU hypothesis. Both lead to film search with a cinema filter and the address next to the name, from insights 4 and 5 and the conversion hypothesis. Then the film page with dates and showtimes on the first screen, a Kino.kz strength. Then payment inside Kaspi.kz without leaving for other sites, against a Ticketon weakness. Then the ticket, which opens at once with the QR code first, against weaknesses of Kino.kz and Ticketon. Last, a reminder two hours before the showing, from insight 3 and the retention hypothesis.">
+            <defs><marker id="ck-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse"><path d="M0 0 10 5 0 10z" class="d-head"/></marker></defs>
+            <g class="d-edge">
+              <path d="M124 80V112" marker-end="url(#ck-arrow)"/><path d="M344 80V112" marker-end="url(#ck-arrow)"/>
+              <path d="M234 168V200" marker-end="url(#ck-arrow)"/><path d="M234 256V288" marker-end="url(#ck-arrow)"/>
+              <path d="M234 344V376" marker-end="url(#ck-arrow)"/><path d="M234 432V464" marker-end="url(#ck-arrow)"/>
+            </g>
+            <rect x="24" y="24" width="200" height="56" class="d-box"/><text x="124" y="48" text-anchor="middle" class="d-t">Search results</text><text x="124" y="66" text-anchor="middle" class="d-sub">the link opens the app</text>
+            <rect x="244" y="24" width="200" height="56" class="d-box"/><text x="344" y="48" text-anchor="middle" class="d-t">Kaspi.kz home screen</text><text x="344" y="66" text-anchor="middle" class="d-sub">an icon during the launch</text>
+            <text x="476" y="56" class="d-note">insights 01, 02 · MAU</text>
+            <rect x="84" y="112" width="300" height="56" class="d-box"/><text x="234" y="136" text-anchor="middle" class="d-t">Film search</text><text x="234" y="154" text-anchor="middle" class="d-sub">a cinema filter, the address next to the name</text>
+            <text x="416" y="144" class="d-note">insights 04, 05 · conversion</text>
+            <rect x="84" y="200" width="300" height="56" class="d-box"/><text x="234" y="224" text-anchor="middle" class="d-t">Film page</text><text x="234" y="242" text-anchor="middle" class="d-sub">dates and showtimes on the first screen</text>
+            <text x="416" y="232" class="d-note">a Kino.kz strength</text>
+            <rect x="84" y="288" width="300" height="56" class="d-box"/><text x="234" y="312" text-anchor="middle" class="d-t">Payment inside Kaspi.kz</text><text x="234" y="330" text-anchor="middle" class="d-sub">without leaving for other sites</text>
+            <text x="416" y="320" class="d-note">a Ticketon weakness</text>
+            <rect x="84" y="376" width="300" height="56" class="d-box is-key"/><text x="234" y="400" text-anchor="middle" class="d-t is-key">Ticket</text><text x="234" y="418" text-anchor="middle" class="d-sub is-key">opens at once, the QR code first</text>
+            <text x="416" y="408" class="d-note">Kino.kz and Ticketon weaknesses</text>
+            <rect x="84" y="464" width="300" height="56" class="d-box"/><text x="234" y="488" text-anchor="middle" class="d-t">Showing reminder</text><text x="234" y="506" text-anchor="middle" class="d-sub">a notification two hours before the start</text>
+            <text x="416" y="496" class="d-note">insight 03 · retention</text>
+          </svg>
+        </div>
+        <figcaption class="mono">Two ways in meet in one path, and next to each step is where the decision came from<span class="cs-swipe"> · swipe to see all of it</span></figcaption>
+      </figure>
+      <div class="cs-body cs-after">
+        <p data-rv>The key decisions:</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div><strong>A way in from search.</strong> A link in the Google and Yandex results leads straight to the service inside the app. People look for tickets the way they’re used to, but buy them in Kaspi.kz.</div></li>
+          <li><span class="mono">02</span><div><strong>An icon on the home screen, for the launch.</strong> Kaspi.kz has dozens of services, and not all of them make it to the home screen. A new service is easy to miss there, so I proposed putting its icon on the home screen for a while.</div></li>
+          <li><span class="mono">03</span><div><strong>The cinema as a way in.</strong> The cinema filter is both in search and on the film page, and the cinema’s name always comes with its address.</div></li>
+          <li><span class="mono">04</span><div><strong>Showtimes on the first screen.</strong> The film page doesn’t hide the tickets under a banner: dates and the nearest showtimes are visible right away, as in Kino.kz.</div></li>
+          <li><span class="mono">05</span><div><strong>From payment straight to the ticket.</strong> Payment happens inside Kaspi.kz, and after it the ticket itself opens: not a list of tickets, not a text message.</div></li>
+          <li><span class="mono">06</span><div><strong>The QR code first.</strong> At the entrance people need exactly the QR code, so it sits at the top, with the showtime details below.</div></li>
+          <li><span class="mono">07</span><div><strong>A reminder two hours before the showing.</strong> The notification saves people from a missed showing, and at the same time tests the retention hypothesis.</div></li>
+        </ol>
+      </div>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-kino-flow-800.avif 800w, img/case-kino-flow-1200.avif 1200w, img/case-kino-flow-1600.avif 1600w, img/case-kino-flow-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-kino-flow-1600.webp" alt="Three screens of the new service. The film page: a still, the rating and age limit, genres, the April dates, by time or by cinema, and showtimes with the cinema, its address, the price and the language. Payment: 2 tickets for 3,400 tenge, an option to spend bonuses, payment by Kaspi Gold, in instalments or with another bank’s card, and a Pay button. The ticket: the QR code at the top, then the film, the cinema address, the seats, the amount, the order number and the payment method" width="1600" height="874" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The film page with showtimes on the first screen, payment inside Kaspi.kz and the ticket with the QR code at the top</figcaption>
+      </figure>
+      <figure class="cs-fig" data-rv>
+        <picture><source type="image/avif" srcset="img/case-kino-reminder-800.avif 800w, img/case-kino-reminder-1200.avif 1200w, img/case-kino-reminder-1600.avif 1600w, img/case-kino-reminder-2000.avif 2000w" sizes="(max-width: 600px) calc(100vw - 32px), (max-width: 980px) 94vw, min(70vw, 1005px)"><img src="img/case-kino-reminder-1600.webp" alt="A message at 08:00 in the Cinema on Kaspi.kz chat: a still from the film, the text that the showing starts today at 10:00, the cinema address and an Open ticket button" width="1600" height="1206" loading="lazy" decoding="async"></picture>
+        <figcaption class="mono">The reminder two hours before the showing, with the cinema address and a button that opens the ticket</figcaption>
+      </figure>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="ck-h6">
+      <p class="cs-n mono" data-rv>06 — Result</p>
+      <div class="cs-body">
+        <h2 id="ck-h6" data-rv>A flow where every screen has a reason</h2>
+        <p data-rv>The service went from an idea to a final user flow. The outcome isn’t just a set of screens but decisions, each of them backed by data.</p>
+        <ol class="cs-list" data-rv>
+          <li><span class="mono">01</span><div>A screen-by-screen review of Kino.kz and Ticketon: what to take and what to avoid</div></li>
+          <li><span class="mono">02</span><div>6 in-depth interviews and 5 insights into how people buy tickets</div></li>
+          <li><span class="mono">03</span><div>3 hypotheses with target metrics across the whole funnel: MAU, conversion rate and retention rate</div></li>
+          <li><span class="mono">04</span><div>A final user flow with all its branches, every screen marked with the insight it addresses</div></li>
+          <li><span class="mono">05</span><div>A launch plan: a way in from the search results and a temporary icon on the Kaspi.kz home screen</div></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="cs-sec" aria-labelledby="ck-h7">
+      <p class="cs-n mono" data-rv>07 — Takeaways</p>
+      <div class="cs-body">
+        <h2 id="ck-h7" class="sr-only">What I took away</h2>
+        <p class="cs-take" data-rv>Buying a ticket doesn’t end with the payment. The most awkward moments come later: a couple of hours before the showing, when it has been forgotten, and at the door, when the QR code is at the very bottom of the page.</p>
+        <p data-rv>That is exactly where a new service can turn out more convenient than the familiar ones.</p>
+        <p data-rv>Second, in a super app a service competes not only with outside players but also with dozens of neighbours for a place on the home screen. So the answer to “how will people find the service” is as much a part of the design as the screens themselves.</p>
+        <p data-rv>Third, having no analytics is no reason to work without numbers. Interviews and search queries gave enough ground to frame hypotheses with measurable goals and to talk to the business in the language of metrics, not taste.</p>
       </div>
     </section>
 
