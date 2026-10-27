@@ -174,7 +174,7 @@ html.js .frame:not(.gl):not(.nogl) img{opacity:0}
 .projects{list-style:none;margin:0;padding:0}
 .proj{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));column-gap:24px;row-gap:28px;align-items:start;padding-block:clamp(28px,3.5vw,48px);border-top:1px solid var(--line)}
 .proj-info{grid-column:1/6;grid-row:1;min-width:0;display:flex;flex-direction:column;gap:20px}
-.proj-media{grid-column:7/13;grid-row:1;position:relative;margin:0;aspect-ratio:3/2;max-width:100%;overflow:hidden}
+.proj-media{grid-column:7/13;grid-row:1;position:relative;margin:0;aspect-ratio:3/2;max-width:100%;overflow:hidden;border:1px solid var(--line)}
 .proj-media img{display:block;width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
 .proj:hover .proj-media img{transform:scale(1.025)}
 .proj-meta{margin:0;display:flex;flex-wrap:wrap;gap:6px 18px;color:var(--fg-2)}
@@ -230,7 +230,7 @@ html.js .frame:not(.gl):not(.nogl) img{opacity:0}
   .proj-meta,.proj-title,.proj-media,.proj-cta{grid-column:1/-1;grid-row:auto}
   .proj-meta{order:1}
   .proj-title{order:2;margin-top:12px}
-  .proj-media{order:3;margin:24px calc(-1 * max(var(--gutter), env(safe-area-inset-left, 0px))) 0;max-width:none}
+  .proj-media{order:3;margin:24px calc(-1 * max(var(--gutter), env(safe-area-inset-left, 0px))) 0;max-width:none;border-inline:0}
   .proj-cta{order:4;margin-top:24px;justify-self:start}
   .proj-lede,.proj-note{display:none}
 }
